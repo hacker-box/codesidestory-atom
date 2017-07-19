@@ -1,0 +1,102 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "octicon-utf-codes.less";
+
+.codesidestory-atom {
+}
+
+.css-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.css-close {
+  cursor: pointer;
+}
+
+.primary-line {
+  font-weight: bold;
+}
+
+.css-item {
+  border-top: 1px solid #cccccc;
+}
+
+.css-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.css-convo {
+  min-height: 20px;
+  min-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  .css-close-chat {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    color: @text-color-warning;
+  }
+  .css-convo-line {
+    padding: 5px;
+    & > p {
+      margin-bottom: 0px;
+    }
+    &:nth-child(even) {
+      background-color: rgba(69, 142, 209, .04);
+    }
+  }
+  .css-input-wrapper {
+    padding: 5px;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(230, 230, 230, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  .css-lines-wrapper {
+    max-height: 800px;
+    overflow-y: auto;
+  }
+}
+
+.css-convo-icon {
+  cursor: pointer;
+  color: #ff8888;
+  &:before {
+    width: 13px;
+    height: 13px;
+    font-size: 13px;
+  }
+  &:hover {
+    color: darken(#ff8888, 20%);
+  }
+}
+
+/* repo-setting-view */
+
+.css-line-item {
+  font-size: 14px;
+}
+.css-link {
+  color: @button-background-color-selected;
+  text-decoration: underline;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.css-margin-right {
+  margin-right: 10px;
+}
+.css-block {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dddddd;
+}

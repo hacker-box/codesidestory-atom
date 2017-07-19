@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle codesidestory-atom",
+        "command": "codesidestory-atom:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "codesidestory-atom",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "codesidestory-atom:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

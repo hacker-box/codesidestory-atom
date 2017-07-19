@@ -1,0 +1,9 @@
+{
+  "atom-workspace": {
+    "ctrl-alt-c": "codesidestory:init"
+  },
+  ".css-convo atom-text-editor.mini": {
+    "enter" : "codesidestory:post-comment",
+    "escape"   : "codesidestory:hide-comment"
+  }
+}

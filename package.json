@@ -1,0 +1,25 @@
+{
+  "name": "codesidestory-atom",
+  "main": "./lib/codesidestory-atom",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "codesidestory:init"
+  },
+  "repository": "https://github.com/atom/codesidestory-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-select-list": "^0.2.0",
+    "etch": "^0.12.5",
+    "firebase": "^4.1.3",
+    "jwt-decode": "^2.2.0",
+    "left-pad": "^1.1.3",
+    "light-markdown": "^0.1.2",
+    "lodash.get": "^4.4.2",
+    "superagent": "^3.5.2"
+  }
+}

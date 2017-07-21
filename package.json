@@ -1,16 +1,21 @@
 {
   "name": "codesidestory-atom",
-  "main": "./lib/codesidestory-atom",
+  "main": "./dist/bundle",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "A Slack integration to chat and archive code related conversations",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "codesidestory:init"
   },
-  "repository": "https://github.com/atom/codesidestory-atom",
+  "repository": "https://github.com/hacker-box/codesidestory-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "atom-select-list": "^0.2.0",
@@ -21,5 +26,13 @@
     "light-markdown": "^0.1.2",
     "lodash.get": "^4.4.2",
     "superagent": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "webpack": "^3.3.0"
   }
 }

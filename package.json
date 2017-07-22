@@ -2,8 +2,8 @@
   "name": "codesidestory-atom",
   "main": "./dist/bundle",
   "version": "0.0.0",
-  "description": "A Slack integration to chat and archive code related conversations",
-  "keywords": [],
+  "description": "A Slack integration to Keep your code related conversation next to the code.",
+  "keywords": ["slack","atom","code","conversation"],
   "activationCommands": {
     "atom-workspace": "codesidestory:init"
   },

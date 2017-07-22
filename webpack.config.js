@@ -1,5 +1,4 @@
 const path = require("path");
-const webpack = require("webpack");
 
 module.exports = {
   entry: "./lib/codesidestory-atom.js",
@@ -19,7 +18,6 @@ module.exports = {
       }
     ]
   },
-  plugins: [new webpack.DefinePlugin({ "global.GENTLY": false })],
   externals: [
     {
       atom: "atom",

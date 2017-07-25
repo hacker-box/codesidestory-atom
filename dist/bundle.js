@@ -18907,6 +18907,8 @@ module.exports = {
   },
 
   activate: function activate(state) {
+    var _this = this;
+
     // Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     this.state = state || {};
 
@@ -18916,14 +18918,11 @@ module.exports = {
     this.logoutsubs = new _atom.CompositeDisposable();
     this.subscriptions.add(this.loginsubs, this.logoutsubs);
 
-    this.login();
-    /*
-    this.logoutsubs.add(
-      atom.commands.add("atom-workspace", {
-        "codesidestory:init": () => this.login()
-      })
-    );
-    */
+    this.subscriptions.add(atom.commands.add("atom-workspace", {
+      "codesidestory:init": function codesidestoryInit() {
+        return _this.user ? _this.init(true) : _this.login();
+      }
+    }));
   },
   deactivate: function deactivate() {
     this.subscriptions.dispose();
@@ -18935,7 +18934,7 @@ module.exports = {
     return this.state;
   },
   login: function login() {
-    var _this = this;
+    var _this2 = this;
 
     if (firebase.apps.length) {
       this.auth();
@@ -18947,47 +18946,56 @@ module.exports = {
 
     firebase.auth().onAuthStateChanged(function (user) {
       if (user) {
-        _this.logoutsubs.dispose();
+        _this2.logoutsubs.dispose();
 
         user.getIdToken().then(function (tok) {
           var _ref = (0, _jwtDecode2.default)(tok) || {},
               team_id = _ref.team_id;
 
           if (!team_id) {
-            return _this.error("No team_id found for user ", user.uid);
+            return console.error("No team_id found for user ", user.uid);
           }
           var userTeam = { user_id: user.uid, team_id: team_id };
 
-          _this.init(userTeam);
+          _this2.user = userTeam;
+          _this2.init();
 
-          _this.loginsubs.add(atom.commands.add("atom-workspace", {
+          _this2.loginsubs.add(atom.commands.add("atom-workspace", {
             "codesidestory:repo-settings": function codesidestoryRepoSettings() {
-              return _this.init(userTeam, true);
+              return _this2.init(true);
             }
+          }), atom.contextMenu.add({
+            "atom-workspace": [{
+              label: "CodeSideStory",
+              submenu: [{
+                label: "Repo Settings",
+                command: "codesidestory:repo-settings"
+              }]
+            }]
           }));
         });
-        _this.loginsubs.add(atom.commands.add("atom-workspace", {
+        _this2.loginsubs.add(atom.commands.add("atom-workspace", {
           "codesidestory:logout": function codesidestoryLogout() {
             return firebase.auth().signOut();
           }
         }));
       } else {
-        _this.loginsubs.dispose();
+        _this2.loginsubs.dispose();
 
-        _this.logoutsubs.add(atom.commands.add("atom-workspace", {
+        _this2.logoutsubs.add(atom.commands.add("atom-workspace", {
           "codesidestory:login": function codesidestoryLogin() {
-            return _this.login();
+            return _this2.login();
           }
         }));
 
-        _this.auth();
+        _this2.auth();
       }
     });
   },
-  init: function init(user, showRepoSetting) {
-    var _this2 = this;
+  init: function init(showRepoSetting) {
+    var _this3 = this;
 
-    var team_id = user.team_id;
+    var team_id = this.user.team_id;
 
     this.teamRef = firebase.database().ref("teams/" + team_id);
 
@@ -18997,15 +19005,15 @@ module.exports = {
         return !repo || !repo.id || !repo.channel;
       });
       if (uninitialiedRepos || showRepoSetting) {
-        _this2.initRepoSettingsView(repos);
+        _this3.initRepoSettingsView(repos);
       } else {
-        _this2.modalPanel = atom.workspace.addModalPanel({
+        _this3.modalPanel = atom.workspace.addBottomPanel({
           item: _etch2.default.render($.div({
-            className: "block",
+            className: "block css-bottom-panel text-info",
             onClick: function onClick() {
-              return _this2.modalPanel.destroy();
+              return _this3.modalPanel.destroy();
             }
-          }, $.div({ className: "css-close icon icon-x pull-right" }), 'Plugin initialized! Use "Codesidestory:Start Conversation" in Command Palette to start a conversation')),
+          }, $.div({ className: "css-close icon icon-x pull-right" }), 'CodeSideStory initialized! Use "Codesidestory:Start Conversation" in Command Palette to start a conversation')),
           visible: true
         });
       }
@@ -19014,7 +19022,7 @@ module.exports = {
     this.loginsubs.add(atom.workspace.observeActiveTextEditor(this.onEditorActive.bind(this)));
   },
   onEditorActive: function onEditorActive(editor) {
-    var _this3 = this;
+    var _this4 = this;
 
     if (!editor) {
       return;
@@ -19028,6 +19036,7 @@ module.exports = {
     var repoId = (0, _helpers.repoIdForPath)(editor.getPath(), this.state.repos);
     if (!repoId) {
       console.warn("Not able to find repo for file: ", filePath);
+      this.init(true);
       return;
     }
     var fileRef = this.teamRef.child("repos/" + repoId + "/files/" + (0, _helpers.fbKeyEncode)(filePath));
@@ -19043,57 +19052,57 @@ module.exports = {
         console.warn("No channles setup for repo");
         return;
       }
-      _this3.gutter = new _conversationsGutter2.default({ editor: editor, fileRef: fileRef, channelId: channelId });
-      _this3.loginsubs.add(new _atom.Disposable(function () {
-        return _this3.gutter && _this3.gutter.destroy();
+      _this4.gutter = new _conversationsGutter2.default({ editor: editor, fileRef: fileRef, channelId: channelId });
+      _this4.loginsubs.add(new _atom.Disposable(function () {
+        return _this4.gutter && _this4.gutter.destroy();
       }));
     });
   },
   getRepos: function getRepos() {
-    var _this4 = this;
+    var _this5 = this;
 
     var savedRepos = this.state.repos || [];
     return Promise.all(atom.project.getRepositories().map(function (repo, idx) {
       return repo && repo.getOriginURL() ? repo.getOriginURL() : savedRepos[idx];
     }).map(function (url) {
-      return url ? _this4.teamRef.child("repoIds/" + (0, _helpers.fbKeyEncode)(url)).once("value").then(function (snap) {
+      return url ? _this5.teamRef.child("repoIds/" + (0, _helpers.fbKeyEncode)(url)).once("value").then(function (snap) {
         return snap.val() || { id: (0, _helpers.fbKeyEncode)(url), url: url };
       }) : Promise.resolve({});
     }));
   },
   showRepoSettings: function showRepoSettings(repos, channels) {
-    var _this5 = this;
+    var _this6 = this;
 
     if (this.repoSettingsView) {
       this.repoSettingsView.destroy();
     }
     this.teamRef.child("repoIds").once("value").then(function (snap) {
       var repoIds = snap.val() || {};
-      _this5.repoSettingsView = new _repoSettingsView2.default({
+      _this6.repoSettingsView = new _repoSettingsView2.default({
         repos: repos,
         channels: channels,
         repoIds: Object.keys(repoIds).map(function (key) {
           return repoIds[key];
         }),
-        onSave: _this5.onSave.bind(_this5)
+        onSave: _this6.onSave.bind(_this6)
       });
     }).catch(function (err) {
       console.error(err);
-      _this5.repoSettingsView = new _repoSettingsView2.default({
+      _this6.repoSettingsView = new _repoSettingsView2.default({
         repos: repos,
         channels: channels,
         repoIds: [],
-        onSave: _this5.onSave.bind(_this5)
+        onSave: _this6.onSave.bind(_this6)
       });
     });
   },
   onSave: function onSave(_ref2) {
-    var _this6 = this;
+    var _this7 = this;
 
     var repos = _ref2.repos;
 
     repos.forEach(function (repo) {
-      return _this6.teamRef.child("repoIds/" + repo.id).update(repo);
+      return _this7.teamRef.child("repoIds/" + repo.id).update(repo);
     });
     var paths = atom.project.getPaths();
     this.state.repos = repos.map(function (repo) {
@@ -19102,7 +19111,7 @@ module.exports = {
     this.onEditorActive(atom.workspace.getActiveTextEditor());
   },
   initRepoSettingsView: function initRepoSettingsView(repos) {
-    var _this7 = this;
+    var _this8 = this;
 
     this.teamRef.child("channels").once("value").then(function (snap) {
       var val = snap.val() || {};
@@ -19110,7 +19119,7 @@ module.exports = {
         return val[key];
       });
     }).then(function (channels) {
-      return _this7.showRepoSettings(repos, channels);
+      return _this8.showRepoSettings(repos, channels);
     }).catch(console.error);
   },
   auth: function auth() {
@@ -24246,6 +24255,14 @@ var ConversationsGutter = function () {
     }));
     this.disposables.add(atom.commands.add(atom.views.getView(this.editor), {
       "codesidestory:start-conversation": this.startConvo.bind(this)
+    }), atom.contextMenu.add({
+      "atom-text-editor": [{
+        label: "CodeSideStory",
+        submenu: [{
+          label: "Start Conversation",
+          command: "codesidestory:start-conversation"
+        }]
+      }]
     }));
 
     var linesRef = this.fileRef.child("lines");

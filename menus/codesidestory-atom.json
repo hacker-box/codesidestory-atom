@@ -2,8 +2,13 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle codesidestory-atom",
-        "command": "codesidestory-atom:toggle"
+        "label": "CodeSideStory",
+        "submenu": [
+          {
+            "label": "Initialize",
+            "command": "codesidestory:init"
+          }
+        ]
       }
     ]
   },
@@ -12,11 +17,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "codesidestory-atom",
+          "label": "CodeSideStory",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "codesidestory-atom:toggle"
+              "label": "Init",
+              "command": "codesidestory:init"
             }
           ]
         }

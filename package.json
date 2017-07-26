@@ -1,7 +1,7 @@
 {
   "name": "codesidestory-atom",
   "main": "./dist/bundle",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A Slack integration to Keep your code related conversation next to the code.",
   "keywords": [
     "slack",

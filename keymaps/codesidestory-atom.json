@@ -5,7 +5,7 @@
   "atom-text-editor": {
     "ctrl-alt-c": "codesidestory:start-conversation"
   },
-  ".css-convo atom-text-editor.mini": {
+  ".css-convo atom-text-editor.css-input:not(.autocomplete-active)": {
     "enter" : "codesidestory:post-comment",
     "escape"   : "codesidestory:hide-comment"
   }

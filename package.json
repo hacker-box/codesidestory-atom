@@ -12,6 +12,13 @@
   "activationCommands": {
     "atom-workspace": "codesidestory:init"
   },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "3.0.0": "getProviders"
+      }
+    }
+  },
   "repository": "https://github.com/hacker-box/codesidestory-atom",
   "license": "MIT",
   "engines": {

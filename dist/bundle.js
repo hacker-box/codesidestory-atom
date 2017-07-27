@@ -18990,6 +18990,8 @@ module.exports = {
           _this2.user = userTeam;
           _this2.init();
 
+          _this2.loginsubs.add(atom.workspace.observeActiveTextEditor(_this2.onEditorActive.bind(_this2)));
+
           _this2.loginsubs.add(atom.commands.add("atom-workspace", {
             "codesidestory:repo-settings": function codesidestoryRepoSettings() {
               return _this2.init(true);
@@ -19050,8 +19052,6 @@ module.exports = {
         });
       }
     }).catch(console.error);
-
-    this.loginsubs.add(atom.workspace.observeActiveTextEditor(this.onEditorActive.bind(this)));
   },
   onEditorActive: function onEditorActive(editor) {
     var _this4 = this;

@@ -3,6 +3,7 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@import "syntax-variables";
 @import "octicon-utf-codes.less";
 
 .codesidestory-atom {
@@ -34,9 +35,9 @@
   min-height: 20px;
   min-width: 400px;
   background-color: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  box-shadow: 0 5px 10px lighten(@base-border-color, 50%);
+  border: 1px solid @base-border-color;
+  box-shadow: 0 0 5px @overlay-border-color;
   .css-close-chat {
     cursor: pointer;
     position: absolute;
@@ -54,15 +55,28 @@
     }
   }
   .css-input-wrapper {
-    padding: 5px;
+    padding: 10px 5px;
+    /*
     background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 1) 0%,
       rgba(230, 230, 230, 1) 50%,
       rgba(255, 255, 255, 1) 100%
     );
+    */
+    .css-input {
+      background-color: @syntax-background-color;
+      color: @syntax-text-color;
+    }
+    background: linear-gradient(
+      0deg,
+      @syntax-background-color 0%,
+      darken(@syntax-background-color, 10%) 50%,
+      @syntax-background-color 100%
+    );
   }
   .css-lines-wrapper {
+    background-color: @syntax-background-color;
     min-height: 40px;
     max-height: 400px;
     overflow-y: auto;

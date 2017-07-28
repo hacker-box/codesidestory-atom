@@ -42,7 +42,7 @@
   .css-close-chat {
     cursor: pointer;
     position: absolute;
-    top: 5px;
+    top: 4px;
     right: 8px;
     color: @text-color-warning;
   }
@@ -60,14 +60,6 @@
   }
   .css-input-wrapper {
     padding: 10px 5px;
-    /*
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(230, 230, 230, 1) 50%,
-      rgba(255, 255, 255, 1) 100%
-    );
-    */
     .css-input {
       background-color: @syntax-background-color;
       color: @syntax-text-color;
@@ -84,6 +76,12 @@
     min-height: 40px;
     max-height: 400px;
     overflow-y: auto;
+  }
+  .css-scroll {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: @syntax-background-color;
   }
 }
 

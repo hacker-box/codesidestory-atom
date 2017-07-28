@@ -1923,7 +1923,7 @@ function write(key, options, type) {
 // If you have no idea what ASN.1 or BER is, see this:
 // ftp://ftp.rsa.com/pub/pkcs/ascii/layman.asc
 
-var Ber = __webpack_require__(184);
+var Ber = __webpack_require__(185);
 
 
 
@@ -1949,9 +1949,9 @@ module.exports = {
 
 var Emitter = __webpack_require__(65).EventEmitter,
     util    = __webpack_require__(0),
-    streams = __webpack_require__(147),
+    streams = __webpack_require__(148),
     Headers = __webpack_require__(45),
-    Reader  = __webpack_require__(148);
+    Reader  = __webpack_require__(149);
 
 var Base = function(request, url, options) {
   Emitter.call(this);
@@ -6025,7 +6025,7 @@ module.exports = {
   toHash: toHash,
   getProperty: getProperty,
   escapeQuotes: escapeQuotes,
-  ucs2length: __webpack_require__(234),
+  ucs2length: __webpack_require__(235),
   varOccurences: varOccurences,
   varReplace: varReplace,
   cleanUpCode: cleanUpCode,
@@ -6284,7 +6284,7 @@ module.exports = require("http");
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint-disable node/no-deprecated-api */
-var buffer = __webpack_require__(167)
+var buffer = __webpack_require__(168)
 var Buffer = buffer.Buffer
 
 // alternative to using Object.keys for old browsers
@@ -6535,9 +6535,9 @@ var PrivateKey = __webpack_require__(6);
 var Identity = __webpack_require__(24);
 
 var formats = {};
-formats['openssh'] = __webpack_require__(187);
+formats['openssh'] = __webpack_require__(188);
 formats['x509'] = __webpack_require__(85);
-formats['pem'] = __webpack_require__(188);
+formats['pem'] = __webpack_require__(189);
 
 var CertificateParseError = errs.CertificateParseError;
 var InvalidAlgorithmError = errs.InvalidAlgorithmError;
@@ -7740,9 +7740,9 @@ module.exports = exports['default'];
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const dom = __webpack_require__(134)
+const dom = __webpack_require__(135)
 const render = __webpack_require__(44)
-const {initialize, update, updateSync, destroy, destroySync} = __webpack_require__(136)
+const {initialize, update, updateSync, destroy, destroySync} = __webpack_require__(137)
 const {setScheduler, getScheduler} = __webpack_require__(64)
 
 module.exports = {
@@ -7766,8 +7766,8 @@ module.exports = {
 // * http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-17
 
 var Base   = __webpack_require__(13),
-    Client = __webpack_require__(149),
-    Server = __webpack_require__(158);
+    Client = __webpack_require__(150),
+    Server = __webpack_require__(159);
 
 var Driver = {
   client: function(url, options) {
@@ -8180,7 +8180,7 @@ exports.badImplementation = function (message, data) {
 var Crypto = __webpack_require__(1);
 var Path = __webpack_require__(51);
 var Util = __webpack_require__(0);
-var Escape = __webpack_require__(171);
+var Escape = __webpack_require__(172);
 
 
 // Declare internals
@@ -9187,7 +9187,7 @@ var internals = {};
 
 exports.version = function () {
 
-    return __webpack_require__(176).version;
+    return __webpack_require__(177).version;
 };
 
 
@@ -10758,7 +10758,7 @@ var postConversation = exports.postConversation = function postConversation(_ref
 
 var slackRegEx = /<(.*?)>/g;
 var emojiRegEx = /:([a-z-_0-9]*?):/g;
-var emojiMap = __webpack_require__(277);
+var emojiMap = __webpack_require__(133);
 _lightMarkdown2.default.setFlavor("slack");
 var formatSlackMessages = exports.formatSlackMessages = function formatSlackMessages(msg) {
   if (!msg) {
@@ -11333,7 +11333,7 @@ module.exports = function extend() {
 "use strict";
 
 
-var jsonSafeStringify = __webpack_require__(166)
+var jsonSafeStringify = __webpack_require__(167)
   , crypto = __webpack_require__(1)
   , Buffer = __webpack_require__(20).Buffer
 
@@ -12046,7 +12046,7 @@ module.exports.httpify = function (resp, headers) {
 /* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var json = typeof JSON !== 'undefined' ? JSON : __webpack_require__(235);
+var json = typeof JSON !== 'undefined' ? JSON : __webpack_require__(236);
 
 module.exports = function (obj, opts) {
     if (!opts) opts = {};
@@ -12136,8 +12136,8 @@ var objectKeys = Object.keys || function (obj) {
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var v1 = __webpack_require__(268);
-var v4 = __webpack_require__(269);
+var v1 = __webpack_require__(269);
+var v4 = __webpack_require__(270);
 
 var uuid = v4;
 uuid.v1 = v1;
@@ -12560,7 +12560,7 @@ module.exports = {
 
 const EVENT_LISTENER_PROPS = __webpack_require__(62)
 const SVG_TAGS = __webpack_require__(43)
-const SVG_ATTRIBUTE_TRANSLATIONS = __webpack_require__(135)
+const SVG_ATTRIBUTE_TRANSLATIONS = __webpack_require__(136)
 const EMPTY = ''
 
 module.exports = function (domNode, oldVirtualNode, newVirtualNode, options) {
@@ -12755,7 +12755,7 @@ function updateEventListeners (domNode, oldVirtualNode, newVirtualNode, listener
 // associated functions repeatedly. Again, they should be scheduled in such a
 // way so as to avoid synchronous reflows.
 
-const DefaultScheduler = __webpack_require__(138)
+const DefaultScheduler = __webpack_require__(139)
 
 let scheduler = null
 
@@ -12786,10 +12786,10 @@ module.exports = require("events");
 
 var crypto     = __webpack_require__(1),
     util       = __webpack_require__(0),
-    Extensions = __webpack_require__(150),
+    Extensions = __webpack_require__(151),
     Base       = __webpack_require__(13),
-    Frame      = __webpack_require__(155),
-    Message    = __webpack_require__(156);
+    Frame      = __webpack_require__(156),
+    Message    = __webpack_require__(157);
 
 var Hybi = function(request, url, options) {
   Base.apply(this, arguments);
@@ -13541,7 +13541,7 @@ module.exports = EventTarget;
 "use strict";
 
 
-var tough = __webpack_require__(163)
+var tough = __webpack_require__(164)
 
 var Cookie = tough.Cookie
   , CookieJar = tough.CookieJar
@@ -13904,7 +13904,7 @@ exports.pathMatch = pathMatch;
 /* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(172);
+module.exports = __webpack_require__(173);
 
 /***/ }),
 /* 78 */
@@ -14404,7 +14404,7 @@ function generateECDSA(curve) {
 var crypto = __webpack_require__(1);
 var BigInteger = __webpack_require__(15).BigInteger;
 var ECPointFp = __webpack_require__(38).ECPointFp;
-exports.ECCurves = __webpack_require__(183);
+exports.ECCurves = __webpack_require__(184);
 
 // zero prepad
 function unstupid(hex,len)
@@ -16247,7 +16247,7 @@ function dumpException(ex)
  * @private
  */
 
-var db = __webpack_require__(194)
+var db = __webpack_require__(195)
 var extname = __webpack_require__(51).extname
 
 /**
@@ -16429,7 +16429,7 @@ function populateMaps (extensions, types) {
 
 var util = __webpack_require__(0);
 var Stream = __webpack_require__(8).Stream;
-var DelayedStream = __webpack_require__(200);
+var DelayedStream = __webpack_require__(201);
 
 module.exports = CombinedStream;
 function CombinedStream() {
@@ -16708,7 +16708,7 @@ function runJob(iterator, key, item, callback)
 /* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var defer = __webpack_require__(203);
+var defer = __webpack_require__(204);
 
 // API
 module.exports = async;
@@ -16978,8 +16978,8 @@ module.exports.isDuplex   = isDuplex
 "use strict";
 
 
-var stringify = __webpack_require__(209);
-var parse = __webpack_require__(210);
+var stringify = __webpack_require__(210);
+var parse = __webpack_require__(211);
 var formats = __webpack_require__(99);
 
 module.exports = {
@@ -18886,11 +18886,11 @@ var _jwtDecode2 = _interopRequireDefault(_jwtDecode);
 
 var _helpers = __webpack_require__(41);
 
-var _repoSettingsView = __webpack_require__(133);
+var _repoSettingsView = __webpack_require__(134);
 
 var _repoSettingsView2 = _interopRequireDefault(_repoSettingsView);
 
-var _conversationsGutter = __webpack_require__(139);
+var _conversationsGutter = __webpack_require__(140);
 
 var _conversationsGutter2 = _interopRequireDefault(_conversationsGutter);
 
@@ -18898,13 +18898,13 @@ var _app = __webpack_require__(26);
 
 var firebase = _interopRequireWildcard(_app);
 
-var _autocompleteProvider = __webpack_require__(142);
+var _autocompleteProvider = __webpack_require__(143);
 
 var _autocompleteProvider2 = _interopRequireDefault(_autocompleteProvider);
 
 __webpack_require__(61);
 
-__webpack_require__(143);
+__webpack_require__(144);
 
 var _etch = __webpack_require__(27);
 
@@ -23660,6 +23660,1502 @@ function patchProperty(obj, prop, value) {
 
 /***/ }),
 /* 133 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"100": "&#x1F4AF;",
+	"1234": "&#x1F522;",
+	"copyright": "&#x00A9;",
+	"registered": "&#x00AE;",
+	"bangbang": "&#x203C;",
+	"interrobang": "&#x2049;",
+	"tm": "&#x2122;",
+	"information_source": "&#x2139;",
+	"left_right_arrow": "&#x2194;",
+	"arrow_up_down": "&#x2195;",
+	"arrow_upper_left": "&#x2196;",
+	"arrow_upper_right": "&#x2197;",
+	"arrow_lower_right": "&#x2198;",
+	"arrow_lower_left": "&#x2199;",
+	"leftwards_arrow_with_hook": "&#x21A9;",
+	"arrow_right_hook": "&#x21AA;",
+	"watch": "&#x231A;",
+	"hourglass": "&#x231B;",
+	"keyboard": "&#x2328;",
+	"eject": "&#x23CF;",
+	"fast_forward": "&#x23E9;",
+	"rewind": "&#x23EA;",
+	"arrow_double_up": "&#x23EB;",
+	"arrow_double_down": "&#x23EC;",
+	"black_right_pointing_double_triangle_with_vertical_bar": "&#x23ED;",
+	"black_left_pointing_double_triangle_with_vertical_bar": "&#x23EE;",
+	"black_right_pointing_triangle_with_double_vertical_bar": "&#x23EF;",
+	"alarm_clock": "&#x23F0;",
+	"stopwatch": "&#x23F1;",
+	"timer_clock": "&#x23F2;",
+	"hourglass_flowing_sand": "&#x23F3;",
+	"double_vertical_bar": "&#x23F8;",
+	"black_square_for_stop": "&#x23F9;",
+	"black_circle_for_record": "&#x23FA;",
+	"m": "&#x24C2;",
+	"black_small_square": "&#x25AA;",
+	"white_small_square": "&#x25AB;",
+	"arrow_forward": "&#x25B6;",
+	"arrow_backward": "&#x25C0;",
+	"white_medium_square": "&#x25FB;",
+	"black_medium_square": "&#x25FC;",
+	"white_medium_small_square": "&#x25FD;",
+	"black_medium_small_square": "&#x25FE;",
+	"sunny": "&#x2600;",
+	"cloud": "&#x2601;",
+	"umbrella": "&#x2602;",
+	"snowman": "&#x2603;",
+	"comet": "&#x2604;",
+	"phone": "&#x260E;",
+	"ballot_box_with_check": "&#x2611;",
+	"umbrella_with_rain_drops": "&#x2614;",
+	"coffee": "&#x2615;",
+	"shamrock": "&#x2618;",
+	"point_up": "&#x261D;",
+	"skull_and_crossbones": "&#x2620;",
+	"radioactive_sign": "&#x2622;",
+	"biohazard_sign": "&#x2623;",
+	"orthodox_cross": "&#x2626;",
+	"star_and_crescent": "&#x262A;",
+	"peace_symbol": "&#x262E;",
+	"yin_yang": "&#x262F;",
+	"wheel_of_dharma": "&#x2638;",
+	"white_frowning_face": "&#x2639;",
+	"relaxed": "&#x263A;",
+	"female_sign": "&#x2640;",
+	"male_sign": "&#x2642;",
+	"aries": "&#x2648;",
+	"taurus": "&#x2649;",
+	"gemini": "&#x264A;",
+	"cancer": "&#x264B;",
+	"leo": "&#x264C;",
+	"virgo": "&#x264D;",
+	"libra": "&#x264E;",
+	"scorpius": "&#x264F;",
+	"sagittarius": "&#x2650;",
+	"capricorn": "&#x2651;",
+	"aquarius": "&#x2652;",
+	"pisces": "&#x2653;",
+	"spades": "&#x2660;",
+	"clubs": "&#x2663;",
+	"hearts": "&#x2665;",
+	"diamonds": "&#x2666;",
+	"hotsprings": "&#x2668;",
+	"recycle": "&#x267B;",
+	"wheelchair": "&#x267F;",
+	"hammer_and_pick": "&#x2692;",
+	"anchor": "&#x2693;",
+	"crossed_swords": "&#x2694;",
+	"staff_of_aesculapius": "&#x2695;",
+	"scales": "&#x2696;",
+	"alembic": "&#x2697;",
+	"gear": "&#x2699;",
+	"atom_symbol": "&#x269B;",
+	"fleur_de_lis": "&#x269C;",
+	"warning": "&#x26A0;",
+	"zap": "&#x26A1;",
+	"white_circle": "&#x26AA;",
+	"black_circle": "&#x26AB;",
+	"coffin": "&#x26B0;",
+	"funeral_urn": "&#x26B1;",
+	"soccer": "&#x26BD;",
+	"baseball": "&#x26BE;",
+	"snowman_without_snow": "&#x26C4;",
+	"partly_sunny": "&#x26C5;",
+	"thunder_cloud_and_rain": "&#x26C8;",
+	"ophiuchus": "&#x26CE;",
+	"pick": "&#x26CF;",
+	"helmet_with_white_cross": "&#x26D1;",
+	"chains": "&#x26D3;",
+	"no_entry": "&#x26D4;",
+	"shinto_shrine": "&#x26E9;",
+	"church": "&#x26EA;",
+	"mountain": "&#x26F0;",
+	"umbrella_on_ground": "&#x26F1;",
+	"fountain": "&#x26F2;",
+	"golf": "&#x26F3;",
+	"ferry": "&#x26F4;",
+	"boat": "&#x26F5;",
+	"skier": "&#x26F7;",
+	"ice_skate": "&#x26F8;",
+	"person_with_ball": "&#x26F9;",
+	"tent": "&#x26FA;",
+	"fuelpump": "&#x26FD;",
+	"scissors": "&#x2702;",
+	"white_check_mark": "&#x2705;",
+	"airplane": "&#x2708;",
+	"email": "&#x2709;",
+	"fist": "&#x270A;",
+	"hand": "&#x270B;",
+	"v": "&#x270C;",
+	"writing_hand": "&#x270D;",
+	"pencil2": "&#x270F;",
+	"black_nib": "&#x2712;",
+	"heavy_check_mark": "&#x2714;",
+	"heavy_multiplication_x": "&#x2716;",
+	"latin_cross": "&#x271D;",
+	"star_of_david": "&#x2721;",
+	"sparkles": "&#x2728;",
+	"eight_spoked_asterisk": "&#x2733;",
+	"eight_pointed_black_star": "&#x2734;",
+	"snowflake": "&#x2744;",
+	"sparkle": "&#x2747;",
+	"x": "&#x274C;",
+	"negative_squared_cross_mark": "&#x274E;",
+	"question": "&#x2753;",
+	"grey_question": "&#x2754;",
+	"grey_exclamation": "&#x2755;",
+	"exclamation": "&#x2757;",
+	"heavy_heart_exclamation_mark_ornament": "&#x2763;",
+	"heart": "&#x2764;",
+	"heavy_plus_sign": "&#x2795;",
+	"heavy_minus_sign": "&#x2796;",
+	"heavy_division_sign": "&#x2797;",
+	"arrow_right": "&#x27A1;",
+	"curly_loop": "&#x27B0;",
+	"loop": "&#x27BF;",
+	"arrow_heading_up": "&#x2934;",
+	"arrow_heading_down": "&#x2935;",
+	"arrow_left": "&#x2B05;",
+	"arrow_up": "&#x2B06;",
+	"arrow_down": "&#x2B07;",
+	"black_large_square": "&#x2B1B;",
+	"white_large_square": "&#x2B1C;",
+	"star": "&#x2B50;",
+	"o": "&#x2B55;",
+	"wavy_dash": "&#x3030;",
+	"part_alternation_mark": "&#x303D;",
+	"congratulations": "&#x3297;",
+	"secret": "&#x3299;",
+	"mahjong": "&#x1F004;",
+	"black_joker": "&#x1F0CF;",
+	"a": "&#x1F170;",
+	"b": "&#x1F171;",
+	"o2": "&#x1F17E;",
+	"parking": "&#x1F17F;",
+	"ab": "&#x1F18E;",
+	"cl": "&#x1F191;",
+	"cool": "&#x1F192;",
+	"free": "&#x1F193;",
+	"id": "&#x1F194;",
+	"new": "&#x1F195;",
+	"ng": "&#x1F196;",
+	"ok": "&#x1F197;",
+	"sos": "&#x1F198;",
+	"up": "&#x1F199;",
+	"vs": "&#x1F19A;",
+	"koko": "&#x1F201;",
+	"sa": "&#x1F202;",
+	"u7121": "&#x1F21A;",
+	"u6307": "&#x1F22F;",
+	"u7981": "&#x1F232;",
+	"u7a7a": "&#x1F233;",
+	"u5408": "&#x1F234;",
+	"u6e80": "&#x1F235;",
+	"u6709": "&#x1F236;",
+	"u6708": "&#x1F237;",
+	"u7533": "&#x1F238;",
+	"u5272": "&#x1F239;",
+	"u55b6": "&#x1F23A;",
+	"ideograph_advantage": "&#x1F250;",
+	"accept": "&#x1F251;",
+	"cyclone": "&#x1F300;",
+	"foggy": "&#x1F301;",
+	"closed_umbrella": "&#x1F302;",
+	"night_with_stars": "&#x1F303;",
+	"sunrise_over_mountains": "&#x1F304;",
+	"sunrise": "&#x1F305;",
+	"city_sunset": "&#x1F306;",
+	"city_sunrise": "&#x1F307;",
+	"rainbow": "&#x1F308;",
+	"bridge_at_night": "&#x1F309;",
+	"ocean": "&#x1F30A;",
+	"volcano": "&#x1F30B;",
+	"milky_way": "&#x1F30C;",
+	"earth_africa": "&#x1F30D;",
+	"earth_americas": "&#x1F30E;",
+	"earth_asia": "&#x1F30F;",
+	"globe_with_meridians": "&#x1F310;",
+	"new_moon": "&#x1F311;",
+	"waxing_crescent_moon": "&#x1F312;",
+	"first_quarter_moon": "&#x1F313;",
+	"moon": "&#x1F314;",
+	"full_moon": "&#x1F315;",
+	"waning_gibbous_moon": "&#x1F316;",
+	"last_quarter_moon": "&#x1F317;",
+	"waning_crescent_moon": "&#x1F318;",
+	"crescent_moon": "&#x1F319;",
+	"new_moon_with_face": "&#x1F31A;",
+	"first_quarter_moon_with_face": "&#x1F31B;",
+	"last_quarter_moon_with_face": "&#x1F31C;",
+	"full_moon_with_face": "&#x1F31D;",
+	"sun_with_face": "&#x1F31E;",
+	"star2": "&#x1F31F;",
+	"stars": "&#x1F320;",
+	"thermometer": "&#x1F321;",
+	"mostly_sunny": "&#x1F324;",
+	"barely_sunny": "&#x1F325;",
+	"partly_sunny_rain": "&#x1F326;",
+	"rain_cloud": "&#x1F327;",
+	"snow_cloud": "&#x1F328;",
+	"lightning": "&#x1F329;",
+	"tornado": "&#x1F32A;",
+	"fog": "&#x1F32B;",
+	"wind_blowing_face": "&#x1F32C;",
+	"hotdog": "&#x1F32D;",
+	"taco": "&#x1F32E;",
+	"burrito": "&#x1F32F;",
+	"chestnut": "&#x1F330;",
+	"seedling": "&#x1F331;",
+	"evergreen_tree": "&#x1F332;",
+	"deciduous_tree": "&#x1F333;",
+	"palm_tree": "&#x1F334;",
+	"cactus": "&#x1F335;",
+	"hot_pepper": "&#x1F336;",
+	"tulip": "&#x1F337;",
+	"cherry_blossom": "&#x1F338;",
+	"rose": "&#x1F339;",
+	"hibiscus": "&#x1F33A;",
+	"sunflower": "&#x1F33B;",
+	"blossom": "&#x1F33C;",
+	"corn": "&#x1F33D;",
+	"ear_of_rice": "&#x1F33E;",
+	"herb": "&#x1F33F;",
+	"four_leaf_clover": "&#x1F340;",
+	"maple_leaf": "&#x1F341;",
+	"fallen_leaf": "&#x1F342;",
+	"leaves": "&#x1F343;",
+	"mushroom": "&#x1F344;",
+	"tomato": "&#x1F345;",
+	"eggplant": "&#x1F346;",
+	"grapes": "&#x1F347;",
+	"melon": "&#x1F348;",
+	"watermelon": "&#x1F349;",
+	"tangerine": "&#x1F34A;",
+	"lemon": "&#x1F34B;",
+	"banana": "&#x1F34C;",
+	"pineapple": "&#x1F34D;",
+	"apple": "&#x1F34E;",
+	"green_apple": "&#x1F34F;",
+	"pear": "&#x1F350;",
+	"peach": "&#x1F351;",
+	"cherries": "&#x1F352;",
+	"strawberry": "&#x1F353;",
+	"hamburger": "&#x1F354;",
+	"pizza": "&#x1F355;",
+	"meat_on_bone": "&#x1F356;",
+	"poultry_leg": "&#x1F357;",
+	"rice_cracker": "&#x1F358;",
+	"rice_ball": "&#x1F359;",
+	"rice": "&#x1F35A;",
+	"curry": "&#x1F35B;",
+	"ramen": "&#x1F35C;",
+	"spaghetti": "&#x1F35D;",
+	"bread": "&#x1F35E;",
+	"fries": "&#x1F35F;",
+	"sweet_potato": "&#x1F360;",
+	"dango": "&#x1F361;",
+	"oden": "&#x1F362;",
+	"sushi": "&#x1F363;",
+	"fried_shrimp": "&#x1F364;",
+	"fish_cake": "&#x1F365;",
+	"icecream": "&#x1F366;",
+	"shaved_ice": "&#x1F367;",
+	"ice_cream": "&#x1F368;",
+	"doughnut": "&#x1F369;",
+	"cookie": "&#x1F36A;",
+	"chocolate_bar": "&#x1F36B;",
+	"candy": "&#x1F36C;",
+	"lollipop": "&#x1F36D;",
+	"custard": "&#x1F36E;",
+	"honey_pot": "&#x1F36F;",
+	"cake": "&#x1F370;",
+	"bento": "&#x1F371;",
+	"stew": "&#x1F372;",
+	"fried_egg": "&#x1F373;",
+	"fork_and_knife": "&#x1F374;",
+	"tea": "&#x1F375;",
+	"sake": "&#x1F376;",
+	"wine_glass": "&#x1F377;",
+	"cocktail": "&#x1F378;",
+	"tropical_drink": "&#x1F379;",
+	"beer": "&#x1F37A;",
+	"beers": "&#x1F37B;",
+	"baby_bottle": "&#x1F37C;",
+	"knife_fork_plate": "&#x1F37D;",
+	"champagne": "&#x1F37E;",
+	"popcorn": "&#x1F37F;",
+	"ribbon": "&#x1F380;",
+	"gift": "&#x1F381;",
+	"birthday": "&#x1F382;",
+	"jack_o_lantern": "&#x1F383;",
+	"christmas_tree": "&#x1F384;",
+	"santa": "&#x1F385;",
+	"fireworks": "&#x1F386;",
+	"sparkler": "&#x1F387;",
+	"balloon": "&#x1F388;",
+	"tada": "&#x1F389;",
+	"confetti_ball": "&#x1F38A;",
+	"tanabata_tree": "&#x1F38B;",
+	"crossed_flags": "&#x1F38C;",
+	"bamboo": "&#x1F38D;",
+	"dolls": "&#x1F38E;",
+	"flags": "&#x1F38F;",
+	"wind_chime": "&#x1F390;",
+	"rice_scene": "&#x1F391;",
+	"school_satchel": "&#x1F392;",
+	"mortar_board": "&#x1F393;",
+	"medal": "&#x1F396;",
+	"reminder_ribbon": "&#x1F397;",
+	"studio_microphone": "&#x1F399;",
+	"level_slider": "&#x1F39A;",
+	"control_knobs": "&#x1F39B;",
+	"film_frames": "&#x1F39E;",
+	"admission_tickets": "&#x1F39F;",
+	"carousel_horse": "&#x1F3A0;",
+	"ferris_wheel": "&#x1F3A1;",
+	"roller_coaster": "&#x1F3A2;",
+	"fishing_pole_and_fish": "&#x1F3A3;",
+	"microphone": "&#x1F3A4;",
+	"movie_camera": "&#x1F3A5;",
+	"cinema": "&#x1F3A6;",
+	"headphones": "&#x1F3A7;",
+	"art": "&#x1F3A8;",
+	"tophat": "&#x1F3A9;",
+	"circus_tent": "&#x1F3AA;",
+	"ticket": "&#x1F3AB;",
+	"clapper": "&#x1F3AC;",
+	"performing_arts": "&#x1F3AD;",
+	"video_game": "&#x1F3AE;",
+	"dart": "&#x1F3AF;",
+	"slot_machine": "&#x1F3B0;",
+	"8ball": "&#x1F3B1;",
+	"game_die": "&#x1F3B2;",
+	"bowling": "&#x1F3B3;",
+	"flower_playing_cards": "&#x1F3B4;",
+	"musical_note": "&#x1F3B5;",
+	"notes": "&#x1F3B6;",
+	"saxophone": "&#x1F3B7;",
+	"guitar": "&#x1F3B8;",
+	"musical_keyboard": "&#x1F3B9;",
+	"trumpet": "&#x1F3BA;",
+	"violin": "&#x1F3BB;",
+	"musical_score": "&#x1F3BC;",
+	"running_shirt_with_sash": "&#x1F3BD;",
+	"tennis": "&#x1F3BE;",
+	"ski": "&#x1F3BF;",
+	"basketball": "&#x1F3C0;",
+	"checkered_flag": "&#x1F3C1;",
+	"snowboarder": "&#x1F3C2;",
+	"runner": "&#x1F3C3;",
+	"surfer": "&#x1F3C4;",
+	"sports_medal": "&#x1F3C5;",
+	"trophy": "&#x1F3C6;",
+	"horse_racing": "&#x1F3C7;",
+	"football": "&#x1F3C8;",
+	"rugby_football": "&#x1F3C9;",
+	"swimmer": "&#x1F3CA;",
+	"weight_lifter": "&#x1F3CB;",
+	"golfer": "&#x1F3CC;",
+	"racing_motorcycle": "&#x1F3CD;",
+	"racing_car": "&#x1F3CE;",
+	"cricket_bat_and_ball": "&#x1F3CF;",
+	"volleyball": "&#x1F3D0;",
+	"field_hockey_stick_and_ball": "&#x1F3D1;",
+	"ice_hockey_stick_and_puck": "&#x1F3D2;",
+	"table_tennis_paddle_and_ball": "&#x1F3D3;",
+	"snow_capped_mountain": "&#x1F3D4;",
+	"camping": "&#x1F3D5;",
+	"beach_with_umbrella": "&#x1F3D6;",
+	"building_construction": "&#x1F3D7;",
+	"house_buildings": "&#x1F3D8;",
+	"cityscape": "&#x1F3D9;",
+	"derelict_house_building": "&#x1F3DA;",
+	"classical_building": "&#x1F3DB;",
+	"desert": "&#x1F3DC;",
+	"desert_island": "&#x1F3DD;",
+	"national_park": "&#x1F3DE;",
+	"stadium": "&#x1F3DF;",
+	"house": "&#x1F3E0;",
+	"house_with_garden": "&#x1F3E1;",
+	"office": "&#x1F3E2;",
+	"post_office": "&#x1F3E3;",
+	"european_post_office": "&#x1F3E4;",
+	"hospital": "&#x1F3E5;",
+	"bank": "&#x1F3E6;",
+	"atm": "&#x1F3E7;",
+	"hotel": "&#x1F3E8;",
+	"love_hotel": "&#x1F3E9;",
+	"convenience_store": "&#x1F3EA;",
+	"school": "&#x1F3EB;",
+	"department_store": "&#x1F3EC;",
+	"factory": "&#x1F3ED;",
+	"izakaya_lantern": "&#x1F3EE;",
+	"japanese_castle": "&#x1F3EF;",
+	"european_castle": "&#x1F3F0;",
+	"waving_white_flag": "&#x1F3F3;",
+	"waving_black_flag": "&#x1F3F4;",
+	"rosette": "&#x1F3F5;",
+	"label": "&#x1F3F7;",
+	"badminton_racquet_and_shuttlecock": "&#x1F3F8;",
+	"bow_and_arrow": "&#x1F3F9;",
+	"amphora": "&#x1F3FA;",
+	"skin-tone-2": "&#x1F3FB;",
+	"skin-tone-3": "&#x1F3FC;",
+	"skin-tone-4": "&#x1F3FD;",
+	"skin-tone-5": "&#x1F3FE;",
+	"skin-tone-6": "&#x1F3FF;",
+	"rat": "&#x1F400;",
+	"mouse2": "&#x1F401;",
+	"ox": "&#x1F402;",
+	"water_buffalo": "&#x1F403;",
+	"cow2": "&#x1F404;",
+	"tiger2": "&#x1F405;",
+	"leopard": "&#x1F406;",
+	"rabbit2": "&#x1F407;",
+	"cat2": "&#x1F408;",
+	"dragon": "&#x1F409;",
+	"crocodile": "&#x1F40A;",
+	"whale2": "&#x1F40B;",
+	"snail": "&#x1F40C;",
+	"snake": "&#x1F40D;",
+	"racehorse": "&#x1F40E;",
+	"ram": "&#x1F40F;",
+	"goat": "&#x1F410;",
+	"sheep": "&#x1F411;",
+	"monkey": "&#x1F412;",
+	"rooster": "&#x1F413;",
+	"chicken": "&#x1F414;",
+	"dog2": "&#x1F415;",
+	"pig2": "&#x1F416;",
+	"boar": "&#x1F417;",
+	"elephant": "&#x1F418;",
+	"octopus": "&#x1F419;",
+	"shell": "&#x1F41A;",
+	"bug": "&#x1F41B;",
+	"ant": "&#x1F41C;",
+	"bee": "&#x1F41D;",
+	"beetle": "&#x1F41E;",
+	"fish": "&#x1F41F;",
+	"tropical_fish": "&#x1F420;",
+	"blowfish": "&#x1F421;",
+	"turtle": "&#x1F422;",
+	"hatching_chick": "&#x1F423;",
+	"baby_chick": "&#x1F424;",
+	"hatched_chick": "&#x1F425;",
+	"bird": "&#x1F426;",
+	"penguin": "&#x1F427;",
+	"koala": "&#x1F428;",
+	"poodle": "&#x1F429;",
+	"dromedary_camel": "&#x1F42A;",
+	"camel": "&#x1F42B;",
+	"dolphin": "&#x1F42C;",
+	"mouse": "&#x1F42D;",
+	"cow": "&#x1F42E;",
+	"tiger": "&#x1F42F;",
+	"rabbit": "&#x1F430;",
+	"cat": "&#x1F431;",
+	"dragon_face": "&#x1F432;",
+	"whale": "&#x1F433;",
+	"horse": "&#x1F434;",
+	"monkey_face": "&#x1F435;",
+	"dog": "&#x1F436;",
+	"pig": "&#x1F437;",
+	"frog": "&#x1F438;",
+	"hamster": "&#x1F439;",
+	"wolf": "&#x1F43A;",
+	"bear": "&#x1F43B;",
+	"panda_face": "&#x1F43C;",
+	"pig_nose": "&#x1F43D;",
+	"feet": "&#x1F43E;",
+	"chipmunk": "&#x1F43F;",
+	"eyes": "&#x1F440;",
+	"eye": "&#x1F441;",
+	"ear": "&#x1F442;",
+	"nose": "&#x1F443;",
+	"lips": "&#x1F444;",
+	"tongue": "&#x1F445;",
+	"point_up_2": "&#x1F446;",
+	"point_down": "&#x1F447;",
+	"point_left": "&#x1F448;",
+	"point_right": "&#x1F449;",
+	"facepunch": "&#x1F44A;",
+	"wave": "&#x1F44B;",
+	"ok_hand": "&#x1F44C;",
+	"+1": "&#x1F44D;",
+	"-1": "&#x1F44E;",
+	"clap": "&#x1F44F;",
+	"open_hands": "&#x1F450;",
+	"crown": "&#x1F451;",
+	"womans_hat": "&#x1F452;",
+	"eyeglasses": "&#x1F453;",
+	"necktie": "&#x1F454;",
+	"shirt": "&#x1F455;",
+	"jeans": "&#x1F456;",
+	"dress": "&#x1F457;",
+	"kimono": "&#x1F458;",
+	"bikini": "&#x1F459;",
+	"womans_clothes": "&#x1F45A;",
+	"purse": "&#x1F45B;",
+	"handbag": "&#x1F45C;",
+	"pouch": "&#x1F45D;",
+	"mans_shoe": "&#x1F45E;",
+	"athletic_shoe": "&#x1F45F;",
+	"high_heel": "&#x1F460;",
+	"sandal": "&#x1F461;",
+	"boot": "&#x1F462;",
+	"footprints": "&#x1F463;",
+	"bust_in_silhouette": "&#x1F464;",
+	"busts_in_silhouette": "&#x1F465;",
+	"boy": "&#x1F466;",
+	"girl": "&#x1F467;",
+	"man": "&#x1F468;",
+	"woman": "&#x1F469;",
+	"family": "&#x1F46A;",
+	"couple": "&#x1F46B;",
+	"two_men_holding_hands": "&#x1F46C;",
+	"two_women_holding_hands": "&#x1F46D;",
+	"cop": "&#x1F46E;",
+	"dancers": "&#x1F46F;",
+	"bride_with_veil": "&#x1F470;",
+	"person_with_blond_hair": "&#x1F471;",
+	"man_with_gua_pi_mao": "&#x1F472;",
+	"man_with_turban": "&#x1F473;",
+	"older_man": "&#x1F474;",
+	"older_woman": "&#x1F475;",
+	"baby": "&#x1F476;",
+	"construction_worker": "&#x1F477;",
+	"princess": "&#x1F478;",
+	"japanese_ogre": "&#x1F479;",
+	"japanese_goblin": "&#x1F47A;",
+	"ghost": "&#x1F47B;",
+	"angel": "&#x1F47C;",
+	"alien": "&#x1F47D;",
+	"space_invader": "&#x1F47E;",
+	"imp": "&#x1F47F;",
+	"skull": "&#x1F480;",
+	"information_desk_person": "&#x1F481;",
+	"guardsman": "&#x1F482;",
+	"dancer": "&#x1F483;",
+	"lipstick": "&#x1F484;",
+	"nail_care": "&#x1F485;",
+	"massage": "&#x1F486;",
+	"haircut": "&#x1F487;",
+	"barber": "&#x1F488;",
+	"syringe": "&#x1F489;",
+	"pill": "&#x1F48A;",
+	"kiss": "&#x1F48B;",
+	"love_letter": "&#x1F48C;",
+	"ring": "&#x1F48D;",
+	"gem": "&#x1F48E;",
+	"couplekiss": "&#x1F48F;",
+	"bouquet": "&#x1F490;",
+	"couple_with_heart": "&#x1F491;",
+	"wedding": "&#x1F492;",
+	"heartbeat": "&#x1F493;",
+	"broken_heart": "&#x1F494;",
+	"two_hearts": "&#x1F495;",
+	"sparkling_heart": "&#x1F496;",
+	"heartpulse": "&#x1F497;",
+	"cupid": "&#x1F498;",
+	"blue_heart": "&#x1F499;",
+	"green_heart": "&#x1F49A;",
+	"yellow_heart": "&#x1F49B;",
+	"purple_heart": "&#x1F49C;",
+	"gift_heart": "&#x1F49D;",
+	"revolving_hearts": "&#x1F49E;",
+	"heart_decoration": "&#x1F49F;",
+	"diamond_shape_with_a_dot_inside": "&#x1F4A0;",
+	"bulb": "&#x1F4A1;",
+	"anger": "&#x1F4A2;",
+	"bomb": "&#x1F4A3;",
+	"zzz": "&#x1F4A4;",
+	"boom": "&#x1F4A5;",
+	"sweat_drops": "&#x1F4A6;",
+	"droplet": "&#x1F4A7;",
+	"dash": "&#x1F4A8;",
+	"hankey": "&#x1F4A9;",
+	"muscle": "&#x1F4AA;",
+	"dizzy": "&#x1F4AB;",
+	"speech_balloon": "&#x1F4AC;",
+	"thought_balloon": "&#x1F4AD;",
+	"white_flower": "&#x1F4AE;",
+	"moneybag": "&#x1F4B0;",
+	"currency_exchange": "&#x1F4B1;",
+	"heavy_dollar_sign": "&#x1F4B2;",
+	"credit_card": "&#x1F4B3;",
+	"yen": "&#x1F4B4;",
+	"dollar": "&#x1F4B5;",
+	"euro": "&#x1F4B6;",
+	"pound": "&#x1F4B7;",
+	"money_with_wings": "&#x1F4B8;",
+	"chart": "&#x1F4B9;",
+	"seat": "&#x1F4BA;",
+	"computer": "&#x1F4BB;",
+	"briefcase": "&#x1F4BC;",
+	"minidisc": "&#x1F4BD;",
+	"floppy_disk": "&#x1F4BE;",
+	"cd": "&#x1F4BF;",
+	"dvd": "&#x1F4C0;",
+	"file_folder": "&#x1F4C1;",
+	"open_file_folder": "&#x1F4C2;",
+	"page_with_curl": "&#x1F4C3;",
+	"page_facing_up": "&#x1F4C4;",
+	"date": "&#x1F4C5;",
+	"calendar": "&#x1F4C6;",
+	"card_index": "&#x1F4C7;",
+	"chart_with_upwards_trend": "&#x1F4C8;",
+	"chart_with_downwards_trend": "&#x1F4C9;",
+	"bar_chart": "&#x1F4CA;",
+	"clipboard": "&#x1F4CB;",
+	"pushpin": "&#x1F4CC;",
+	"round_pushpin": "&#x1F4CD;",
+	"paperclip": "&#x1F4CE;",
+	"straight_ruler": "&#x1F4CF;",
+	"triangular_ruler": "&#x1F4D0;",
+	"bookmark_tabs": "&#x1F4D1;",
+	"ledger": "&#x1F4D2;",
+	"notebook": "&#x1F4D3;",
+	"notebook_with_decorative_cover": "&#x1F4D4;",
+	"closed_book": "&#x1F4D5;",
+	"book": "&#x1F4D6;",
+	"green_book": "&#x1F4D7;",
+	"blue_book": "&#x1F4D8;",
+	"orange_book": "&#x1F4D9;",
+	"books": "&#x1F4DA;",
+	"name_badge": "&#x1F4DB;",
+	"scroll": "&#x1F4DC;",
+	"memo": "&#x1F4DD;",
+	"telephone_receiver": "&#x1F4DE;",
+	"pager": "&#x1F4DF;",
+	"fax": "&#x1F4E0;",
+	"satellite_antenna": "&#x1F4E1;",
+	"loudspeaker": "&#x1F4E2;",
+	"mega": "&#x1F4E3;",
+	"outbox_tray": "&#x1F4E4;",
+	"inbox_tray": "&#x1F4E5;",
+	"package": "&#x1F4E6;",
+	"e-mail": "&#x1F4E7;",
+	"incoming_envelope": "&#x1F4E8;",
+	"envelope_with_arrow": "&#x1F4E9;",
+	"mailbox_closed": "&#x1F4EA;",
+	"mailbox": "&#x1F4EB;",
+	"mailbox_with_mail": "&#x1F4EC;",
+	"mailbox_with_no_mail": "&#x1F4ED;",
+	"postbox": "&#x1F4EE;",
+	"postal_horn": "&#x1F4EF;",
+	"newspaper": "&#x1F4F0;",
+	"iphone": "&#x1F4F1;",
+	"calling": "&#x1F4F2;",
+	"vibration_mode": "&#x1F4F3;",
+	"mobile_phone_off": "&#x1F4F4;",
+	"no_mobile_phones": "&#x1F4F5;",
+	"signal_strength": "&#x1F4F6;",
+	"camera": "&#x1F4F7;",
+	"camera_with_flash": "&#x1F4F8;",
+	"video_camera": "&#x1F4F9;",
+	"tv": "&#x1F4FA;",
+	"radio": "&#x1F4FB;",
+	"vhs": "&#x1F4FC;",
+	"film_projector": "&#x1F4FD;",
+	"prayer_beads": "&#x1F4FF;",
+	"twisted_rightwards_arrows": "&#x1F500;",
+	"repeat": "&#x1F501;",
+	"repeat_one": "&#x1F502;",
+	"arrows_clockwise": "&#x1F503;",
+	"arrows_counterclockwise": "&#x1F504;",
+	"low_brightness": "&#x1F505;",
+	"high_brightness": "&#x1F506;",
+	"mute": "&#x1F507;",
+	"speaker": "&#x1F508;",
+	"sound": "&#x1F509;",
+	"loud_sound": "&#x1F50A;",
+	"battery": "&#x1F50B;",
+	"electric_plug": "&#x1F50C;",
+	"mag": "&#x1F50D;",
+	"mag_right": "&#x1F50E;",
+	"lock_with_ink_pen": "&#x1F50F;",
+	"closed_lock_with_key": "&#x1F510;",
+	"key": "&#x1F511;",
+	"lock": "&#x1F512;",
+	"unlock": "&#x1F513;",
+	"bell": "&#x1F514;",
+	"no_bell": "&#x1F515;",
+	"bookmark": "&#x1F516;",
+	"link": "&#x1F517;",
+	"radio_button": "&#x1F518;",
+	"back": "&#x1F519;",
+	"end": "&#x1F51A;",
+	"on": "&#x1F51B;",
+	"soon": "&#x1F51C;",
+	"top": "&#x1F51D;",
+	"underage": "&#x1F51E;",
+	"keycap_ten": "&#x1F51F;",
+	"capital_abcd": "&#x1F520;",
+	"abcd": "&#x1F521;",
+	"symbols": "&#x1F523;",
+	"abc": "&#x1F524;",
+	"fire": "&#x1F525;",
+	"flashlight": "&#x1F526;",
+	"wrench": "&#x1F527;",
+	"hammer": "&#x1F528;",
+	"nut_and_bolt": "&#x1F529;",
+	"hocho": "&#x1F52A;",
+	"gun": "&#x1F52B;",
+	"microscope": "&#x1F52C;",
+	"telescope": "&#x1F52D;",
+	"crystal_ball": "&#x1F52E;",
+	"six_pointed_star": "&#x1F52F;",
+	"beginner": "&#x1F530;",
+	"trident": "&#x1F531;",
+	"black_square_button": "&#x1F532;",
+	"white_square_button": "&#x1F533;",
+	"red_circle": "&#x1F534;",
+	"large_blue_circle": "&#x1F535;",
+	"large_orange_diamond": "&#x1F536;",
+	"large_blue_diamond": "&#x1F537;",
+	"small_orange_diamond": "&#x1F538;",
+	"small_blue_diamond": "&#x1F539;",
+	"small_red_triangle": "&#x1F53A;",
+	"small_red_triangle_down": "&#x1F53B;",
+	"arrow_up_small": "&#x1F53C;",
+	"arrow_down_small": "&#x1F53D;",
+	"om_symbol": "&#x1F549;",
+	"dove_of_peace": "&#x1F54A;",
+	"kaaba": "&#x1F54B;",
+	"mosque": "&#x1F54C;",
+	"synagogue": "&#x1F54D;",
+	"menorah_with_nine_branches": "&#x1F54E;",
+	"clock1": "&#x1F550;",
+	"clock2": "&#x1F551;",
+	"clock3": "&#x1F552;",
+	"clock4": "&#x1F553;",
+	"clock5": "&#x1F554;",
+	"clock6": "&#x1F555;",
+	"clock7": "&#x1F556;",
+	"clock8": "&#x1F557;",
+	"clock9": "&#x1F558;",
+	"clock10": "&#x1F559;",
+	"clock11": "&#x1F55A;",
+	"clock12": "&#x1F55B;",
+	"clock130": "&#x1F55C;",
+	"clock230": "&#x1F55D;",
+	"clock330": "&#x1F55E;",
+	"clock430": "&#x1F55F;",
+	"clock530": "&#x1F560;",
+	"clock630": "&#x1F561;",
+	"clock730": "&#x1F562;",
+	"clock830": "&#x1F563;",
+	"clock930": "&#x1F564;",
+	"clock1030": "&#x1F565;",
+	"clock1130": "&#x1F566;",
+	"clock1230": "&#x1F567;",
+	"candle": "&#x1F56F;",
+	"mantelpiece_clock": "&#x1F570;",
+	"hole": "&#x1F573;",
+	"man_in_business_suit_levitating": "&#x1F574;",
+	"sleuth_or_spy": "&#x1F575;",
+	"dark_sunglasses": "&#x1F576;",
+	"spider": "&#x1F577;",
+	"spider_web": "&#x1F578;",
+	"joystick": "&#x1F579;",
+	"man_dancing": "&#x1F57A;",
+	"linked_paperclips": "&#x1F587;",
+	"lower_left_ballpoint_pen": "&#x1F58A;",
+	"lower_left_fountain_pen": "&#x1F58B;",
+	"lower_left_paintbrush": "&#x1F58C;",
+	"lower_left_crayon": "&#x1F58D;",
+	"raised_hand_with_fingers_splayed": "&#x1F590;",
+	"middle_finger": "&#x1F595;",
+	"spock-hand": "&#x1F596;",
+	"black_heart": "&#x1F5A4;",
+	"desktop_computer": "&#x1F5A5;",
+	"printer": "&#x1F5A8;",
+	"three_button_mouse": "&#x1F5B1;",
+	"trackball": "&#x1F5B2;",
+	"frame_with_picture": "&#x1F5BC;",
+	"card_index_dividers": "&#x1F5C2;",
+	"card_file_box": "&#x1F5C3;",
+	"file_cabinet": "&#x1F5C4;",
+	"wastebasket": "&#x1F5D1;",
+	"spiral_note_pad": "&#x1F5D2;",
+	"spiral_calendar_pad": "&#x1F5D3;",
+	"compression": "&#x1F5DC;",
+	"old_key": "&#x1F5DD;",
+	"rolled_up_newspaper": "&#x1F5DE;",
+	"dagger_knife": "&#x1F5E1;",
+	"speaking_head_in_silhouette": "&#x1F5E3;",
+	"left_speech_bubble": "&#x1F5E8;",
+	"right_anger_bubble": "&#x1F5EF;",
+	"ballot_box_with_ballot": "&#x1F5F3;",
+	"world_map": "&#x1F5FA;",
+	"mount_fuji": "&#x1F5FB;",
+	"tokyo_tower": "&#x1F5FC;",
+	"statue_of_liberty": "&#x1F5FD;",
+	"japan": "&#x1F5FE;",
+	"moyai": "&#x1F5FF;",
+	"grinning": "&#x1F600;",
+	"grin": "&#x1F601;",
+	"joy": "&#x1F602;",
+	"smiley": "&#x1F603;",
+	"smile": "&#x1F604;",
+	"sweat_smile": "&#x1F605;",
+	"laughing": "&#x1F606;",
+	"innocent": "&#x1F607;",
+	"smiling_imp": "&#x1F608;",
+	"wink": "&#x1F609;",
+	"blush": "&#x1F60A;",
+	"yum": "&#x1F60B;",
+	"relieved": "&#x1F60C;",
+	"heart_eyes": "&#x1F60D;",
+	"sunglasses": "&#x1F60E;",
+	"smirk": "&#x1F60F;",
+	"neutral_face": "&#x1F610;",
+	"expressionless": "&#x1F611;",
+	"unamused": "&#x1F612;",
+	"sweat": "&#x1F613;",
+	"pensive": "&#x1F614;",
+	"confused": "&#x1F615;",
+	"confounded": "&#x1F616;",
+	"kissing": "&#x1F617;",
+	"kissing_heart": "&#x1F618;",
+	"kissing_smiling_eyes": "&#x1F619;",
+	"kissing_closed_eyes": "&#x1F61A;",
+	"stuck_out_tongue": "&#x1F61B;",
+	"stuck_out_tongue_winking_eye": "&#x1F61C;",
+	"stuck_out_tongue_closed_eyes": "&#x1F61D;",
+	"disappointed": "&#x1F61E;",
+	"worried": "&#x1F61F;",
+	"angry": "&#x1F620;",
+	"rage": "&#x1F621;",
+	"cry": "&#x1F622;",
+	"persevere": "&#x1F623;",
+	"triumph": "&#x1F624;",
+	"disappointed_relieved": "&#x1F625;",
+	"frowning": "&#x1F626;",
+	"anguished": "&#x1F627;",
+	"fearful": "&#x1F628;",
+	"weary": "&#x1F629;",
+	"sleepy": "&#x1F62A;",
+	"tired_face": "&#x1F62B;",
+	"grimacing": "&#x1F62C;",
+	"sob": "&#x1F62D;",
+	"open_mouth": "&#x1F62E;",
+	"hushed": "&#x1F62F;",
+	"cold_sweat": "&#x1F630;",
+	"scream": "&#x1F631;",
+	"astonished": "&#x1F632;",
+	"flushed": "&#x1F633;",
+	"sleeping": "&#x1F634;",
+	"dizzy_face": "&#x1F635;",
+	"no_mouth": "&#x1F636;",
+	"mask": "&#x1F637;",
+	"smile_cat": "&#x1F638;",
+	"joy_cat": "&#x1F639;",
+	"smiley_cat": "&#x1F63A;",
+	"heart_eyes_cat": "&#x1F63B;",
+	"smirk_cat": "&#x1F63C;",
+	"kissing_cat": "&#x1F63D;",
+	"pouting_cat": "&#x1F63E;",
+	"crying_cat_face": "&#x1F63F;",
+	"scream_cat": "&#x1F640;",
+	"slightly_frowning_face": "&#x1F641;",
+	"slightly_smiling_face": "&#x1F642;",
+	"upside_down_face": "&#x1F643;",
+	"face_with_rolling_eyes": "&#x1F644;",
+	"no_good": "&#x1F645;",
+	"ok_woman": "&#x1F646;",
+	"bow": "&#x1F647;",
+	"see_no_evil": "&#x1F648;",
+	"hear_no_evil": "&#x1F649;",
+	"speak_no_evil": "&#x1F64A;",
+	"raising_hand": "&#x1F64B;",
+	"raised_hands": "&#x1F64C;",
+	"person_frowning": "&#x1F64D;",
+	"person_with_pouting_face": "&#x1F64E;",
+	"pray": "&#x1F64F;",
+	"rocket": "&#x1F680;",
+	"helicopter": "&#x1F681;",
+	"steam_locomotive": "&#x1F682;",
+	"railway_car": "&#x1F683;",
+	"bullettrain_side": "&#x1F684;",
+	"bullettrain_front": "&#x1F685;",
+	"train2": "&#x1F686;",
+	"metro": "&#x1F687;",
+	"light_rail": "&#x1F688;",
+	"station": "&#x1F689;",
+	"tram": "&#x1F68A;",
+	"train": "&#x1F68B;",
+	"bus": "&#x1F68C;",
+	"oncoming_bus": "&#x1F68D;",
+	"trolleybus": "&#x1F68E;",
+	"busstop": "&#x1F68F;",
+	"minibus": "&#x1F690;",
+	"ambulance": "&#x1F691;",
+	"fire_engine": "&#x1F692;",
+	"police_car": "&#x1F693;",
+	"oncoming_police_car": "&#x1F694;",
+	"taxi": "&#x1F695;",
+	"oncoming_taxi": "&#x1F696;",
+	"car": "&#x1F697;",
+	"oncoming_automobile": "&#x1F698;",
+	"blue_car": "&#x1F699;",
+	"truck": "&#x1F69A;",
+	"articulated_lorry": "&#x1F69B;",
+	"tractor": "&#x1F69C;",
+	"monorail": "&#x1F69D;",
+	"mountain_railway": "&#x1F69E;",
+	"suspension_railway": "&#x1F69F;",
+	"mountain_cableway": "&#x1F6A0;",
+	"aerial_tramway": "&#x1F6A1;",
+	"ship": "&#x1F6A2;",
+	"rowboat": "&#x1F6A3;",
+	"speedboat": "&#x1F6A4;",
+	"traffic_light": "&#x1F6A5;",
+	"vertical_traffic_light": "&#x1F6A6;",
+	"construction": "&#x1F6A7;",
+	"rotating_light": "&#x1F6A8;",
+	"triangular_flag_on_post": "&#x1F6A9;",
+	"door": "&#x1F6AA;",
+	"no_entry_sign": "&#x1F6AB;",
+	"smoking": "&#x1F6AC;",
+	"no_smoking": "&#x1F6AD;",
+	"put_litter_in_its_place": "&#x1F6AE;",
+	"do_not_litter": "&#x1F6AF;",
+	"potable_water": "&#x1F6B0;",
+	"non-potable_water": "&#x1F6B1;",
+	"bike": "&#x1F6B2;",
+	"no_bicycles": "&#x1F6B3;",
+	"bicyclist": "&#x1F6B4;",
+	"mountain_bicyclist": "&#x1F6B5;",
+	"walking": "&#x1F6B6;",
+	"no_pedestrians": "&#x1F6B7;",
+	"children_crossing": "&#x1F6B8;",
+	"mens": "&#x1F6B9;",
+	"womens": "&#x1F6BA;",
+	"restroom": "&#x1F6BB;",
+	"baby_symbol": "&#x1F6BC;",
+	"toilet": "&#x1F6BD;",
+	"wc": "&#x1F6BE;",
+	"shower": "&#x1F6BF;",
+	"bath": "&#x1F6C0;",
+	"bathtub": "&#x1F6C1;",
+	"passport_control": "&#x1F6C2;",
+	"customs": "&#x1F6C3;",
+	"baggage_claim": "&#x1F6C4;",
+	"left_luggage": "&#x1F6C5;",
+	"couch_and_lamp": "&#x1F6CB;",
+	"sleeping_accommodation": "&#x1F6CC;",
+	"shopping_bags": "&#x1F6CD;",
+	"bellhop_bell": "&#x1F6CE;",
+	"bed": "&#x1F6CF;",
+	"place_of_worship": "&#x1F6D0;",
+	"octagonal_sign": "&#x1F6D1;",
+	"shopping_trolley": "&#x1F6D2;",
+	"hammer_and_wrench": "&#x1F6E0;",
+	"shield": "&#x1F6E1;",
+	"oil_drum": "&#x1F6E2;",
+	"motorway": "&#x1F6E3;",
+	"railway_track": "&#x1F6E4;",
+	"motor_boat": "&#x1F6E5;",
+	"small_airplane": "&#x1F6E9;",
+	"airplane_departure": "&#x1F6EB;",
+	"airplane_arriving": "&#x1F6EC;",
+	"satellite": "&#x1F6F0;",
+	"passenger_ship": "&#x1F6F3;",
+	"scooter": "&#x1F6F4;",
+	"motor_scooter": "&#x1F6F5;",
+	"canoe": "&#x1F6F6;",
+	"zipper_mouth_face": "&#x1F910;",
+	"money_mouth_face": "&#x1F911;",
+	"face_with_thermometer": "&#x1F912;",
+	"nerd_face": "&#x1F913;",
+	"thinking_face": "&#x1F914;",
+	"face_with_head_bandage": "&#x1F915;",
+	"robot_face": "&#x1F916;",
+	"hugging_face": "&#x1F917;",
+	"the_horns": "&#x1F918;",
+	"call_me_hand": "&#x1F919;",
+	"raised_back_of_hand": "&#x1F91A;",
+	"left-facing_fist": "&#x1F91B;",
+	"right-facing_fist": "&#x1F91C;",
+	"handshake": "&#x1F91D;",
+	"hand_with_index_and_middle_fingers_crossed": "&#x1F91E;",
+	"face_with_cowboy_hat": "&#x1F920;",
+	"clown_face": "&#x1F921;",
+	"nauseated_face": "&#x1F922;",
+	"rolling_on_the_floor_laughing": "&#x1F923;",
+	"drooling_face": "&#x1F924;",
+	"lying_face": "&#x1F925;",
+	"face_palm": "&#x1F926;",
+	"sneezing_face": "&#x1F927;",
+	"pregnant_woman": "&#x1F930;",
+	"selfie": "&#x1F933;",
+	"prince": "&#x1F934;",
+	"man_in_tuxedo": "&#x1F935;",
+	"mother_christmas": "&#x1F936;",
+	"shrug": "&#x1F937;",
+	"person_doing_cartwheel": "&#x1F938;",
+	"juggling": "&#x1F939;",
+	"fencer": "&#x1F93A;",
+	"wrestlers": "&#x1F93C;",
+	"water_polo": "&#x1F93D;",
+	"handball": "&#x1F93E;",
+	"wilted_flower": "&#x1F940;",
+	"drum_with_drumsticks": "&#x1F941;",
+	"clinking_glasses": "&#x1F942;",
+	"tumbler_glass": "&#x1F943;",
+	"spoon": "&#x1F944;",
+	"goal_net": "&#x1F945;",
+	"first_place_medal": "&#x1F947;",
+	"second_place_medal": "&#x1F948;",
+	"third_place_medal": "&#x1F949;",
+	"boxing_glove": "&#x1F94A;",
+	"martial_arts_uniform": "&#x1F94B;",
+	"croissant": "&#x1F950;",
+	"avocado": "&#x1F951;",
+	"cucumber": "&#x1F952;",
+	"bacon": "&#x1F953;",
+	"potato": "&#x1F954;",
+	"carrot": "&#x1F955;",
+	"baguette_bread": "&#x1F956;",
+	"green_salad": "&#x1F957;",
+	"shallow_pan_of_food": "&#x1F958;",
+	"stuffed_flatbread": "&#x1F959;",
+	"egg": "&#x1F95A;",
+	"glass_of_milk": "&#x1F95B;",
+	"peanuts": "&#x1F95C;",
+	"kiwifruit": "&#x1F95D;",
+	"pancakes": "&#x1F95E;",
+	"crab": "&#x1F980;",
+	"lion_face": "&#x1F981;",
+	"scorpion": "&#x1F982;",
+	"turkey": "&#x1F983;",
+	"unicorn_face": "&#x1F984;",
+	"eagle": "&#x1F985;",
+	"duck": "&#x1F986;",
+	"bat": "&#x1F987;",
+	"shark": "&#x1F988;",
+	"owl": "&#x1F989;",
+	"fox_face": "&#x1F98A;",
+	"butterfly": "&#x1F98B;",
+	"deer": "&#x1F98C;",
+	"gorilla": "&#x1F98D;",
+	"lizard": "&#x1F98E;",
+	"rhinoceros": "&#x1F98F;",
+	"shrimp": "&#x1F990;",
+	"squid": "&#x1F991;",
+	"cheese_wedge": "&#x1F9C0;",
+	"hash": "&#x0023;&#x20E3;",
+	"keycap_star": "&#x002A;&#x20E3;",
+	"zero": "&#x0030;&#x20E3;",
+	"one": "&#x0031;&#x20E3;",
+	"two": "&#x0032;&#x20E3;",
+	"three": "&#x0033;&#x20E3;",
+	"four": "&#x0034;&#x20E3;",
+	"five": "&#x0035;&#x20E3;",
+	"six": "&#x0036;&#x20E3;",
+	"seven": "&#x0037;&#x20E3;",
+	"eight": "&#x0038;&#x20E3;",
+	"nine": "&#x0039;&#x20E3;",
+	"flag-ac": "&#x1F1E6;&#x1F1E8;",
+	"flag-ad": "&#x1F1E6;&#x1F1E9;",
+	"flag-ae": "&#x1F1E6;&#x1F1EA;",
+	"flag-af": "&#x1F1E6;&#x1F1EB;",
+	"flag-ag": "&#x1F1E6;&#x1F1EC;",
+	"flag-ai": "&#x1F1E6;&#x1F1EE;",
+	"flag-al": "&#x1F1E6;&#x1F1F1;",
+	"flag-am": "&#x1F1E6;&#x1F1F2;",
+	"flag-ao": "&#x1F1E6;&#x1F1F4;",
+	"flag-aq": "&#x1F1E6;&#x1F1F6;",
+	"flag-ar": "&#x1F1E6;&#x1F1F7;",
+	"flag-as": "&#x1F1E6;&#x1F1F8;",
+	"flag-at": "&#x1F1E6;&#x1F1F9;",
+	"flag-au": "&#x1F1E6;&#x1F1FA;",
+	"flag-aw": "&#x1F1E6;&#x1F1FC;",
+	"flag-ax": "&#x1F1E6;&#x1F1FD;",
+	"flag-az": "&#x1F1E6;&#x1F1FF;",
+	"flag-ba": "&#x1F1E7;&#x1F1E6;",
+	"flag-bb": "&#x1F1E7;&#x1F1E7;",
+	"flag-bd": "&#x1F1E7;&#x1F1E9;",
+	"flag-be": "&#x1F1E7;&#x1F1EA;",
+	"flag-bf": "&#x1F1E7;&#x1F1EB;",
+	"flag-bg": "&#x1F1E7;&#x1F1EC;",
+	"flag-bh": "&#x1F1E7;&#x1F1ED;",
+	"flag-bi": "&#x1F1E7;&#x1F1EE;",
+	"flag-bj": "&#x1F1E7;&#x1F1EF;",
+	"flag-bl": "&#x1F1E7;&#x1F1F1;",
+	"flag-bm": "&#x1F1E7;&#x1F1F2;",
+	"flag-bn": "&#x1F1E7;&#x1F1F3;",
+	"flag-bo": "&#x1F1E7;&#x1F1F4;",
+	"flag-bq": "&#x1F1E7;&#x1F1F6;",
+	"flag-br": "&#x1F1E7;&#x1F1F7;",
+	"flag-bs": "&#x1F1E7;&#x1F1F8;",
+	"flag-bt": "&#x1F1E7;&#x1F1F9;",
+	"flag-bv": "&#x1F1E7;&#x1F1FB;",
+	"flag-bw": "&#x1F1E7;&#x1F1FC;",
+	"flag-by": "&#x1F1E7;&#x1F1FE;",
+	"flag-bz": "&#x1F1E7;&#x1F1FF;",
+	"flag-ca": "&#x1F1E8;&#x1F1E6;",
+	"flag-cc": "&#x1F1E8;&#x1F1E8;",
+	"flag-cd": "&#x1F1E8;&#x1F1E9;",
+	"flag-cf": "&#x1F1E8;&#x1F1EB;",
+	"flag-cg": "&#x1F1E8;&#x1F1EC;",
+	"flag-ch": "&#x1F1E8;&#x1F1ED;",
+	"flag-ci": "&#x1F1E8;&#x1F1EE;",
+	"flag-ck": "&#x1F1E8;&#x1F1F0;",
+	"flag-cl": "&#x1F1E8;&#x1F1F1;",
+	"flag-cm": "&#x1F1E8;&#x1F1F2;",
+	"flag-cn": "&#x1F1E8;&#x1F1F3;",
+	"flag-co": "&#x1F1E8;&#x1F1F4;",
+	"flag-cp": "&#x1F1E8;&#x1F1F5;",
+	"flag-cr": "&#x1F1E8;&#x1F1F7;",
+	"flag-cu": "&#x1F1E8;&#x1F1FA;",
+	"flag-cv": "&#x1F1E8;&#x1F1FB;",
+	"flag-cw": "&#x1F1E8;&#x1F1FC;",
+	"flag-cx": "&#x1F1E8;&#x1F1FD;",
+	"flag-cy": "&#x1F1E8;&#x1F1FE;",
+	"flag-cz": "&#x1F1E8;&#x1F1FF;",
+	"flag-de": "&#x1F1E9;&#x1F1EA;",
+	"flag-dg": "&#x1F1E9;&#x1F1EC;",
+	"flag-dj": "&#x1F1E9;&#x1F1EF;",
+	"flag-dk": "&#x1F1E9;&#x1F1F0;",
+	"flag-dm": "&#x1F1E9;&#x1F1F2;",
+	"flag-do": "&#x1F1E9;&#x1F1F4;",
+	"flag-dz": "&#x1F1E9;&#x1F1FF;",
+	"flag-ea": "&#x1F1EA;&#x1F1E6;",
+	"flag-ec": "&#x1F1EA;&#x1F1E8;",
+	"flag-ee": "&#x1F1EA;&#x1F1EA;",
+	"flag-eg": "&#x1F1EA;&#x1F1EC;",
+	"flag-eh": "&#x1F1EA;&#x1F1ED;",
+	"flag-er": "&#x1F1EA;&#x1F1F7;",
+	"flag-es": "&#x1F1EA;&#x1F1F8;",
+	"flag-et": "&#x1F1EA;&#x1F1F9;",
+	"flag-eu": "&#x1F1EA;&#x1F1FA;",
+	"flag-fi": "&#x1F1EB;&#x1F1EE;",
+	"flag-fj": "&#x1F1EB;&#x1F1EF;",
+	"flag-fk": "&#x1F1EB;&#x1F1F0;",
+	"flag-fm": "&#x1F1EB;&#x1F1F2;",
+	"flag-fo": "&#x1F1EB;&#x1F1F4;",
+	"flag-fr": "&#x1F1EB;&#x1F1F7;",
+	"flag-ga": "&#x1F1EC;&#x1F1E6;",
+	"flag-gb": "&#x1F1EC;&#x1F1E7;",
+	"flag-gd": "&#x1F1EC;&#x1F1E9;",
+	"flag-ge": "&#x1F1EC;&#x1F1EA;",
+	"flag-gf": "&#x1F1EC;&#x1F1EB;",
+	"flag-gg": "&#x1F1EC;&#x1F1EC;",
+	"flag-gh": "&#x1F1EC;&#x1F1ED;",
+	"flag-gi": "&#x1F1EC;&#x1F1EE;",
+	"flag-gl": "&#x1F1EC;&#x1F1F1;",
+	"flag-gm": "&#x1F1EC;&#x1F1F2;",
+	"flag-gn": "&#x1F1EC;&#x1F1F3;",
+	"flag-gp": "&#x1F1EC;&#x1F1F5;",
+	"flag-gq": "&#x1F1EC;&#x1F1F6;",
+	"flag-gr": "&#x1F1EC;&#x1F1F7;",
+	"flag-gs": "&#x1F1EC;&#x1F1F8;",
+	"flag-gt": "&#x1F1EC;&#x1F1F9;",
+	"flag-gu": "&#x1F1EC;&#x1F1FA;",
+	"flag-gw": "&#x1F1EC;&#x1F1FC;",
+	"flag-gy": "&#x1F1EC;&#x1F1FE;",
+	"flag-hk": "&#x1F1ED;&#x1F1F0;",
+	"flag-hm": "&#x1F1ED;&#x1F1F2;",
+	"flag-hn": "&#x1F1ED;&#x1F1F3;",
+	"flag-hr": "&#x1F1ED;&#x1F1F7;",
+	"flag-ht": "&#x1F1ED;&#x1F1F9;",
+	"flag-hu": "&#x1F1ED;&#x1F1FA;",
+	"flag-ic": "&#x1F1EE;&#x1F1E8;",
+	"flag-id": "&#x1F1EE;&#x1F1E9;",
+	"flag-ie": "&#x1F1EE;&#x1F1EA;",
+	"flag-il": "&#x1F1EE;&#x1F1F1;",
+	"flag-im": "&#x1F1EE;&#x1F1F2;",
+	"flag-in": "&#x1F1EE;&#x1F1F3;",
+	"flag-io": "&#x1F1EE;&#x1F1F4;",
+	"flag-iq": "&#x1F1EE;&#x1F1F6;",
+	"flag-ir": "&#x1F1EE;&#x1F1F7;",
+	"flag-is": "&#x1F1EE;&#x1F1F8;",
+	"flag-it": "&#x1F1EE;&#x1F1F9;",
+	"flag-je": "&#x1F1EF;&#x1F1EA;",
+	"flag-jm": "&#x1F1EF;&#x1F1F2;",
+	"flag-jo": "&#x1F1EF;&#x1F1F4;",
+	"flag-jp": "&#x1F1EF;&#x1F1F5;",
+	"flag-ke": "&#x1F1F0;&#x1F1EA;",
+	"flag-kg": "&#x1F1F0;&#x1F1EC;",
+	"flag-kh": "&#x1F1F0;&#x1F1ED;",
+	"flag-ki": "&#x1F1F0;&#x1F1EE;",
+	"flag-km": "&#x1F1F0;&#x1F1F2;",
+	"flag-kn": "&#x1F1F0;&#x1F1F3;",
+	"flag-kp": "&#x1F1F0;&#x1F1F5;",
+	"flag-kr": "&#x1F1F0;&#x1F1F7;",
+	"flag-kw": "&#x1F1F0;&#x1F1FC;",
+	"flag-ky": "&#x1F1F0;&#x1F1FE;",
+	"flag-kz": "&#x1F1F0;&#x1F1FF;",
+	"flag-la": "&#x1F1F1;&#x1F1E6;",
+	"flag-lb": "&#x1F1F1;&#x1F1E7;",
+	"flag-lc": "&#x1F1F1;&#x1F1E8;",
+	"flag-li": "&#x1F1F1;&#x1F1EE;",
+	"flag-lk": "&#x1F1F1;&#x1F1F0;",
+	"flag-lr": "&#x1F1F1;&#x1F1F7;",
+	"flag-ls": "&#x1F1F1;&#x1F1F8;",
+	"flag-lt": "&#x1F1F1;&#x1F1F9;",
+	"flag-lu": "&#x1F1F1;&#x1F1FA;",
+	"flag-lv": "&#x1F1F1;&#x1F1FB;",
+	"flag-ly": "&#x1F1F1;&#x1F1FE;",
+	"flag-ma": "&#x1F1F2;&#x1F1E6;",
+	"flag-mc": "&#x1F1F2;&#x1F1E8;",
+	"flag-md": "&#x1F1F2;&#x1F1E9;",
+	"flag-me": "&#x1F1F2;&#x1F1EA;",
+	"flag-mf": "&#x1F1F2;&#x1F1EB;",
+	"flag-mg": "&#x1F1F2;&#x1F1EC;",
+	"flag-mh": "&#x1F1F2;&#x1F1ED;",
+	"flag-mk": "&#x1F1F2;&#x1F1F0;",
+	"flag-ml": "&#x1F1F2;&#x1F1F1;",
+	"flag-mm": "&#x1F1F2;&#x1F1F2;",
+	"flag-mn": "&#x1F1F2;&#x1F1F3;",
+	"flag-mo": "&#x1F1F2;&#x1F1F4;",
+	"flag-mp": "&#x1F1F2;&#x1F1F5;",
+	"flag-mq": "&#x1F1F2;&#x1F1F6;",
+	"flag-mr": "&#x1F1F2;&#x1F1F7;",
+	"flag-ms": "&#x1F1F2;&#x1F1F8;",
+	"flag-mt": "&#x1F1F2;&#x1F1F9;",
+	"flag-mu": "&#x1F1F2;&#x1F1FA;",
+	"flag-mv": "&#x1F1F2;&#x1F1FB;",
+	"flag-mw": "&#x1F1F2;&#x1F1FC;",
+	"flag-mx": "&#x1F1F2;&#x1F1FD;",
+	"flag-my": "&#x1F1F2;&#x1F1FE;",
+	"flag-mz": "&#x1F1F2;&#x1F1FF;",
+	"flag-na": "&#x1F1F3;&#x1F1E6;",
+	"flag-nc": "&#x1F1F3;&#x1F1E8;",
+	"flag-ne": "&#x1F1F3;&#x1F1EA;",
+	"flag-nf": "&#x1F1F3;&#x1F1EB;",
+	"flag-ng": "&#x1F1F3;&#x1F1EC;",
+	"flag-ni": "&#x1F1F3;&#x1F1EE;",
+	"flag-nl": "&#x1F1F3;&#x1F1F1;",
+	"flag-no": "&#x1F1F3;&#x1F1F4;",
+	"flag-np": "&#x1F1F3;&#x1F1F5;",
+	"flag-nr": "&#x1F1F3;&#x1F1F7;",
+	"flag-nu": "&#x1F1F3;&#x1F1FA;",
+	"flag-nz": "&#x1F1F3;&#x1F1FF;",
+	"flag-om": "&#x1F1F4;&#x1F1F2;",
+	"flag-pa": "&#x1F1F5;&#x1F1E6;",
+	"flag-pe": "&#x1F1F5;&#x1F1EA;",
+	"flag-pf": "&#x1F1F5;&#x1F1EB;",
+	"flag-pg": "&#x1F1F5;&#x1F1EC;",
+	"flag-ph": "&#x1F1F5;&#x1F1ED;",
+	"flag-pk": "&#x1F1F5;&#x1F1F0;",
+	"flag-pl": "&#x1F1F5;&#x1F1F1;",
+	"flag-pm": "&#x1F1F5;&#x1F1F2;",
+	"flag-pn": "&#x1F1F5;&#x1F1F3;",
+	"flag-pr": "&#x1F1F5;&#x1F1F7;",
+	"flag-ps": "&#x1F1F5;&#x1F1F8;",
+	"flag-pt": "&#x1F1F5;&#x1F1F9;",
+	"flag-pw": "&#x1F1F5;&#x1F1FC;",
+	"flag-py": "&#x1F1F5;&#x1F1FE;",
+	"flag-qa": "&#x1F1F6;&#x1F1E6;",
+	"flag-re": "&#x1F1F7;&#x1F1EA;",
+	"flag-ro": "&#x1F1F7;&#x1F1F4;",
+	"flag-rs": "&#x1F1F7;&#x1F1F8;",
+	"flag-ru": "&#x1F1F7;&#x1F1FA;",
+	"flag-rw": "&#x1F1F7;&#x1F1FC;",
+	"flag-sa": "&#x1F1F8;&#x1F1E6;",
+	"flag-sb": "&#x1F1F8;&#x1F1E7;",
+	"flag-sc": "&#x1F1F8;&#x1F1E8;",
+	"flag-sd": "&#x1F1F8;&#x1F1E9;",
+	"flag-se": "&#x1F1F8;&#x1F1EA;",
+	"flag-sg": "&#x1F1F8;&#x1F1EC;",
+	"flag-sh": "&#x1F1F8;&#x1F1ED;",
+	"flag-si": "&#x1F1F8;&#x1F1EE;",
+	"flag-sj": "&#x1F1F8;&#x1F1EF;",
+	"flag-sk": "&#x1F1F8;&#x1F1F0;",
+	"flag-sl": "&#x1F1F8;&#x1F1F1;",
+	"flag-sm": "&#x1F1F8;&#x1F1F2;",
+	"flag-sn": "&#x1F1F8;&#x1F1F3;",
+	"flag-so": "&#x1F1F8;&#x1F1F4;",
+	"flag-sr": "&#x1F1F8;&#x1F1F7;",
+	"flag-ss": "&#x1F1F8;&#x1F1F8;",
+	"flag-st": "&#x1F1F8;&#x1F1F9;",
+	"flag-sv": "&#x1F1F8;&#x1F1FB;",
+	"flag-sx": "&#x1F1F8;&#x1F1FD;",
+	"flag-sy": "&#x1F1F8;&#x1F1FE;",
+	"flag-sz": "&#x1F1F8;&#x1F1FF;",
+	"flag-ta": "&#x1F1F9;&#x1F1E6;",
+	"flag-tc": "&#x1F1F9;&#x1F1E8;",
+	"flag-td": "&#x1F1F9;&#x1F1E9;",
+	"flag-tf": "&#x1F1F9;&#x1F1EB;",
+	"flag-tg": "&#x1F1F9;&#x1F1EC;",
+	"flag-th": "&#x1F1F9;&#x1F1ED;",
+	"flag-tj": "&#x1F1F9;&#x1F1EF;",
+	"flag-tk": "&#x1F1F9;&#x1F1F0;",
+	"flag-tl": "&#x1F1F9;&#x1F1F1;",
+	"flag-tm": "&#x1F1F9;&#x1F1F2;",
+	"flag-tn": "&#x1F1F9;&#x1F1F3;",
+	"flag-to": "&#x1F1F9;&#x1F1F4;",
+	"flag-tr": "&#x1F1F9;&#x1F1F7;",
+	"flag-tt": "&#x1F1F9;&#x1F1F9;",
+	"flag-tv": "&#x1F1F9;&#x1F1FB;",
+	"flag-tw": "&#x1F1F9;&#x1F1FC;",
+	"flag-tz": "&#x1F1F9;&#x1F1FF;",
+	"flag-ua": "&#x1F1FA;&#x1F1E6;",
+	"flag-ug": "&#x1F1FA;&#x1F1EC;",
+	"flag-um": "&#x1F1FA;&#x1F1F2;",
+	"flag-un": "&#x1F1FA;&#x1F1F3;",
+	"flag-us": "&#x1F1FA;&#x1F1F8;",
+	"flag-uy": "&#x1F1FA;&#x1F1FE;",
+	"flag-uz": "&#x1F1FA;&#x1F1FF;",
+	"flag-va": "&#x1F1FB;&#x1F1E6;",
+	"flag-vc": "&#x1F1FB;&#x1F1E8;",
+	"flag-ve": "&#x1F1FB;&#x1F1EA;",
+	"flag-vg": "&#x1F1FB;&#x1F1EC;",
+	"flag-vi": "&#x1F1FB;&#x1F1EE;",
+	"flag-vn": "&#x1F1FB;&#x1F1F3;",
+	"flag-vu": "&#x1F1FB;&#x1F1FA;",
+	"flag-wf": "&#x1F1FC;&#x1F1EB;",
+	"flag-ws": "&#x1F1FC;&#x1F1F8;",
+	"flag-xk": "&#x1F1FD;&#x1F1F0;",
+	"flag-ye": "&#x1F1FE;&#x1F1EA;",
+	"flag-yt": "&#x1F1FE;&#x1F1F9;",
+	"flag-za": "&#x1F1FF;&#x1F1E6;",
+	"flag-zm": "&#x1F1FF;&#x1F1F2;",
+	"flag-zw": "&#x1F1FF;&#x1F1FC;",
+	"male-farmer": "&#x1F468;&#x200D;&#x1F33E;",
+	"male-cook": "&#x1F468;&#x200D;&#x1F373;",
+	"male-student": "&#x1F468;&#x200D;&#x1F393;",
+	"male-singer": "&#x1F468;&#x200D;&#x1F3A4;",
+	"male-artist": "&#x1F468;&#x200D;&#x1F3A8;",
+	"male-teacher": "&#x1F468;&#x200D;&#x1F3EB;",
+	"male-factory-worker": "&#x1F468;&#x200D;&#x1F3ED;",
+	"man-boy": "&#x1F468;&#x200D;&#x1F466;",
+	"man-girl": "&#x1F468;&#x200D;&#x1F467;",
+	"male-technologist": "&#x1F468;&#x200D;&#x1F4BB;",
+	"male-office-worker": "&#x1F468;&#x200D;&#x1F4BC;",
+	"male-mechanic": "&#x1F468;&#x200D;&#x1F527;",
+	"male-scientist": "&#x1F468;&#x200D;&#x1F52C;",
+	"male-astronaut": "&#x1F468;&#x200D;&#x1F680;",
+	"male-firefighter": "&#x1F468;&#x200D;&#x1F692;",
+	"female-farmer": "&#x1F469;&#x200D;&#x1F33E;",
+	"female-cook": "&#x1F469;&#x200D;&#x1F373;",
+	"female-student": "&#x1F469;&#x200D;&#x1F393;",
+	"female-singer": "&#x1F469;&#x200D;&#x1F3A4;",
+	"female-artist": "&#x1F469;&#x200D;&#x1F3A8;",
+	"female-teacher": "&#x1F469;&#x200D;&#x1F3EB;",
+	"female-factory-worker": "&#x1F469;&#x200D;&#x1F3ED;",
+	"woman-boy": "&#x1F469;&#x200D;&#x1F466;",
+	"woman-girl": "&#x1F469;&#x200D;&#x1F467;",
+	"female-technologist": "&#x1F469;&#x200D;&#x1F4BB;",
+	"female-office-worker": "&#x1F469;&#x200D;&#x1F4BC;",
+	"female-mechanic": "&#x1F469;&#x200D;&#x1F527;",
+	"female-scientist": "&#x1F469;&#x200D;&#x1F52C;",
+	"female-astronaut": "&#x1F469;&#x200D;&#x1F680;",
+	"female-firefighter": "&#x1F469;&#x200D;&#x1F692;",
+	"woman-running": "&#x1F3C3;&#x200D;&#x2640;&#xFE0F;",
+	"man-running": "&#x1F3C3;&#x200D;&#x2642;&#xFE0F;",
+	"woman-surfing": "&#x1F3C4;&#x200D;&#x2640;&#xFE0F;",
+	"man-surfing": "&#x1F3C4;&#x200D;&#x2642;&#xFE0F;",
+	"woman-swimming": "&#x1F3CA;&#x200D;&#x2640;&#xFE0F;",
+	"man-swimming": "&#x1F3CA;&#x200D;&#x2642;&#xFE0F;",
+	"woman-lifting-weights": "&#x1F3CB;&#xFE0F;&#x200D;&#x2640;&#xFE0F;",
+	"man-lifting-weights": "&#x1F3CB;&#xFE0F;&#x200D;&#x2642;&#xFE0F;",
+	"woman-golfing": "&#x1F3CC;&#xFE0F;&#x200D;&#x2640;&#xFE0F;",
+	"man-golfing": "&#x1F3CC;&#xFE0F;&#x200D;&#x2642;&#xFE0F;",
+	"rainbow-flag": "&#x1F3F3;&#xFE0F;&#x200D;&#x1F308;",
+	"eye-in-speech-bubble": "&#x1F441;&#xFE0F;&#x200D;&#x1F5E8;&#xFE0F;",
+	"man-boy-boy": "&#x1F468;&#x200D;&#x1F466;&#x200D;&#x1F466;",
+	"man-girl-boy": "&#x1F468;&#x200D;&#x1F467;&#x200D;&#x1F466;",
+	"man-girl-girl": "&#x1F468;&#x200D;&#x1F467;&#x200D;&#x1F467;",
+	"man-man-boy": "&#x1F468;&#x200D;&#x1F468;&#x200D;&#x1F466;",
+	"man-man-boy-boy": "&#x1F468;&#x200D;&#x1F468;&#x200D;&#x1F466;&#x200D;&#x1F466;",
+	"man-man-girl": "&#x1F468;&#x200D;&#x1F468;&#x200D;&#x1F467;",
+	"man-man-girl-boy": "&#x1F468;&#x200D;&#x1F468;&#x200D;&#x1F467;&#x200D;&#x1F466;",
+	"man-man-girl-girl": "&#x1F468;&#x200D;&#x1F468;&#x200D;&#x1F467;&#x200D;&#x1F467;",
+	"man-woman-boy": "&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F466;",
+	"man-woman-boy-boy": "&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F466;&#x200D;&#x1F466;",
+	"man-woman-girl": "&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467;",
+	"man-woman-girl-boy": "&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F466;",
+	"man-woman-girl-girl": "&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F467;",
+	"male-doctor": "&#x1F468;&#x200D;&#x2695;&#xFE0F;",
+	"male-judge": "&#x1F468;&#x200D;&#x2696;&#xFE0F;",
+	"male-pilot": "&#x1F468;&#x200D;&#x2708;&#xFE0F;",
+	"man-heart-man": "&#x1F468;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F468;",
+	"man-kiss-man": "&#x1F468;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F48B;&#x200D;&#x1F468;",
+	"woman-boy-boy": "&#x1F469;&#x200D;&#x1F466;&#x200D;&#x1F466;",
+	"woman-girl-boy": "&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F466;",
+	"woman-girl-girl": "&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F467;",
+	"woman-woman-boy": "&#x1F469;&#x200D;&#x1F469;&#x200D;&#x1F466;",
+	"woman-woman-boy-boy": "&#x1F469;&#x200D;&#x1F469;&#x200D;&#x1F466;&#x200D;&#x1F466;",
+	"woman-woman-girl": "&#x1F469;&#x200D;&#x1F469;&#x200D;&#x1F467;",
+	"woman-woman-girl-boy": "&#x1F469;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F466;",
+	"woman-woman-girl-girl": "&#x1F469;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F467;",
+	"female-doctor": "&#x1F469;&#x200D;&#x2695;&#xFE0F;",
+	"female-judge": "&#x1F469;&#x200D;&#x2696;&#xFE0F;",
+	"female-pilot": "&#x1F469;&#x200D;&#x2708;&#xFE0F;",
+	"woman-heart-man": "&#x1F469;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F468;",
+	"woman-heart-woman": "&#x1F469;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F469;",
+	"woman-kiss-man": "&#x1F469;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F48B;&#x200D;&#x1F468;",
+	"woman-kiss-woman": "&#x1F469;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F48B;&#x200D;&#x1F469;",
+	"female-police-officer": "&#x1F46E;&#x200D;&#x2640;&#xFE0F;",
+	"male-police-officer": "&#x1F46E;&#x200D;&#x2642;&#xFE0F;",
+	"woman-with-bunny-ears-partying": "&#x1F46F;&#x200D;&#x2640;&#xFE0F;",
+	"man-with-bunny-ears-partying": "&#x1F46F;&#x200D;&#x2642;&#xFE0F;",
+	"blond-haired-woman": "&#x1F471;&#x200D;&#x2640;&#xFE0F;",
+	"blond-haired-man": "&#x1F471;&#x200D;&#x2642;&#xFE0F;",
+	"woman-wearing-turban": "&#x1F473;&#x200D;&#x2640;&#xFE0F;",
+	"man-wearing-turban": "&#x1F473;&#x200D;&#x2642;&#xFE0F;",
+	"female-construction-worker": "&#x1F477;&#x200D;&#x2640;&#xFE0F;",
+	"male-construction-worker": "&#x1F477;&#x200D;&#x2642;&#xFE0F;",
+	"woman-tipping-hand": "&#x1F481;&#x200D;&#x2640;&#xFE0F;",
+	"man-tipping-hand": "&#x1F481;&#x200D;&#x2642;&#xFE0F;",
+	"female-guard": "&#x1F482;&#x200D;&#x2640;&#xFE0F;",
+	"male-guard": "&#x1F482;&#x200D;&#x2642;&#xFE0F;",
+	"woman-getting-massage": "&#x1F486;&#x200D;&#x2640;&#xFE0F;",
+	"man-getting-massage": "&#x1F486;&#x200D;&#x2642;&#xFE0F;",
+	"woman-getting-haircut": "&#x1F487;&#x200D;&#x2640;&#xFE0F;",
+	"man-getting-haircut": "&#x1F487;&#x200D;&#x2642;&#xFE0F;",
+	"female-detective": "&#x1F575;&#xFE0F;&#x200D;&#x2640;&#xFE0F;",
+	"male-detective": "&#x1F575;&#xFE0F;&#x200D;&#x2642;&#xFE0F;",
+	"woman-gesturing-no": "&#x1F645;&#x200D;&#x2640;&#xFE0F;",
+	"man-gesturing-no": "&#x1F645;&#x200D;&#x2642;&#xFE0F;",
+	"woman-gesturing-ok": "&#x1F646;&#x200D;&#x2640;&#xFE0F;",
+	"man-gesturing-ok": "&#x1F646;&#x200D;&#x2642;&#xFE0F;",
+	"woman-bowing": "&#x1F647;&#x200D;&#x2640;&#xFE0F;",
+	"man-bowing": "&#x1F647;&#x200D;&#x2642;&#xFE0F;",
+	"woman-raising-hand": "&#x1F64B;&#x200D;&#x2640;&#xFE0F;",
+	"man-raising-hand": "&#x1F64B;&#x200D;&#x2642;&#xFE0F;",
+	"woman-frowning": "&#x1F64D;&#x200D;&#x2640;&#xFE0F;",
+	"man-frowning": "&#x1F64D;&#x200D;&#x2642;&#xFE0F;",
+	"woman-pouting": "&#x1F64E;&#x200D;&#x2640;&#xFE0F;",
+	"man-pouting": "&#x1F64E;&#x200D;&#x2642;&#xFE0F;",
+	"woman-rowing-boat": "&#x1F6A3;&#x200D;&#x2640;&#xFE0F;",
+	"man-rowing-boat": "&#x1F6A3;&#x200D;&#x2642;&#xFE0F;",
+	"woman-biking": "&#x1F6B4;&#x200D;&#x2640;&#xFE0F;",
+	"man-biking": "&#x1F6B4;&#x200D;&#x2642;&#xFE0F;",
+	"woman-mountain-biking": "&#x1F6B5;&#x200D;&#x2640;&#xFE0F;",
+	"man-mountain-biking": "&#x1F6B5;&#x200D;&#x2642;&#xFE0F;",
+	"woman-walking": "&#x1F6B6;&#x200D;&#x2640;&#xFE0F;",
+	"man-walking": "&#x1F6B6;&#x200D;&#x2642;&#xFE0F;",
+	"woman-facepalming": "&#x1F926;&#x200D;&#x2640;&#xFE0F;",
+	"man-facepalming": "&#x1F926;&#x200D;&#x2642;&#xFE0F;",
+	"woman-shrugging": "&#x1F937;&#x200D;&#x2640;&#xFE0F;",
+	"man-shrugging": "&#x1F937;&#x200D;&#x2642;&#xFE0F;",
+	"woman-cartwheeling": "&#x1F938;&#x200D;&#x2640;&#xFE0F;",
+	"man-cartwheeling": "&#x1F938;&#x200D;&#x2642;&#xFE0F;",
+	"woman-juggling": "&#x1F939;&#x200D;&#x2640;&#xFE0F;",
+	"man-juggling": "&#x1F939;&#x200D;&#x2642;&#xFE0F;",
+	"woman-wrestling": "&#x1F93C;&#x200D;&#x2640;&#xFE0F;",
+	"man-wrestling": "&#x1F93C;&#x200D;&#x2642;&#xFE0F;",
+	"woman-playing-water-polo": "&#x1F93D;&#x200D;&#x2640;&#xFE0F;",
+	"man-playing-water-polo": "&#x1F93D;&#x200D;&#x2642;&#xFE0F;",
+	"woman-playing-handball": "&#x1F93E;&#x200D;&#x2640;&#xFE0F;",
+	"man-playing-handball": "&#x1F93E;&#x200D;&#x2642;&#xFE0F;",
+	"woman-bouncing-ball": "&#x26F9;&#xFE0F;&#x200D;&#x2640;&#xFE0F;",
+	"man-bouncing-ball": "&#x26F9;&#xFE0F;&#x200D;&#x2642;&#xFE0F;"
+};
+
+/***/ }),
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23941,7 +25437,7 @@ var RepoSettingsView = function RepoSettingsView(props) {
 exports.default = RepoSettingsView;
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const EVENT_LISTENER_PROPS = __webpack_require__(62)
@@ -24022,7 +25518,7 @@ module.exports = dom
 
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, exports) {
 
 // Based on https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute
@@ -24102,11 +25598,11 @@ module.exports = new Map([
 
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const render = __webpack_require__(44)
-const patch = __webpack_require__(137)
+const patch = __webpack_require__(138)
 const {getScheduler} = __webpack_require__(64)
 
 const componentsWithPendingUpdates = new WeakSet()
@@ -24288,7 +25784,7 @@ module.exports = {
 
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const render = __webpack_require__(44)
@@ -24466,7 +25962,7 @@ module.exports = patch
 
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports) {
 
 // If the scheduler is not customized via `etch.setScheduler`, an instance of
@@ -24542,7 +26038,7 @@ module.exports = class DefaultScheduler {
 
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24560,7 +26056,7 @@ var _etch = __webpack_require__(27);
 
 var _etch2 = _interopRequireDefault(_etch);
 
-var _conversation = __webpack_require__(140);
+var _conversation = __webpack_require__(141);
 
 var _conversation2 = _interopRequireDefault(_conversation);
 
@@ -24724,7 +26220,7 @@ var _initialiseProps = function _initialiseProps() {
 exports.default = ConversationsGutter;
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24746,7 +26242,7 @@ var _etch2 = _interopRequireDefault(_etch);
 
 var _helpers = __webpack_require__(41);
 
-var _leftPad = __webpack_require__(141);
+var _leftPad = __webpack_require__(142);
 
 var _leftPad2 = _interopRequireDefault(_leftPad);
 
@@ -24774,6 +26270,8 @@ var Convo = function Convo(_ref) {
   this.lines = lines;
   this.onSend = onSend;
   this.onHide = onHide;
+  this.scrollTop = 0;
+  this.etsMap = {};
 
   this.disposables = new _atom.CompositeDisposable();
   this.inputdisp = new _atom.CompositeDisposable();
@@ -24811,7 +26309,8 @@ var _initialiseProps = function _initialiseProps() {
     enumerable: true,
     writable: true,
     value: function value() {
-      return _this4.refs.container.scrollTop = _this4.refs.container.scrollHeight;
+      var container = _this4.refs.container;
+      container.scrollTop = container.scrollHeight - container.clientHeight;
     }
   });
   Object.defineProperty(this, "writeAfterUpdate", {
@@ -24819,7 +26318,25 @@ var _initialiseProps = function _initialiseProps() {
     writable: true,
     value: function value() {
       atom.views.getView(_this4.refs.input).classList.add("css-input");
-      _this4.scrollToBottom();
+
+      var container = _this4.refs.container;
+      if (_this4.noDown) {
+        container.scrollTop = _this4.scrollTop;
+      } else {
+        _this4.scrollToBottom();
+      }
+
+      if (container.scrollTop + container.clientHeight === container.scrollHeight) {
+        _this4.refs.scrollDown.classList.add("hidden");
+      } else {
+        _this4.refs.scrollDown.classList.remove("hidden");
+      }
+      if (container.scrollTop === 0) {
+        _this4.refs.scrollUp.classList.add("hidden");
+      } else {
+        _this4.refs.scrollUp.classList.remove("hidden");
+      }
+
       _this4.focus();
     }
   });
@@ -24830,14 +26347,15 @@ var _initialiseProps = function _initialiseProps() {
       var editor = _this4.refs.input;
       _this4.inputdisp.dispose();
       _this4.inputdisp.add(atom.textEditors.add(editor), atom.textEditors.maintainGrammar(editor), atom.textEditors.maintainConfig(editor));
+      _this4.scrollTop = _this4.refs.container.scrollTop;
     }
   });
   Object.defineProperty(this, "update", {
     enumerable: true,
     writable: true,
-    value: function value(lines) {
+    value: function value(lines, noDown) {
+      _this4.noDown = noDown;
       _this4.lines = lines;
-      _this4.scrollToBottom();
       return _etch2.default.update(_this4);
     }
   });
@@ -24860,13 +26378,59 @@ var _initialiseProps = function _initialiseProps() {
       _this4.refs.input.setText("");
     }
   });
+  Object.defineProperty(this, "scroll", {
+    enumerable: true,
+    writable: true,
+    value: function value(up) {
+      var container = _this4.refs.container;
+      var scrollBy = Math.round(container.clientHeight / 1.25);
+      _this4.scrollTop = _this4.scrollTop + (up ? -scrollBy : scrollBy);
+      _this4.update(_this4.lines, true);
+    }
+  });
+  Object.defineProperty(this, "filterDups", {
+    enumerable: true,
+    writable: true,
+    value: function value(_ref3) {
+      var event_ts = _ref3.event_ts;
+
+      if (_this4.etsMap[event_ts]) {
+        return false;
+      }
+      _this4.etsMap[event_ts] = true;
+      return true;
+    }
+  });
+  Object.defineProperty(this, "sortEvent", {
+    enumerable: true,
+    writable: true,
+    value: function value(a, b) {
+      var aSec = parseInt(a.event_ts.split(".").shift(), 10);
+      var bSec = parseInt(b.event_ts.split(".").shift(), 10);
+      return aSec === bSec ? 0 : aSec < bSec ? -1 : 1;
+    }
+  });
   Object.defineProperty(this, "render", {
     enumerable: true,
     writable: true,
     value: function value() {
+      _this4.etsMap = {};
+
       return $.div({ className: "css-convo inline-block" }, $.div({ className: "css-close-chat", onClick: function onClick() {
           return _this4.onHide();
-        } }, $.i({ className: "icon icon-x" })), $.div.apply($, [{ className: "css-lines-wrapper", ref: "container" }].concat(_toConsumableArray(_this4.lines.map(_this4.renderLine)))), $.div({ className: "css-input-wrapper" }, $(_atom.TextEditor, {
+        } }, $.i({ className: "icon icon-x" })), $.div({
+        className: "css-scroll",
+        ref: "scrollUp",
+        onClick: function onClick() {
+          return _this4.scroll(true);
+        }
+      }, $.i({ className: "icon icon-chevron-up" })), $.div.apply($, [{ className: "css-lines-wrapper", ref: "container" }].concat(_toConsumableArray(_this4.lines.filter(_this4.filterDups).sort(_this4.sortEvent).map(_this4.renderLine)))), $.div({
+        className: "css-scroll",
+        ref: "scrollDown",
+        onClick: function onClick() {
+          return _this4.scroll();
+        }
+      }, $.i({ className: "icon icon-chevron-down" })), $.div({ className: "css-input-wrapper" }, $(_atom.TextEditor, {
         ref: "input",
         mini: true
       })));
@@ -25079,7 +26643,7 @@ var _initialiseProps2 = function _initialiseProps2() {
 exports.default = Conversation;
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25138,7 +26702,7 @@ function leftPad (str, len, ch) {
 
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25274,7 +26838,7 @@ var AutocompleteProvider = function () {
 exports.default = AutocompleteProvider;
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*! @license Firebase v4.1.3
@@ -25344,8 +26908,8 @@ h.lb=function(){return this};h.vc=function(){return!0};h.Z=function(a){return a=
 Fc.prototype.Fc=function(a,b,c){Gc(this,a);a=this.Ac[a]||[];for(var d=0;d<a.length;d++)if(a[d].Ge===b&&(!c||c===a[d].La)){a.splice(d,1);break}};function Gc(a,b){D(Da(a.Af,function(a){return a===b}),"Unknown event: "+b)};var Hc=function(){var a=0,b=[];return function(c){var d=c===a;a=c;for(var e=Array(8),f=7;0<=f;f--)e[f]="-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz".charAt(c%64),c=Math.floor(c/64);D(0===c,"Cannot push at time == 0");c=e.join("");if(d){for(f=11;0<=f&&63===b[f];f--)b[f]=0;b[f]++}else for(f=0;12>f;f++)b[f]=Math.floor(64*Math.random());for(f=0;12>f;f++)c+="-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz".charAt(b[f]);D(20===c.length,"nextPushId: Length should be 20.");
 return c}}();function Ic(){Fc.call(this,["online"]);this.ec=!0;if("undefined"!==typeof window&&"undefined"!==typeof window.addEventListener&&!mb()){var a=this;window.addEventListener("online",function(){a.ec||(a.ec=!0,a.Ee("online",!0))},!1);window.addEventListener("offline",function(){a.ec&&(a.ec=!1,a.Ee("online",!1))},!1)}}la(Ic,Fc);Ic.prototype.Re=function(a){D("online"===a,"Unknown event type: "+a);return[this.ec]};ca(Ic);function Jc(){Fc.call(this,["visible"]);var a,b;"undefined"!==typeof document&&"undefined"!==typeof document.addEventListener&&("undefined"!==typeof document.hidden?(b="visibilitychange",a="hidden"):"undefined"!==typeof document.mozHidden?(b="mozvisibilitychange",a="mozHidden"):"undefined"!==typeof document.msHidden?(b="msvisibilitychange",a="msHidden"):"undefined"!==typeof document.webkitHidden&&(b="webkitvisibilitychange",a="webkitHidden"));this.Kb=!0;if(b){var c=this;document.addEventListener(b,
 function(){var b=!document[a];b!==c.Kb&&(c.Kb=b,c.Ee("visible",b))},!1)}}la(Jc,Fc);Jc.prototype.Re=function(a){D("visible"===a,"Unknown event type: "+a);return[this.Kb]};ca(Jc);(function(){var a=process.version;if("v0.10.22"===a||"v0.10.23"===a||"v0.10.24"===a){var b=function(a,b,c){this.chunk=a;this.encoding=b;this.callback=c},c=function(a,c,d,e,l){c.objectMode||!1===c.decodeStrings||"string"!==typeof d||(d=new Buffer(d,e));Buffer.isBuffer(d)&&(e="buffer");var r=c.objectMode?1:d.length;c.length+=r;var y=c.length<c.highWaterMark;y||(c.needDrain=!0);c.writing?c.buffer.push(new b(d,e,l)):(c.writelen=r,c.writecb=l,c.writing=!0,c.sync=!0,a._write(d,e,c.onwrite),c.sync=!1);return y},
-d=function(a,b,c,d){var e=!0;if(!Buffer.isBuffer(c)&&"string"!==typeof c&&null!==c&&void 0!==c&&!b.objectMode){var r=new TypeError("Invalid non-string/buffer chunk");a.emit("error",r);process.nextTick(function(){d(r)});e=!1}return e},e=function(a,b){var c=Error("write after end");a.emit("error",c);process.nextTick(function(){b(c)})},a=__webpack_require__(144);a.prototype.write=function(a,b,k){var m=this._writableState,l=!1;"function"===typeof b&&(k=b,b=null);Buffer.isBuffer(a)?b="buffer":b||(b=
-m.defaultEncoding);"function"!==typeof k&&(k=function(){});m.ended?e(this,k):d(this,m,a,k)&&(l=c(this,m,a,b,k));return l};__webpack_require__(145).prototype.write=a.prototype.write}})();function E(a,b){if(1==arguments.length){this.o=a.split("/");for(var c=0,d=0;d<this.o.length;d++)0<this.o[d].length&&(this.o[c]=this.o[d],c++);this.o.length=c;this.Y=0}else this.o=a,this.Y=b}function P(a,b){var c=K(a);if(null===c)return b;if(c===K(b))return P(N(a),N(b));throw Error("INTERNAL ERROR: innerPath ("+b+") is not within outerPath ("+a+")");}
+d=function(a,b,c,d){var e=!0;if(!Buffer.isBuffer(c)&&"string"!==typeof c&&null!==c&&void 0!==c&&!b.objectMode){var r=new TypeError("Invalid non-string/buffer chunk");a.emit("error",r);process.nextTick(function(){d(r)});e=!1}return e},e=function(a,b){var c=Error("write after end");a.emit("error",c);process.nextTick(function(){b(c)})},a=__webpack_require__(145);a.prototype.write=function(a,b,k){var m=this._writableState,l=!1;"function"===typeof b&&(k=b,b=null);Buffer.isBuffer(a)?b="buffer":b||(b=
+m.defaultEncoding);"function"!==typeof k&&(k=function(){});m.ended?e(this,k):d(this,m,a,k)&&(l=c(this,m,a,b,k));return l};__webpack_require__(146).prototype.write=a.prototype.write}})();function E(a,b){if(1==arguments.length){this.o=a.split("/");for(var c=0,d=0;d<this.o.length;d++)0<this.o[d].length&&(this.o[c]=this.o[d],c++);this.o.length=c;this.Y=0}else this.o=a,this.Y=b}function P(a,b){var c=K(a);if(null===c)return b;if(c===K(b))return P(N(a),N(b));throw Error("INTERNAL ERROR: innerPath ("+b+") is not within outerPath ("+a+")");}
 function Kc(a,b){for(var c=a.slice(),d=b.slice(),e=0;e<c.length&&e<d.length;e++){var f=pb(c[e],d[e]);if(0!==f)return f}return c.length===d.length?0:c.length<d.length?-1:1}function K(a){return a.Y>=a.o.length?null:a.o[a.Y]}function Bc(a){return a.o.length-a.Y}function N(a){var b=a.Y;b<a.o.length&&b++;return new E(a.o,b)}function Lc(a){return a.Y<a.o.length?a.o[a.o.length-1]:null}h=E.prototype;
 h.toString=function(){for(var a="",b=this.Y;b<this.o.length;b++)""!==this.o[b]&&(a+="/"+this.o[b]);return a||"/"};h.slice=function(a){return this.o.slice(this.Y+(a||0))};h.parent=function(){if(this.Y>=this.o.length)return null;for(var a=[],b=this.Y;b<this.o.length-1;b++)a.push(this.o[b]);return new E(a,0)};
 h.n=function(a){for(var b=[],c=this.Y;c<this.o.length;c++)b.push(this.o[c]);if(a instanceof E)for(c=a.Y;c<a.o.length;c++)b.push(a.o[c]);else for(a=a.split("/"),c=0;c<a.length;c++)0<a[c].length&&b.push(a[c]);return new E(b,0)};h.e=function(){return this.Y>=this.o.length};h.Z=function(a){if(Bc(this)!==Bc(a))return!1;for(var b=this.Y,c=a.Y;b<=this.o.length;b++,c++)if(this.o[b]!==a.o[c])return!1;return!0};
@@ -25423,7 +26987,7 @@ function Df(a,b,c){for(var d=qf,e=0;e<a.length;++e){var f=a[e];if(b(f)){var g=f.
 h.Aa=function(a,b,c){return this.W.Aa(this.Jb,a,b,c)};h.oc=function(a){return this.W.oc(this.Jb,a)};h.Yc=function(a,b,c){return this.W.Yc(this.Jb,a,b,c)};h.ic=function(a){return this.W.ic(this.Jb.n(a))};h.Td=function(a,b,c,d,e){return this.W.Td(this.Jb,a,b,c,d,e)};h.nc=function(a,b){return this.W.nc(this.Jb,a,b)};h.n=function(a){return new Ff(this.Jb.n(a),this.W)};function Gf(a,b){this.qf={};this.Sc=new Hf(a);this.va=b;var c=1E4+2E4*Math.random();ec(q(this.jf,this),Math.floor(c))}Gf.prototype.jf=function(){var a=this.Sc.get(),b={},c=!1,d;for(d in a)0<a[d]&&bb(this.qf,d)&&(b[d]=a[d],c=!0);c&&this.va.we(b);ec(q(this.jf,this),Math.floor(6E5*Math.random()))};function If(){this.qc={}}function Jf(a,b,c){n(c)||(c=1);bb(a.qc,b)||(a.qc[b]=0);a.qc[b]+=c}If.prototype.get=function(){return Sa(this.qc)};function Hf(a){this.Df=a;this.od=null}Hf.prototype.get=function(){var a=this.Df.get(),b=Sa(a);if(this.od)for(var c in this.od)b[c]-=this.od[c];this.od=a;return b};var Kf={},Lf={};function Mf(a){a=a.toString();Kf[a]||(Kf[a]=new If);return Kf[a]}function Nf(a,b){var c=a.toString();Lf[c]||(Lf[c]=b());return Lf[c]};function Of(a,b,c){this.f=Qb("p:rest:");this.L=a;this.Eb=b;this.Xc=c;this.$={}}function Pf(a,b){if(n(b))return"tag$"+b;D(nf(a.m),"should have a tag if it's not a default query.");return a.path.toString()}h=Of.prototype;
 h.Xe=function(a,b,c,d){var e=a.path.toString();this.f("Listen called for "+e+" "+a.ja());var f=Pf(a,c),g={};this.$[f]=g;a=of(a.m);var k=this;Qf(this,e+".json",a,function(a,b){var r=b;404===a&&(a=r=null);null===a&&k.Eb(e,r,!1,c);w(k.$,f)===g&&d(a?401==a?"permission_denied":"rest_error:"+a:"ok",null)})};h.tf=function(a,b){var c=Pf(a,b);delete this.$[c]};h.hf=function(){};h.pe=function(){};h.bf=function(){};h.vd=function(){};h.put=function(){};h.Ye=function(){};h.we=function(){};
 function Qf(a,b,c,d){c=c||{};c.format="export";a.Xc.getToken(!1).then(function(e){(e=e&&e.accessToken)&&(c.auth=e);var f=(a.L.Pc?"https://":"http://")+a.L.host+b+"?"+db(c);a.f("Sending REST request for "+f);var g=new XMLHttpRequest;g.onreadystatechange=function(){if(d&&4===g.readyState){a.f("REST Response for "+f+" received. status:",g.status,"response:",g.responseText);var b=null;if(200<=g.status&&300>g.status){try{b=ib(g.responseText)}catch(c){J("Failed to parse JSON response for "+f+": "+g.responseText)}d(null,
-b)}else 401!==g.status&&404!==g.status&&J("Got unsuccessful REST response for "+f+" Status: "+g.status),d(g.status);d=null}};g.open("GET",f,!0);g.send()})};function Rf(a){this.re=a;this.zd=[];this.Ob=0;this.Ud=-1;this.Db=null}function Sf(a,b,c){a.Ud=b;a.Db=c;a.Ud<a.Ob&&(a.Db(),a.Db=null)}function Tf(a,b,c){for(a.zd[b]=c;a.zd[a.Ob];){var d=a.zd[a.Ob];delete a.zd[a.Ob];for(var e=0;e<d.length;++e)if(d[e]){var f=a;cc(function(){f.re(d[e])})}if(a.Ob===a.Ud){a.Db&&(clearTimeout(a.Db),a.Db(),a.Db=null);break}a.Ob++}};var zb="websocket",Ab="long_polling";var Uf=null,Uf=__webpack_require__(146).Client;function Vf(a,b,c,d){this.Vd=a;this.f=Qb(this.Vd);this.frames=this.wc=null;this.nb=this.ob=this.De=0;this.Ua=Mf(b);a={v:"5"};c&&(a.s=c);d&&(a.ls=d);this.Wd=yb(b,zb,a)}var Wf;
+b)}else 401!==g.status&&404!==g.status&&J("Got unsuccessful REST response for "+f+" Status: "+g.status),d(g.status);d=null}};g.open("GET",f,!0);g.send()})};function Rf(a){this.re=a;this.zd=[];this.Ob=0;this.Ud=-1;this.Db=null}function Sf(a,b,c){a.Ud=b;a.Db=c;a.Ud<a.Ob&&(a.Db(),a.Db=null)}function Tf(a,b,c){for(a.zd[b]=c;a.zd[a.Ob];){var d=a.zd[a.Ob];delete a.zd[a.Ob];for(var e=0;e<d.length;++e)if(d[e]){var f=a;cc(function(){f.re(d[e])})}if(a.Ob===a.Ud){a.Db&&(clearTimeout(a.Db),a.Db(),a.Db=null);break}a.Ob++}};var zb="websocket",Ab="long_polling";var Uf=null,Uf=__webpack_require__(147).Client;function Vf(a,b,c,d){this.Vd=a;this.f=Qb(this.Vd);this.frames=this.wc=null;this.nb=this.ob=this.De=0;this.Ua=Mf(b);a={v:"5"};c&&(a.s=c);d&&(a.ls=d);this.Wd=yb(b,zb,a)}var Wf;
 Vf.prototype.open=function(a,b){this.gb=b;this.Xf=a;this.f("Websocket connecting to "+this.Wd);this.tc=!1;ub.set("previous_websocket_failure",!0);try{var c={headers:{"User-Agent":"Firebase/5/"+firebase.SDK_VERSION+"/"+process.platform+"/Node"}},d=process.env,e=0==this.Wd.indexOf("wss://")?d.HTTPS_PROXY||d.https_proxy:d.HTTP_PROXY||d.http_proxy;e&&(c.proxy={origin:e});this.Ha=new Uf(this.Wd,[],c)}catch(f){this.f("Error instantiating WebSocket.");(c=f.message||f.data)&&this.f(c);this.ab();return}var g=
 this;this.Ha.onopen=function(){g.f("Websocket connected.");g.tc=!0};this.Ha.onclose=function(){g.f("Websocket connection was disconnected.");g.Ha=null;g.ab()};this.Ha.onmessage=function(a){if(null!==g.Ha)if(a=a.data,g.nb+=a.length,Jf(g.Ua,"bytes_received",a.length),Xf(g),null!==g.frames)Yf(g,a);else{a:{D(null===g.frames,"We already have a frame buffer");if(6>=a.length){var b=Number(a);if(!isNaN(b)){g.De=b;g.frames=[];a=null;break a}}g.De=1;g.frames=[]}null!==a&&Yf(g,a)}};this.Ha.onerror=function(a){g.f("WebSocket error.  Closing connection.");
 (a=a.message||a.data)&&g.f(a);g.ab()}};Vf.prototype.start=function(){};Vf.isAvailable=function(){var a=!1;if("undefined"!==typeof navigator&&navigator.userAgent){var b=navigator.userAgent.match(/Android ([0-9]{0,}\.[0-9]{0,})/);b&&1<b.length&&4.4>parseFloat(b[1])&&(a=!0)}return!a&&null!==Uf&&!Wf};Vf.responsesRequiredToBeHealthy=2;Vf.healthyTimeout=3E4;h=Vf.prototype;h.pd=function(){ub.remove("previous_websocket_failure")};
@@ -25435,7 +26999,7 @@ $f.isAvailable=function(){return ag||!bg&&"undefined"!==typeof document&&null!=d
 h.ab=function(){this.yb||(this.f("Longpoll is closing itself"),this.Qc(),this.ia&&(this.ia(this.tc),this.ia=null))};h.close=function(){this.yb||(this.f("Longpoll is being closed."),this.Qc())};h.send=function(a){a=x(a);this.ob+=a.length;Jf(this.Ua,"bytes_sent",a.length);a=jb(a);a=Za(a,!0);a=Zb(a,1840);for(var b=0;b<a.length;b++){var c=this.Sa;c.Nc.push({lg:this.Ke,rg:a.length,Me:a[b]});c.Qd&&fg(c);this.Ke++}};function dg(a,b){var c=x(b).length;a.nb+=c;Jf(a.Ua,"bytes_received",c)}
 function cg(a,b,c,d){this.Vc=d;this.gb=c;this.te=new Dc;this.Nc=[];this.Xd=Math.floor(1E8*Math.random());this.of=!0;this.Ef=a;this.Yf=b}cg.prototype.close=function(){this.Qd=!1;if(this.rd){this.rd.wg.body.innerHTML="";var a=this;setTimeout(function(){null!==a.rd&&(document.body.removeChild(a.rd),a.rd=null)},Math.floor(0))}if(this.me){var b={disconn:"t"};b.id=this.me;b.pw=this.$e;b=this.Vc(b);gg(b)}if(b=this.gb)this.gb=null,b()};
 function fg(a){if(a.Qd&&a.of&&a.te.count()<(0<a.Nc.length?2:1)){a.Xd++;var b={};b.id=a.me;b.pw=a.$e;b.ser=a.Xd;for(var b=a.Vc(b),c="",d=0;0<a.Nc.length;)if(1870>=a.Nc[0].Me.length+30+c.length){var e=a.Nc.shift(),c=c+"&seg"+d+"="+e.lg+"&ts"+d+"="+e.rg+"&d"+d+"="+e.Me;d++}else break;hg(a,b+c,a.Xd);return!0}return!1}function hg(a,b,c){function d(){a.te.remove(c);fg(a)}a.te.add(c,1);var e=setTimeout(d,Math.floor(25E3));eg(a,b,function(){clearTimeout(e);d()})}function eg(a,b,c){a.Hf(b,c)}var ig=null;
-function gg(a,b){ig||(ig=__webpack_require__(162));ig(a,function(c,d,e){if(c)throw"Rest request for "+a.url+" failed.";b&&b(e)})}cg.prototype.Hf=function(a,b){var c=this;gg({url:a,xg:!0},function(a){c.Kf(a);b()})};cg.prototype.Kf=function(a){eval("var jsonpCB = function(pLPCommand, pRTLPCB) {"+a+"}");jsonpCB(this.Ef,this.Yf)};function jg(a){kg(this,a)}var lg=[$f,Vf];function kg(a,b){var c=Vf&&Vf.isAvailable(),d=c&&!(ub.We||!0===ub.get("previous_websocket_failure"));b.tg&&(c||J("wss:// URL used, but browser isn't known to support websockets.  Trying anyway."),d=!0);if(d)a.Tc=[Vf];else{var e=a.Tc=[];$b(lg,function(a,b){b&&b.isAvailable()&&e.push(b)})}}function mg(a){if(0<a.Tc.length)return a.Tc[0];throw Error("No transports available");};function ng(a,b,c,d,e,f,g){this.id=a;this.f=Qb("c:"+this.id+":");this.re=c;this.Ic=d;this.ia=e;this.qe=f;this.L=b;this.yd=[];this.Ie=0;this.rf=new jg(b);this.Ta=0;this.Ab=g;this.f("Connection created");og(this)}
+function gg(a,b){ig||(ig=__webpack_require__(163));ig(a,function(c,d,e){if(c)throw"Rest request for "+a.url+" failed.";b&&b(e)})}cg.prototype.Hf=function(a,b){var c=this;gg({url:a,xg:!0},function(a){c.Kf(a);b()})};cg.prototype.Kf=function(a){eval("var jsonpCB = function(pLPCommand, pRTLPCB) {"+a+"}");jsonpCB(this.Ef,this.Yf)};function jg(a){kg(this,a)}var lg=[$f,Vf];function kg(a,b){var c=Vf&&Vf.isAvailable(),d=c&&!(ub.We||!0===ub.get("previous_websocket_failure"));b.tg&&(c||J("wss:// URL used, but browser isn't known to support websockets.  Trying anyway."),d=!0);if(d)a.Tc=[Vf];else{var e=a.Tc=[];$b(lg,function(a,b){b&&b.isAvailable()&&e.push(b)})}}function mg(a){if(0<a.Tc.length)return a.Tc[0];throw Error("No transports available");};function ng(a,b,c,d,e,f,g){this.id=a;this.f=Qb("c:"+this.id+":");this.re=c;this.Ic=d;this.ia=e;this.qe=f;this.L=b;this.yd=[];this.Ie=0;this.rf=new jg(b);this.Ta=0;this.Ab=g;this.f("Connection created");og(this)}
 function og(a){var b=mg(a.rf);a.I=new b("c:"+a.id+":"+a.Ie++,a.L,void 0,a.Ab);a.ve=b.responsesRequiredToBeHealthy||0;var c=pg(a,a.I),d=qg(a,a.I);a.Uc=a.I;a.Oc=a.I;a.D=null;a.zb=!1;setTimeout(function(){a.I&&a.I.open(c,d)},Math.floor(0));b=b.healthyTimeout||0;0<b&&(a.jd=ec(function(){a.jd=null;a.zb||(a.I&&102400<a.I.nb?(a.f("Connection exceeded healthy timeout but has received "+a.I.nb+" bytes.  Marking connection healthy."),a.zb=!0,a.I.pd()):a.I&&10240<a.I.ob?a.f("Connection exceeded healthy timeout but has sent "+
 a.I.ob+" bytes.  Leaving connection alive."):(a.f("Closing unhealthy connection after timeout."),a.close()))},Math.floor(b)))}function qg(a,b){return function(c){b===a.I?(a.I=null,c||0!==a.Ta?1===a.Ta&&a.f("Realtime connection lost."):(a.f("Realtime connection failed."),"s-"===a.L.Za.substr(0,2)&&(ub.remove("host:"+a.L.host),a.L.Za=a.L.host)),a.close()):b===a.D?(a.f("Secondary connection lost."),c=a.D,a.D=null,a.Uc!==c&&a.Oc!==c||a.close()):a.f("closing an old connection")}}
 function pg(a,b){return function(c){if(2!=a.Ta)if(b===a.Oc){var d=Xb("t",c);c=Xb("d",c);if("c"==d){if(d=Xb("t",c),"d"in c)if(c=c.d,"h"===d){var d=c.ts,e=c.v,f=c.h;a.pf=c.s;xb(a.L,f);0==a.Ta&&(a.I.start(),rg(a,a.I,d),"5"!==e&&J("Protocol version mismatch detected"),c=a.rf,(c=1<c.Tc.length?c.Tc[1]:null)&&sg(a,c))}else if("n"===d){a.f("recvd end transmission on primary");a.Oc=a.D;for(c=0;c<a.yd.length;++c)a.ud(a.yd[c]);a.yd=[];tg(a)}else"s"===d?(a.f("Connection shutdown command received. Shutting down..."),
@@ -25541,19 +27105,19 @@ a);b.jb[a.name]=d;return d.Xa},{Reference:U,Query:X,Database:Og,enableLogging:Pb
 
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, exports) {
 
 module.exports = require("_stream_writable");
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, exports) {
 
 module.exports = require("_stream_duplex");
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // API references:
@@ -25597,14 +27161,14 @@ WebSocket.validateOptions = function(options, validKeys) {
 };
 
 WebSocket.WebSocket   = WebSocket;
-WebSocket.Client      = __webpack_require__(160);
-WebSocket.EventSource = __webpack_require__(161);
+WebSocket.Client      = __webpack_require__(161);
+WebSocket.EventSource = __webpack_require__(162);
 
 module.exports        = WebSocket;
 
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25757,7 +27321,7 @@ exports.Messages = Messages;
 
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25844,7 +27408,7 @@ module.exports = StreamReader;
 
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25856,7 +27420,7 @@ var crypto     = __webpack_require__(1),
     HttpParser = __webpack_require__(46),
     Base       = __webpack_require__(13),
     Hybi       = __webpack_require__(66),
-    Proxy      = __webpack_require__(157);
+    Proxy      = __webpack_require__(158);
 
 var Client = function(_url, options) {
   this.version = 'hybi-13';
@@ -25989,14 +27553,14 @@ module.exports = Client;
 
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Parser   = __webpack_require__(151),
-    Pipeline = __webpack_require__(152);
+var Parser   = __webpack_require__(152),
+    Pipeline = __webpack_require__(153);
 
 var Extensions = function() {
   this._rsv1 = this._rsv2 = this._rsv3 = null;
@@ -26158,7 +27722,7 @@ module.exports = Extensions;
 
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26264,13 +27828,13 @@ module.exports = Parser;
 
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Cell   = __webpack_require__(153),
+var Cell   = __webpack_require__(154),
     Pledge = __webpack_require__(68);
 
 var Pipeline = function(sessions) {
@@ -26318,13 +27882,13 @@ module.exports = Pipeline;
 
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Functor = __webpack_require__(154),
+var Functor = __webpack_require__(155),
     Pledge  = __webpack_require__(68);
 
 var Cell = function(tuple) {
@@ -26377,7 +27941,7 @@ module.exports = Cell;
 
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26445,7 +28009,7 @@ module.exports = Functor;
 
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26473,7 +28037,7 @@ module.exports = Frame;
 
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26521,7 +28085,7 @@ module.exports = Message;
 
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26626,7 +28190,7 @@ module.exports = Proxy;
 
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26636,7 +28200,7 @@ var util       = __webpack_require__(0),
     HttpParser = __webpack_require__(46),
     Base       = __webpack_require__(13),
     Draft75    = __webpack_require__(69),
-    Draft76    = __webpack_require__(159),
+    Draft76    = __webpack_require__(160),
     Hybi       = __webpack_require__(66);
 
 var Server = function(options) {
@@ -26741,7 +28305,7 @@ module.exports = Server;
 
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26864,7 +28428,7 @@ module.exports = Draft76;
 
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var util   = __webpack_require__(0),
@@ -26954,7 +28518,7 @@ module.exports = Client;
 
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Stream      = __webpack_require__(8).Stream,
@@ -27091,7 +28655,7 @@ module.exports = EventSource;
 
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27238,7 +28802,7 @@ request.forever = function (agentOptions, optionsArg) {
 // Exports
 
 module.exports = request
-request.Request = __webpack_require__(168)
+request.Request = __webpack_require__(169)
 request.initParams = initParams
 
 // Backwards compatibility for request.debug
@@ -27254,7 +28818,7 @@ Object.defineProperty(request, 'debug', {
 
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27293,9 +28857,9 @@ var net = __webpack_require__(30);
 var urlParse = __webpack_require__(7).parse;
 var pubsuffix = __webpack_require__(72);
 var Store = __webpack_require__(74).Store;
-var MemoryCookieStore = __webpack_require__(164).MemoryCookieStore;
+var MemoryCookieStore = __webpack_require__(165).MemoryCookieStore;
 var pathMatch = __webpack_require__(76).pathMatch;
-var VERSION = __webpack_require__(165).version;
+var VERSION = __webpack_require__(166).version;
 
 var punycode;
 try {
@@ -28597,7 +30161,7 @@ module.exports = {
 
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28774,7 +30338,7 @@ MemoryCookieStore.prototype.getAllCookies = function(cb) {
 
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -28853,7 +30417,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, exports) {
 
 exports = module.exports = stringify
@@ -28886,13 +30450,13 @@ function serializer(replacer, cycleReplacer) {
 
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports) {
 
 module.exports = require("buffer");
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28903,30 +30467,30 @@ var http = __webpack_require__(19)
   , url = __webpack_require__(7)
   , util = __webpack_require__(0)
   , stream = __webpack_require__(8)
-  , zlib = __webpack_require__(169)
-  , hawk = __webpack_require__(170)
-  , aws2 = __webpack_require__(178)
-  , aws4 = __webpack_require__(179)
-  , httpSignature = __webpack_require__(181)
+  , zlib = __webpack_require__(170)
+  , hawk = __webpack_require__(171)
+  , aws2 = __webpack_require__(179)
+  , aws4 = __webpack_require__(180)
+  , httpSignature = __webpack_require__(182)
   , mime = __webpack_require__(87)
-  , stringstream = __webpack_require__(196)
+  , stringstream = __webpack_require__(197)
   , caseless = __webpack_require__(57)
-  , ForeverAgent = __webpack_require__(198)
-  , FormData = __webpack_require__(199)
+  , ForeverAgent = __webpack_require__(199)
+  , FormData = __webpack_require__(200)
   , extend = __webpack_require__(49)
   , isstream = __webpack_require__(96)
-  , isTypedArray = __webpack_require__(206).strict
+  , isTypedArray = __webpack_require__(207).strict
   , helpers = __webpack_require__(50)
   , cookies = __webpack_require__(71)
-  , getProxyFromURI = __webpack_require__(207)
-  , Querystring = __webpack_require__(208).Querystring
-  , Har = __webpack_require__(211).Har
-  , Auth = __webpack_require__(267).Auth
-  , OAuth = __webpack_require__(270).OAuth
-  , Multipart = __webpack_require__(272).Multipart
-  , Redirect = __webpack_require__(273).Redirect
-  , Tunnel = __webpack_require__(274).Tunnel
-  , now = __webpack_require__(276)
+  , getProxyFromURI = __webpack_require__(208)
+  , Querystring = __webpack_require__(209).Querystring
+  , Har = __webpack_require__(212).Har
+  , Auth = __webpack_require__(268).Auth
+  , OAuth = __webpack_require__(271).OAuth
+  , Multipart = __webpack_require__(273).Multipart
+  , Redirect = __webpack_require__(274).Redirect
+  , Tunnel = __webpack_require__(275).Tunnel
+  , now = __webpack_require__(277)
   , Buffer = __webpack_require__(20).Buffer
 
 var safeStringify = helpers.safeStringify
@@ -30464,13 +32028,13 @@ module.exports = Request
 
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports) {
 
 module.exports = require("zlib");
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Export sub-modules
@@ -30478,8 +32042,8 @@ module.exports = require("zlib");
 exports.error = exports.Error = __webpack_require__(32);
 exports.sntp = __webpack_require__(77);
 
-exports.server = __webpack_require__(175);
-exports.client = __webpack_require__(177);
+exports.server = __webpack_require__(176);
+exports.client = __webpack_require__(178);
 exports.crypto = __webpack_require__(52);
 exports.utils = __webpack_require__(34);
 
@@ -30491,7 +32055,7 @@ exports.uri = {
 
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports) {
 
 // Declare internals
@@ -30629,13 +32193,13 @@ internals.safeCharCodes = (function () {
 
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Load modules
 
-var Dgram = __webpack_require__(173);
-var Dns = __webpack_require__(174);
+var Dgram = __webpack_require__(174);
+var Dns = __webpack_require__(175);
 var Hoek = __webpack_require__(33);
 
 
@@ -31047,19 +32611,19 @@ internals.ignore = function () {
 
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports) {
 
 module.exports = require("dgram");
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports) {
 
 module.exports = require("dns");
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Load modules
@@ -31613,7 +33177,7 @@ internals.nonceFunc = function (key, nonce, ts, nonceCallback) {
 
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -31652,7 +33216,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Load modules
@@ -32027,7 +33591,7 @@ exports.message = function (host, port, message, options) {
 
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -32245,14 +33809,14 @@ module.exports.canonicalizeResource = canonicalizeResource
 
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var aws4 = exports,
     url = __webpack_require__(7),
     querystring = __webpack_require__(35),
     crypto = __webpack_require__(1),
-    lru = __webpack_require__(180),
+    lru = __webpack_require__(181),
     credentialsCache = lru(1000)
 
 // http://docs.amazonwebservices.com/general/latest/gr/signature-version-4.html
@@ -32583,7 +34147,7 @@ aws4.sign = function(request, credentials) {
 
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports) {
 
 module.exports = function(size) {
@@ -32685,14 +34249,14 @@ function DoublyLinkedNode(key, val) {
 
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright 2015 Joyent, Inc.
 
-var parser = __webpack_require__(182);
-var signer = __webpack_require__(189);
-var verify = __webpack_require__(193);
+var parser = __webpack_require__(183);
+var signer = __webpack_require__(190);
+var verify = __webpack_require__(194);
 var utils = __webpack_require__(37);
 
 
@@ -32720,7 +34284,7 @@ module.exports = {
 
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright 2012 Joyent, Inc.  All rights reserved.
@@ -33044,7 +34608,7 @@ module.exports = {
 
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Named EC curves
@@ -33220,7 +34784,7 @@ module.exports = {
 
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright 2011 Mark Cavage <mcavage@gmail.com> All rights reserved.
@@ -33228,8 +34792,8 @@ module.exports = {
 var errors = __webpack_require__(54);
 var types = __webpack_require__(55);
 
-var Reader = __webpack_require__(185);
-var Writer = __webpack_require__(186);
+var Reader = __webpack_require__(186);
+var Writer = __webpack_require__(187);
 
 
 ///--- Exports
@@ -33253,7 +34817,7 @@ for (var e in errors) {
 
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright 2011 Mark Cavage <mcavage@gmail.com> All rights reserved.
@@ -33520,7 +35084,7 @@ module.exports = Reader;
 
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright 2011 Mark Cavage <mcavage@gmail.com> All rights reserved.
@@ -33842,7 +35406,7 @@ module.exports = Writer;
 
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright 2017 Joyent, Inc.
@@ -34170,7 +35734,7 @@ function getCertType(key) {
 
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright 2016 Joyent, Inc.
@@ -34253,7 +35817,7 @@ function write(cert, options) {
 
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright 2012 Joyent, Inc.  All rights reserved.
@@ -34263,7 +35827,7 @@ var crypto = __webpack_require__(1);
 var http = __webpack_require__(19);
 var util = __webpack_require__(0);
 var sshpk = __webpack_require__(53);
-var jsprim = __webpack_require__(190);
+var jsprim = __webpack_require__(191);
 var utils = __webpack_require__(37);
 
 var sprintf = __webpack_require__(0).format;
@@ -34658,7 +36222,7 @@ module.exports = {
 
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -34669,8 +36233,8 @@ var mod_assert = __webpack_require__(2);
 var mod_util = __webpack_require__(0);
 
 var mod_extsprintf = __webpack_require__(86);
-var mod_verror = __webpack_require__(191);
-var mod_jsonschema = __webpack_require__(192);
+var mod_verror = __webpack_require__(192);
+var mod_jsonschema = __webpack_require__(193);
 
 /*
  * Public interface
@@ -35399,7 +36963,7 @@ function mergeObjects(provided, overrides, defaults)
 
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -35562,7 +37126,7 @@ WError.prototype.cause = function we_cause(c)
 
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -35842,7 +37406,7 @@ return exports;
 
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright 2015 Joyent, Inc.
@@ -35936,7 +37500,7 @@ module.exports = {
 
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -35949,11 +37513,11 @@ module.exports = {
  * Module exports.
  */
 
-module.exports = __webpack_require__(195)
+module.exports = __webpack_require__(196)
 
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -44654,12 +46218,12 @@ module.exports = {
 };
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var util = __webpack_require__(0)
 var Stream = __webpack_require__(8)
-var StringDecoder = __webpack_require__(197).StringDecoder
+var StringDecoder = __webpack_require__(198).StringDecoder
 
 module.exports = StringStream
 module.exports.AlignedStringDecoder = AlignedStringDecoder
@@ -44762,13 +46326,13 @@ function alignedWrite(buffer) {
 
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports) {
 
 module.exports = require("string_decoder");
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = ForeverAgent
@@ -44912,7 +46476,7 @@ function createConnectionSSL (port, host, options) {
 
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var CombinedStream = __webpack_require__(88);
@@ -44923,8 +46487,8 @@ var https = __webpack_require__(31);
 var parseUrl = __webpack_require__(7).parse;
 var fs = __webpack_require__(89);
 var mime = __webpack_require__(87);
-var asynckit = __webpack_require__(201);
-var populate = __webpack_require__(205);
+var asynckit = __webpack_require__(202);
+var populate = __webpack_require__(206);
 
 // Public API
 module.exports = FormData;
@@ -45362,7 +46926,7 @@ FormData.prototype.toString = function () {
 
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Stream = __webpack_require__(8).Stream;
@@ -45475,19 +47039,19 @@ DelayedStream.prototype._checkIfMaxDataSizeExceeded = function() {
 
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports =
 {
-  parallel      : __webpack_require__(202),
-  serial        : __webpack_require__(204),
+  parallel      : __webpack_require__(203),
+  serial        : __webpack_require__(205),
   serialOrdered : __webpack_require__(95)
 };
 
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var iterate    = __webpack_require__(90)
@@ -45536,7 +47100,7 @@ function parallel(list, iterator, callback)
 
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports) {
 
 module.exports = defer;
@@ -45568,7 +47132,7 @@ function defer(fn)
 
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var serialOrdered = __webpack_require__(95);
@@ -45591,7 +47155,7 @@ function serial(list, iterator, callback)
 
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports) {
 
 // populates missing values
@@ -45607,7 +47171,7 @@ module.exports = function(dst, src) {
 
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports) {
 
 module.exports      = isTypedArray
@@ -45654,7 +47218,7 @@ function isLooseTypedArray(arr) {
 
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45740,7 +47304,7 @@ module.exports = getProxyFromURI
 
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45798,7 +47362,7 @@ exports.Querystring = Querystring
 
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46012,7 +47576,7 @@ module.exports = function (object, opts) {
 
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46186,7 +47750,7 @@ module.exports = function (str, opts) {
 
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46194,7 +47758,7 @@ module.exports = function (str, opts) {
 
 var fs = __webpack_require__(89)
 var qs = __webpack_require__(35)
-var validate = __webpack_require__(212)
+var validate = __webpack_require__(213)
 var extend = __webpack_require__(49)
 
 function Har (request) {
@@ -46408,7 +47972,7 @@ exports.Har = Har
 
 
 /***/ }),
-/* 212 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46437,15 +48001,15 @@ exports.request = request;
 exports.response = response;
 exports.timings = timings;
 
-var _harSchema = __webpack_require__(213);
+var _harSchema = __webpack_require__(214);
 
 var schemas = _interopRequireWildcard(_harSchema);
 
-var _ajv = __webpack_require__(232);
+var _ajv = __webpack_require__(233);
 
 var _ajv2 = _interopRequireDefault(_ajv);
 
-var _error = __webpack_require__(266);
+var _error = __webpack_require__(267);
 
 var _error2 = _interopRequireDefault(_error);
 
@@ -46546,36 +48110,36 @@ function timings(data) {
 }
 
 /***/ }),
-/* 213 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = {
-  afterRequest: __webpack_require__(214),
-  beforeRequest: __webpack_require__(215),
-  browser: __webpack_require__(216),
-  cache: __webpack_require__(217),
-  content: __webpack_require__(218),
-  cookie: __webpack_require__(219),
-  creator: __webpack_require__(220),
-  entry: __webpack_require__(221),
-  har: __webpack_require__(222),
-  header: __webpack_require__(223),
-  log: __webpack_require__(224),
-  page: __webpack_require__(225),
-  pageTimings: __webpack_require__(226),
-  postData: __webpack_require__(227),
-  query: __webpack_require__(228),
-  request: __webpack_require__(229),
-  response: __webpack_require__(230),
-  timings: __webpack_require__(231)
+  afterRequest: __webpack_require__(215),
+  beforeRequest: __webpack_require__(216),
+  browser: __webpack_require__(217),
+  cache: __webpack_require__(218),
+  content: __webpack_require__(219),
+  cookie: __webpack_require__(220),
+  creator: __webpack_require__(221),
+  entry: __webpack_require__(222),
+  har: __webpack_require__(223),
+  header: __webpack_require__(224),
+  log: __webpack_require__(225),
+  page: __webpack_require__(226),
+  pageTimings: __webpack_require__(227),
+  postData: __webpack_require__(228),
+  query: __webpack_require__(229),
+  request: __webpack_require__(230),
+  response: __webpack_require__(231),
+  timings: __webpack_require__(232)
 }
 
 
 /***/ }),
-/* 214 */
+/* 215 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46609,7 +48173,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 215 */
+/* 216 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46643,7 +48207,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 216 */
+/* 217 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46667,7 +48231,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 217 */
+/* 218 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46700,7 +48264,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 218 */
+/* 219 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46733,7 +48297,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 219 */
+/* 220 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46776,7 +48340,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 220 */
+/* 221 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46800,7 +48364,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 221 */
+/* 222 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46861,7 +48425,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 222 */
+/* 223 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46878,7 +48442,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 223 */
+/* 224 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46902,7 +48466,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46942,7 +48506,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -46978,7 +48542,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -47000,7 +48564,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -47047,7 +48611,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -47071,7 +48635,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -47132,7 +48696,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -47190,7 +48754,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -47236,20 +48800,20 @@ module.exports = {
 };
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var compileSchema = __webpack_require__(233)
+var compileSchema = __webpack_require__(234)
   , resolve = __webpack_require__(100)
-  , Cache = __webpack_require__(239)
+  , Cache = __webpack_require__(240)
   , SchemaObject = __webpack_require__(102)
   , stableStringify = __webpack_require__(58)
-  , formats = __webpack_require__(240)
-  , rules = __webpack_require__(241)
-  , v5 = __webpack_require__(257)
+  , formats = __webpack_require__(241)
+  , rules = __webpack_require__(242)
+  , v5 = __webpack_require__(258)
   , util = __webpack_require__(18)
   , async = __webpack_require__(103)
   , co = __webpack_require__(106);
@@ -47258,7 +48822,7 @@ module.exports = Ajv;
 
 Ajv.prototype.compileAsync = async.compile;
 
-var customKeyword = __webpack_require__(263);
+var customKeyword = __webpack_require__(264);
 Ajv.prototype.addKeyword = customKeyword.add;
 Ajv.prototype.getKeyword = customKeyword.get;
 Ajv.prototype.removeKeyword = customKeyword.remove;
@@ -47624,7 +49188,7 @@ function Ajv(opts) {
 
   function addDraft4MetaSchema() {
     if (self._opts.meta !== false) {
-      var metaSchema = __webpack_require__(265);
+      var metaSchema = __webpack_require__(266);
       addMetaSchema(metaSchema, META_SCHEMA_ID, true);
       self._refs['http://json-schema.org/schema'] = META_SCHEMA_ID;
     }
@@ -47663,7 +49227,7 @@ function Ajv(opts) {
 
 
 /***/ }),
-/* 233 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48060,7 +49624,7 @@ function vars(arr, statement) {
 
 
 /***/ }),
-/* 234 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48087,15 +49651,15 @@ module.exports = function ucs2length(str) {
 
 
 /***/ }),
-/* 235 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports.parse = __webpack_require__(236);
-exports.stringify = __webpack_require__(237);
+exports.parse = __webpack_require__(237);
+exports.stringify = __webpack_require__(238);
 
 
 /***/ }),
-/* 236 */
+/* 237 */
 /***/ (function(module, exports) {
 
 var at, // The index of the current character
@@ -48374,7 +49938,7 @@ module.exports = function (source, reviver) {
 
 
 /***/ }),
-/* 237 */
+/* 238 */
 /***/ (function(module, exports) {
 
 var cx = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
@@ -48534,7 +50098,7 @@ module.exports = function (value, replacer, space) {
 
 
 /***/ }),
-/* 238 */
+/* 239 */
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -48543,10 +50107,10 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 238;
+webpackEmptyContext.id = 239;
 
 /***/ }),
-/* 239 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48579,7 +50143,7 @@ Cache.prototype.clear = function Cache_clear() {
 
 
 /***/ }),
-/* 240 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48750,13 +50314,13 @@ function compareDateTime(dt1, dt2) {
 
 
 /***/ }),
-/* 241 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var ruleModules = __webpack_require__(242)
+var ruleModules = __webpack_require__(243)
   , toHash = __webpack_require__(18).toHash;
 
 module.exports = function rules() {
@@ -48797,7 +50361,7 @@ module.exports = function rules() {
 
 
 /***/ }),
-/* 242 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48805,13 +50369,13 @@ module.exports = function rules() {
 
 //all requires must be explicit because browserify won't work with dynamic requires
 module.exports = {
-  '$ref': __webpack_require__(243),
-  allOf: __webpack_require__(244),
-  anyOf: __webpack_require__(245),
-  dependencies: __webpack_require__(246),
-  'enum': __webpack_require__(247),
-  format: __webpack_require__(248),
-  items: __webpack_require__(249),
+  '$ref': __webpack_require__(244),
+  allOf: __webpack_require__(245),
+  anyOf: __webpack_require__(246),
+  dependencies: __webpack_require__(247),
+  'enum': __webpack_require__(248),
+  format: __webpack_require__(249),
+  items: __webpack_require__(250),
   maximum: __webpack_require__(108),
   minimum: __webpack_require__(108),
   maxItems: __webpack_require__(109),
@@ -48820,19 +50384,19 @@ module.exports = {
   minLength: __webpack_require__(110),
   maxProperties: __webpack_require__(111),
   minProperties: __webpack_require__(111),
-  multipleOf: __webpack_require__(250),
-  not: __webpack_require__(251),
-  oneOf: __webpack_require__(252),
-  pattern: __webpack_require__(253),
-  properties: __webpack_require__(254),
-  required: __webpack_require__(255),
-  uniqueItems: __webpack_require__(256),
+  multipleOf: __webpack_require__(251),
+  not: __webpack_require__(252),
+  oneOf: __webpack_require__(253),
+  pattern: __webpack_require__(254),
+  properties: __webpack_require__(255),
+  required: __webpack_require__(256),
+  uniqueItems: __webpack_require__(257),
   validate: __webpack_require__(105)
 };
 
 
 /***/ }),
-/* 243 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48958,7 +50522,7 @@ module.exports = function generate_ref(it, $keyword) {
 
 
 /***/ }),
-/* 244 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49008,7 +50572,7 @@ module.exports = function generate_allOf(it, $keyword) {
 
 
 /***/ }),
-/* 245 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49080,7 +50644,7 @@ module.exports = function generate_anyOf(it, $keyword) {
 
 
 /***/ }),
-/* 246 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49234,7 +50798,7 @@ module.exports = function generate_dependencies(it, $keyword) {
 
 
 /***/ }),
-/* 247 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49306,7 +50870,7 @@ module.exports = function generate_enum(it, $keyword) {
 
 
 /***/ }),
-/* 248 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49451,7 +51015,7 @@ module.exports = function generate_format(it, $keyword) {
 
 
 /***/ }),
-/* 249 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49602,7 +51166,7 @@ module.exports = function generate_items(it, $keyword) {
 
 
 /***/ }),
-/* 250 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49685,7 +51249,7 @@ module.exports = function generate_multipleOf(it, $keyword) {
 
 
 /***/ }),
-/* 251 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49775,7 +51339,7 @@ module.exports = function generate_not(it, $keyword) {
 
 
 /***/ }),
-/* 252 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49858,7 +51422,7 @@ module.exports = function generate_oneOf(it, $keyword) {
 
 
 /***/ }),
-/* 253 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49939,7 +51503,7 @@ module.exports = function generate_pattern(it, $keyword) {
 
 
 /***/ }),
-/* 254 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50391,7 +51955,7 @@ module.exports = function generate_properties(it, $keyword) {
 
 
 /***/ }),
-/* 255 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50647,7 +52211,7 @@ module.exports = function generate_required(it, $keyword) {
 
 
 /***/ }),
-/* 256 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50725,7 +52289,7 @@ module.exports = function generate_uniqueItems(it, $keyword) {
 
 
 /***/ }),
-/* 257 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50741,14 +52305,14 @@ module.exports = {
 
 function enableV5(ajv) {
   var inlineFunctions = {
-    'switch': __webpack_require__(258),
-    'constant': __webpack_require__(259),
-    '_formatLimit': __webpack_require__(260),
-    'patternRequired': __webpack_require__(261)
+    'switch': __webpack_require__(259),
+    'constant': __webpack_require__(260),
+    '_formatLimit': __webpack_require__(261),
+    'patternRequired': __webpack_require__(262)
   };
 
   if (ajv._opts.meta !== false) {
-    var metaSchema = __webpack_require__(262);
+    var metaSchema = __webpack_require__(263);
     ajv.addMetaSchema(metaSchema, META_SCHEMA_ID);
   }
   _addKeyword('constant');
@@ -50784,7 +52348,7 @@ function containsMacro(schema) {
 
 
 /***/ }),
-/* 258 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50919,7 +52483,7 @@ module.exports = function generate_switch(it, $keyword) {
 
 
 /***/ }),
-/* 259 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50978,7 +52542,7 @@ module.exports = function generate_constant(it, $keyword) {
 
 
 /***/ }),
-/* 260 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51161,7 +52725,7 @@ module.exports = function generate__formatLimit(it, $keyword) {
 
 
 /***/ }),
-/* 261 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51219,7 +52783,7 @@ module.exports = function generate_patternRequired(it, $keyword) {
 
 
 /***/ }),
-/* 262 */
+/* 263 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -51719,14 +53283,14 @@ module.exports = {
 };
 
 /***/ }),
-/* 263 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var IDENTIFIER = /^[a-z_$][a-z0-9_$\-]*$/i;
-var customRuleCode = __webpack_require__(264);
+var customRuleCode = __webpack_require__(265);
 
 module.exports = {
   add: addKeyword,
@@ -51855,7 +53419,7 @@ function removeKeyword(keyword) {
 
 
 /***/ }),
-/* 264 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52082,7 +53646,7 @@ module.exports = function generate_custom(it, $keyword) {
 
 
 /***/ }),
-/* 265 */
+/* 266 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -52308,7 +53872,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 266 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52336,7 +53900,7 @@ HARError.prototype = Error.prototype;
 module.exports = exports['default'];
 
 /***/ }),
-/* 267 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52511,7 +54075,7 @@ exports.Auth = Auth
 
 
 /***/ }),
-/* 268 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var rng = __webpack_require__(112);
@@ -52617,7 +54181,7 @@ module.exports = v1;
 
 
 /***/ }),
-/* 269 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var rng = __webpack_require__(112);
@@ -52652,7 +54216,7 @@ module.exports = v4;
 
 
 /***/ }),
-/* 270 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52662,7 +54226,7 @@ var url = __webpack_require__(7)
   , qs = __webpack_require__(97)
   , caseless = __webpack_require__(57)
   , uuid = __webpack_require__(59)
-  , oauth = __webpack_require__(271)
+  , oauth = __webpack_require__(272)
   , crypto = __webpack_require__(1)
   , Buffer = __webpack_require__(20).Buffer
 
@@ -52807,7 +54371,7 @@ exports.OAuth = OAuth
 
 
 /***/ }),
-/* 271 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var crypto = __webpack_require__(1)
@@ -52949,7 +54513,7 @@ exports.generateBase = generateBase
 
 
 /***/ }),
-/* 272 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53069,7 +54633,7 @@ exports.Multipart = Multipart
 
 
 /***/ }),
-/* 273 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53233,14 +54797,14 @@ exports.Redirect = Redirect
 
 
 /***/ }),
-/* 274 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var url = __webpack_require__(7)
-  , tunnel = __webpack_require__(275)
+  , tunnel = __webpack_require__(276)
 
 var defaultProxyHeaderWhiteList = [
   'accept',
@@ -53416,7 +54980,7 @@ exports.Tunnel = Tunnel
 
 
 /***/ }),
-/* 275 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53667,7 +55231,7 @@ exports.debug = debug // for test
 
 
 /***/ }),
-/* 276 */
+/* 277 */
 /***/ (function(module, exports) {
 
 // Generated by CoffeeScript 1.7.1
@@ -53703,1502 +55267,6 @@ exports.debug = debug // for test
 
 }).call(this);
 
-
-/***/ }),
-/* 277 */
-/***/ (function(module, exports) {
-
-module.exports = {
-	"100": "&#x1F4AF;",
-	"1234": "&#x1F522;",
-	"copyright": "&#x00A9;",
-	"registered": "&#x00AE;",
-	"bangbang": "&#x203C;",
-	"interrobang": "&#x2049;",
-	"tm": "&#x2122;",
-	"information_source": "&#x2139;",
-	"left_right_arrow": "&#x2194;",
-	"arrow_up_down": "&#x2195;",
-	"arrow_upper_left": "&#x2196;",
-	"arrow_upper_right": "&#x2197;",
-	"arrow_lower_right": "&#x2198;",
-	"arrow_lower_left": "&#x2199;",
-	"leftwards_arrow_with_hook": "&#x21A9;",
-	"arrow_right_hook": "&#x21AA;",
-	"watch": "&#x231A;",
-	"hourglass": "&#x231B;",
-	"keyboard": "&#x2328;",
-	"eject": "&#x23CF;",
-	"fast_forward": "&#x23E9;",
-	"rewind": "&#x23EA;",
-	"arrow_double_up": "&#x23EB;",
-	"arrow_double_down": "&#x23EC;",
-	"black_right_pointing_double_triangle_with_vertical_bar": "&#x23ED;",
-	"black_left_pointing_double_triangle_with_vertical_bar": "&#x23EE;",
-	"black_right_pointing_triangle_with_double_vertical_bar": "&#x23EF;",
-	"alarm_clock": "&#x23F0;",
-	"stopwatch": "&#x23F1;",
-	"timer_clock": "&#x23F2;",
-	"hourglass_flowing_sand": "&#x23F3;",
-	"double_vertical_bar": "&#x23F8;",
-	"black_square_for_stop": "&#x23F9;",
-	"black_circle_for_record": "&#x23FA;",
-	"m": "&#x24C2;",
-	"black_small_square": "&#x25AA;",
-	"white_small_square": "&#x25AB;",
-	"arrow_forward": "&#x25B6;",
-	"arrow_backward": "&#x25C0;",
-	"white_medium_square": "&#x25FB;",
-	"black_medium_square": "&#x25FC;",
-	"white_medium_small_square": "&#x25FD;",
-	"black_medium_small_square": "&#x25FE;",
-	"sunny": "&#x2600;",
-	"cloud": "&#x2601;",
-	"umbrella": "&#x2602;",
-	"snowman": "&#x2603;",
-	"comet": "&#x2604;",
-	"phone": "&#x260E;",
-	"ballot_box_with_check": "&#x2611;",
-	"umbrella_with_rain_drops": "&#x2614;",
-	"coffee": "&#x2615;",
-	"shamrock": "&#x2618;",
-	"point_up": "&#x261D;",
-	"skull_and_crossbones": "&#x2620;",
-	"radioactive_sign": "&#x2622;",
-	"biohazard_sign": "&#x2623;",
-	"orthodox_cross": "&#x2626;",
-	"star_and_crescent": "&#x262A;",
-	"peace_symbol": "&#x262E;",
-	"yin_yang": "&#x262F;",
-	"wheel_of_dharma": "&#x2638;",
-	"white_frowning_face": "&#x2639;",
-	"relaxed": "&#x263A;",
-	"female_sign": "&#x2640;",
-	"male_sign": "&#x2642;",
-	"aries": "&#x2648;",
-	"taurus": "&#x2649;",
-	"gemini": "&#x264A;",
-	"cancer": "&#x264B;",
-	"leo": "&#x264C;",
-	"virgo": "&#x264D;",
-	"libra": "&#x264E;",
-	"scorpius": "&#x264F;",
-	"sagittarius": "&#x2650;",
-	"capricorn": "&#x2651;",
-	"aquarius": "&#x2652;",
-	"pisces": "&#x2653;",
-	"spades": "&#x2660;",
-	"clubs": "&#x2663;",
-	"hearts": "&#x2665;",
-	"diamonds": "&#x2666;",
-	"hotsprings": "&#x2668;",
-	"recycle": "&#x267B;",
-	"wheelchair": "&#x267F;",
-	"hammer_and_pick": "&#x2692;",
-	"anchor": "&#x2693;",
-	"crossed_swords": "&#x2694;",
-	"staff_of_aesculapius": "&#x2695;",
-	"scales": "&#x2696;",
-	"alembic": "&#x2697;",
-	"gear": "&#x2699;",
-	"atom_symbol": "&#x269B;",
-	"fleur_de_lis": "&#x269C;",
-	"warning": "&#x26A0;",
-	"zap": "&#x26A1;",
-	"white_circle": "&#x26AA;",
-	"black_circle": "&#x26AB;",
-	"coffin": "&#x26B0;",
-	"funeral_urn": "&#x26B1;",
-	"soccer": "&#x26BD;",
-	"baseball": "&#x26BE;",
-	"snowman_without_snow": "&#x26C4;",
-	"partly_sunny": "&#x26C5;",
-	"thunder_cloud_and_rain": "&#x26C8;",
-	"ophiuchus": "&#x26CE;",
-	"pick": "&#x26CF;",
-	"helmet_with_white_cross": "&#x26D1;",
-	"chains": "&#x26D3;",
-	"no_entry": "&#x26D4;",
-	"shinto_shrine": "&#x26E9;",
-	"church": "&#x26EA;",
-	"mountain": "&#x26F0;",
-	"umbrella_on_ground": "&#x26F1;",
-	"fountain": "&#x26F2;",
-	"golf": "&#x26F3;",
-	"ferry": "&#x26F4;",
-	"boat": "&#x26F5;",
-	"skier": "&#x26F7;",
-	"ice_skate": "&#x26F8;",
-	"person_with_ball": "&#x26F9;",
-	"tent": "&#x26FA;",
-	"fuelpump": "&#x26FD;",
-	"scissors": "&#x2702;",
-	"white_check_mark": "&#x2705;",
-	"airplane": "&#x2708;",
-	"email": "&#x2709;",
-	"fist": "&#x270A;",
-	"hand": "&#x270B;",
-	"v": "&#x270C;",
-	"writing_hand": "&#x270D;",
-	"pencil2": "&#x270F;",
-	"black_nib": "&#x2712;",
-	"heavy_check_mark": "&#x2714;",
-	"heavy_multiplication_x": "&#x2716;",
-	"latin_cross": "&#x271D;",
-	"star_of_david": "&#x2721;",
-	"sparkles": "&#x2728;",
-	"eight_spoked_asterisk": "&#x2733;",
-	"eight_pointed_black_star": "&#x2734;",
-	"snowflake": "&#x2744;",
-	"sparkle": "&#x2747;",
-	"x": "&#x274C;",
-	"negative_squared_cross_mark": "&#x274E;",
-	"question": "&#x2753;",
-	"grey_question": "&#x2754;",
-	"grey_exclamation": "&#x2755;",
-	"exclamation": "&#x2757;",
-	"heavy_heart_exclamation_mark_ornament": "&#x2763;",
-	"heart": "&#x2764;",
-	"heavy_plus_sign": "&#x2795;",
-	"heavy_minus_sign": "&#x2796;",
-	"heavy_division_sign": "&#x2797;",
-	"arrow_right": "&#x27A1;",
-	"curly_loop": "&#x27B0;",
-	"loop": "&#x27BF;",
-	"arrow_heading_up": "&#x2934;",
-	"arrow_heading_down": "&#x2935;",
-	"arrow_left": "&#x2B05;",
-	"arrow_up": "&#x2B06;",
-	"arrow_down": "&#x2B07;",
-	"black_large_square": "&#x2B1B;",
-	"white_large_square": "&#x2B1C;",
-	"star": "&#x2B50;",
-	"o": "&#x2B55;",
-	"wavy_dash": "&#x3030;",
-	"part_alternation_mark": "&#x303D;",
-	"congratulations": "&#x3297;",
-	"secret": "&#x3299;",
-	"mahjong": "&#x1F004;",
-	"black_joker": "&#x1F0CF;",
-	"a": "&#x1F170;",
-	"b": "&#x1F171;",
-	"o2": "&#x1F17E;",
-	"parking": "&#x1F17F;",
-	"ab": "&#x1F18E;",
-	"cl": "&#x1F191;",
-	"cool": "&#x1F192;",
-	"free": "&#x1F193;",
-	"id": "&#x1F194;",
-	"new": "&#x1F195;",
-	"ng": "&#x1F196;",
-	"ok": "&#x1F197;",
-	"sos": "&#x1F198;",
-	"up": "&#x1F199;",
-	"vs": "&#x1F19A;",
-	"koko": "&#x1F201;",
-	"sa": "&#x1F202;",
-	"u7121": "&#x1F21A;",
-	"u6307": "&#x1F22F;",
-	"u7981": "&#x1F232;",
-	"u7a7a": "&#x1F233;",
-	"u5408": "&#x1F234;",
-	"u6e80": "&#x1F235;",
-	"u6709": "&#x1F236;",
-	"u6708": "&#x1F237;",
-	"u7533": "&#x1F238;",
-	"u5272": "&#x1F239;",
-	"u55b6": "&#x1F23A;",
-	"ideograph_advantage": "&#x1F250;",
-	"accept": "&#x1F251;",
-	"cyclone": "&#x1F300;",
-	"foggy": "&#x1F301;",
-	"closed_umbrella": "&#x1F302;",
-	"night_with_stars": "&#x1F303;",
-	"sunrise_over_mountains": "&#x1F304;",
-	"sunrise": "&#x1F305;",
-	"city_sunset": "&#x1F306;",
-	"city_sunrise": "&#x1F307;",
-	"rainbow": "&#x1F308;",
-	"bridge_at_night": "&#x1F309;",
-	"ocean": "&#x1F30A;",
-	"volcano": "&#x1F30B;",
-	"milky_way": "&#x1F30C;",
-	"earth_africa": "&#x1F30D;",
-	"earth_americas": "&#x1F30E;",
-	"earth_asia": "&#x1F30F;",
-	"globe_with_meridians": "&#x1F310;",
-	"new_moon": "&#x1F311;",
-	"waxing_crescent_moon": "&#x1F312;",
-	"first_quarter_moon": "&#x1F313;",
-	"moon": "&#x1F314;",
-	"full_moon": "&#x1F315;",
-	"waning_gibbous_moon": "&#x1F316;",
-	"last_quarter_moon": "&#x1F317;",
-	"waning_crescent_moon": "&#x1F318;",
-	"crescent_moon": "&#x1F319;",
-	"new_moon_with_face": "&#x1F31A;",
-	"first_quarter_moon_with_face": "&#x1F31B;",
-	"last_quarter_moon_with_face": "&#x1F31C;",
-	"full_moon_with_face": "&#x1F31D;",
-	"sun_with_face": "&#x1F31E;",
-	"star2": "&#x1F31F;",
-	"stars": "&#x1F320;",
-	"thermometer": "&#x1F321;",
-	"mostly_sunny": "&#x1F324;",
-	"barely_sunny": "&#x1F325;",
-	"partly_sunny_rain": "&#x1F326;",
-	"rain_cloud": "&#x1F327;",
-	"snow_cloud": "&#x1F328;",
-	"lightning": "&#x1F329;",
-	"tornado": "&#x1F32A;",
-	"fog": "&#x1F32B;",
-	"wind_blowing_face": "&#x1F32C;",
-	"hotdog": "&#x1F32D;",
-	"taco": "&#x1F32E;",
-	"burrito": "&#x1F32F;",
-	"chestnut": "&#x1F330;",
-	"seedling": "&#x1F331;",
-	"evergreen_tree": "&#x1F332;",
-	"deciduous_tree": "&#x1F333;",
-	"palm_tree": "&#x1F334;",
-	"cactus": "&#x1F335;",
-	"hot_pepper": "&#x1F336;",
-	"tulip": "&#x1F337;",
-	"cherry_blossom": "&#x1F338;",
-	"rose": "&#x1F339;",
-	"hibiscus": "&#x1F33A;",
-	"sunflower": "&#x1F33B;",
-	"blossom": "&#x1F33C;",
-	"corn": "&#x1F33D;",
-	"ear_of_rice": "&#x1F33E;",
-	"herb": "&#x1F33F;",
-	"four_leaf_clover": "&#x1F340;",
-	"maple_leaf": "&#x1F341;",
-	"fallen_leaf": "&#x1F342;",
-	"leaves": "&#x1F343;",
-	"mushroom": "&#x1F344;",
-	"tomato": "&#x1F345;",
-	"eggplant": "&#x1F346;",
-	"grapes": "&#x1F347;",
-	"melon": "&#x1F348;",
-	"watermelon": "&#x1F349;",
-	"tangerine": "&#x1F34A;",
-	"lemon": "&#x1F34B;",
-	"banana": "&#x1F34C;",
-	"pineapple": "&#x1F34D;",
-	"apple": "&#x1F34E;",
-	"green_apple": "&#x1F34F;",
-	"pear": "&#x1F350;",
-	"peach": "&#x1F351;",
-	"cherries": "&#x1F352;",
-	"strawberry": "&#x1F353;",
-	"hamburger": "&#x1F354;",
-	"pizza": "&#x1F355;",
-	"meat_on_bone": "&#x1F356;",
-	"poultry_leg": "&#x1F357;",
-	"rice_cracker": "&#x1F358;",
-	"rice_ball": "&#x1F359;",
-	"rice": "&#x1F35A;",
-	"curry": "&#x1F35B;",
-	"ramen": "&#x1F35C;",
-	"spaghetti": "&#x1F35D;",
-	"bread": "&#x1F35E;",
-	"fries": "&#x1F35F;",
-	"sweet_potato": "&#x1F360;",
-	"dango": "&#x1F361;",
-	"oden": "&#x1F362;",
-	"sushi": "&#x1F363;",
-	"fried_shrimp": "&#x1F364;",
-	"fish_cake": "&#x1F365;",
-	"icecream": "&#x1F366;",
-	"shaved_ice": "&#x1F367;",
-	"ice_cream": "&#x1F368;",
-	"doughnut": "&#x1F369;",
-	"cookie": "&#x1F36A;",
-	"chocolate_bar": "&#x1F36B;",
-	"candy": "&#x1F36C;",
-	"lollipop": "&#x1F36D;",
-	"custard": "&#x1F36E;",
-	"honey_pot": "&#x1F36F;",
-	"cake": "&#x1F370;",
-	"bento": "&#x1F371;",
-	"stew": "&#x1F372;",
-	"fried_egg": "&#x1F373;",
-	"fork_and_knife": "&#x1F374;",
-	"tea": "&#x1F375;",
-	"sake": "&#x1F376;",
-	"wine_glass": "&#x1F377;",
-	"cocktail": "&#x1F378;",
-	"tropical_drink": "&#x1F379;",
-	"beer": "&#x1F37A;",
-	"beers": "&#x1F37B;",
-	"baby_bottle": "&#x1F37C;",
-	"knife_fork_plate": "&#x1F37D;",
-	"champagne": "&#x1F37E;",
-	"popcorn": "&#x1F37F;",
-	"ribbon": "&#x1F380;",
-	"gift": "&#x1F381;",
-	"birthday": "&#x1F382;",
-	"jack_o_lantern": "&#x1F383;",
-	"christmas_tree": "&#x1F384;",
-	"santa": "&#x1F385;",
-	"fireworks": "&#x1F386;",
-	"sparkler": "&#x1F387;",
-	"balloon": "&#x1F388;",
-	"tada": "&#x1F389;",
-	"confetti_ball": "&#x1F38A;",
-	"tanabata_tree": "&#x1F38B;",
-	"crossed_flags": "&#x1F38C;",
-	"bamboo": "&#x1F38D;",
-	"dolls": "&#x1F38E;",
-	"flags": "&#x1F38F;",
-	"wind_chime": "&#x1F390;",
-	"rice_scene": "&#x1F391;",
-	"school_satchel": "&#x1F392;",
-	"mortar_board": "&#x1F393;",
-	"medal": "&#x1F396;",
-	"reminder_ribbon": "&#x1F397;",
-	"studio_microphone": "&#x1F399;",
-	"level_slider": "&#x1F39A;",
-	"control_knobs": "&#x1F39B;",
-	"film_frames": "&#x1F39E;",
-	"admission_tickets": "&#x1F39F;",
-	"carousel_horse": "&#x1F3A0;",
-	"ferris_wheel": "&#x1F3A1;",
-	"roller_coaster": "&#x1F3A2;",
-	"fishing_pole_and_fish": "&#x1F3A3;",
-	"microphone": "&#x1F3A4;",
-	"movie_camera": "&#x1F3A5;",
-	"cinema": "&#x1F3A6;",
-	"headphones": "&#x1F3A7;",
-	"art": "&#x1F3A8;",
-	"tophat": "&#x1F3A9;",
-	"circus_tent": "&#x1F3AA;",
-	"ticket": "&#x1F3AB;",
-	"clapper": "&#x1F3AC;",
-	"performing_arts": "&#x1F3AD;",
-	"video_game": "&#x1F3AE;",
-	"dart": "&#x1F3AF;",
-	"slot_machine": "&#x1F3B0;",
-	"8ball": "&#x1F3B1;",
-	"game_die": "&#x1F3B2;",
-	"bowling": "&#x1F3B3;",
-	"flower_playing_cards": "&#x1F3B4;",
-	"musical_note": "&#x1F3B5;",
-	"notes": "&#x1F3B6;",
-	"saxophone": "&#x1F3B7;",
-	"guitar": "&#x1F3B8;",
-	"musical_keyboard": "&#x1F3B9;",
-	"trumpet": "&#x1F3BA;",
-	"violin": "&#x1F3BB;",
-	"musical_score": "&#x1F3BC;",
-	"running_shirt_with_sash": "&#x1F3BD;",
-	"tennis": "&#x1F3BE;",
-	"ski": "&#x1F3BF;",
-	"basketball": "&#x1F3C0;",
-	"checkered_flag": "&#x1F3C1;",
-	"snowboarder": "&#x1F3C2;",
-	"runner": "&#x1F3C3;",
-	"surfer": "&#x1F3C4;",
-	"sports_medal": "&#x1F3C5;",
-	"trophy": "&#x1F3C6;",
-	"horse_racing": "&#x1F3C7;",
-	"football": "&#x1F3C8;",
-	"rugby_football": "&#x1F3C9;",
-	"swimmer": "&#x1F3CA;",
-	"weight_lifter": "&#x1F3CB;",
-	"golfer": "&#x1F3CC;",
-	"racing_motorcycle": "&#x1F3CD;",
-	"racing_car": "&#x1F3CE;",
-	"cricket_bat_and_ball": "&#x1F3CF;",
-	"volleyball": "&#x1F3D0;",
-	"field_hockey_stick_and_ball": "&#x1F3D1;",
-	"ice_hockey_stick_and_puck": "&#x1F3D2;",
-	"table_tennis_paddle_and_ball": "&#x1F3D3;",
-	"snow_capped_mountain": "&#x1F3D4;",
-	"camping": "&#x1F3D5;",
-	"beach_with_umbrella": "&#x1F3D6;",
-	"building_construction": "&#x1F3D7;",
-	"house_buildings": "&#x1F3D8;",
-	"cityscape": "&#x1F3D9;",
-	"derelict_house_building": "&#x1F3DA;",
-	"classical_building": "&#x1F3DB;",
-	"desert": "&#x1F3DC;",
-	"desert_island": "&#x1F3DD;",
-	"national_park": "&#x1F3DE;",
-	"stadium": "&#x1F3DF;",
-	"house": "&#x1F3E0;",
-	"house_with_garden": "&#x1F3E1;",
-	"office": "&#x1F3E2;",
-	"post_office": "&#x1F3E3;",
-	"european_post_office": "&#x1F3E4;",
-	"hospital": "&#x1F3E5;",
-	"bank": "&#x1F3E6;",
-	"atm": "&#x1F3E7;",
-	"hotel": "&#x1F3E8;",
-	"love_hotel": "&#x1F3E9;",
-	"convenience_store": "&#x1F3EA;",
-	"school": "&#x1F3EB;",
-	"department_store": "&#x1F3EC;",
-	"factory": "&#x1F3ED;",
-	"izakaya_lantern": "&#x1F3EE;",
-	"japanese_castle": "&#x1F3EF;",
-	"european_castle": "&#x1F3F0;",
-	"waving_white_flag": "&#x1F3F3;",
-	"waving_black_flag": "&#x1F3F4;",
-	"rosette": "&#x1F3F5;",
-	"label": "&#x1F3F7;",
-	"badminton_racquet_and_shuttlecock": "&#x1F3F8;",
-	"bow_and_arrow": "&#x1F3F9;",
-	"amphora": "&#x1F3FA;",
-	"skin-tone-2": "&#x1F3FB;",
-	"skin-tone-3": "&#x1F3FC;",
-	"skin-tone-4": "&#x1F3FD;",
-	"skin-tone-5": "&#x1F3FE;",
-	"skin-tone-6": "&#x1F3FF;",
-	"rat": "&#x1F400;",
-	"mouse2": "&#x1F401;",
-	"ox": "&#x1F402;",
-	"water_buffalo": "&#x1F403;",
-	"cow2": "&#x1F404;",
-	"tiger2": "&#x1F405;",
-	"leopard": "&#x1F406;",
-	"rabbit2": "&#x1F407;",
-	"cat2": "&#x1F408;",
-	"dragon": "&#x1F409;",
-	"crocodile": "&#x1F40A;",
-	"whale2": "&#x1F40B;",
-	"snail": "&#x1F40C;",
-	"snake": "&#x1F40D;",
-	"racehorse": "&#x1F40E;",
-	"ram": "&#x1F40F;",
-	"goat": "&#x1F410;",
-	"sheep": "&#x1F411;",
-	"monkey": "&#x1F412;",
-	"rooster": "&#x1F413;",
-	"chicken": "&#x1F414;",
-	"dog2": "&#x1F415;",
-	"pig2": "&#x1F416;",
-	"boar": "&#x1F417;",
-	"elephant": "&#x1F418;",
-	"octopus": "&#x1F419;",
-	"shell": "&#x1F41A;",
-	"bug": "&#x1F41B;",
-	"ant": "&#x1F41C;",
-	"bee": "&#x1F41D;",
-	"beetle": "&#x1F41E;",
-	"fish": "&#x1F41F;",
-	"tropical_fish": "&#x1F420;",
-	"blowfish": "&#x1F421;",
-	"turtle": "&#x1F422;",
-	"hatching_chick": "&#x1F423;",
-	"baby_chick": "&#x1F424;",
-	"hatched_chick": "&#x1F425;",
-	"bird": "&#x1F426;",
-	"penguin": "&#x1F427;",
-	"koala": "&#x1F428;",
-	"poodle": "&#x1F429;",
-	"dromedary_camel": "&#x1F42A;",
-	"camel": "&#x1F42B;",
-	"dolphin": "&#x1F42C;",
-	"mouse": "&#x1F42D;",
-	"cow": "&#x1F42E;",
-	"tiger": "&#x1F42F;",
-	"rabbit": "&#x1F430;",
-	"cat": "&#x1F431;",
-	"dragon_face": "&#x1F432;",
-	"whale": "&#x1F433;",
-	"horse": "&#x1F434;",
-	"monkey_face": "&#x1F435;",
-	"dog": "&#x1F436;",
-	"pig": "&#x1F437;",
-	"frog": "&#x1F438;",
-	"hamster": "&#x1F439;",
-	"wolf": "&#x1F43A;",
-	"bear": "&#x1F43B;",
-	"panda_face": "&#x1F43C;",
-	"pig_nose": "&#x1F43D;",
-	"feet": "&#x1F43E;",
-	"chipmunk": "&#x1F43F;",
-	"eyes": "&#x1F440;",
-	"eye": "&#x1F441;",
-	"ear": "&#x1F442;",
-	"nose": "&#x1F443;",
-	"lips": "&#x1F444;",
-	"tongue": "&#x1F445;",
-	"point_up_2": "&#x1F446;",
-	"point_down": "&#x1F447;",
-	"point_left": "&#x1F448;",
-	"point_right": "&#x1F449;",
-	"facepunch": "&#x1F44A;",
-	"wave": "&#x1F44B;",
-	"ok_hand": "&#x1F44C;",
-	"+1": "&#x1F44D;",
-	"-1": "&#x1F44E;",
-	"clap": "&#x1F44F;",
-	"open_hands": "&#x1F450;",
-	"crown": "&#x1F451;",
-	"womans_hat": "&#x1F452;",
-	"eyeglasses": "&#x1F453;",
-	"necktie": "&#x1F454;",
-	"shirt": "&#x1F455;",
-	"jeans": "&#x1F456;",
-	"dress": "&#x1F457;",
-	"kimono": "&#x1F458;",
-	"bikini": "&#x1F459;",
-	"womans_clothes": "&#x1F45A;",
-	"purse": "&#x1F45B;",
-	"handbag": "&#x1F45C;",
-	"pouch": "&#x1F45D;",
-	"mans_shoe": "&#x1F45E;",
-	"athletic_shoe": "&#x1F45F;",
-	"high_heel": "&#x1F460;",
-	"sandal": "&#x1F461;",
-	"boot": "&#x1F462;",
-	"footprints": "&#x1F463;",
-	"bust_in_silhouette": "&#x1F464;",
-	"busts_in_silhouette": "&#x1F465;",
-	"boy": "&#x1F466;",
-	"girl": "&#x1F467;",
-	"man": "&#x1F468;",
-	"woman": "&#x1F469;",
-	"family": "&#x1F46A;",
-	"couple": "&#x1F46B;",
-	"two_men_holding_hands": "&#x1F46C;",
-	"two_women_holding_hands": "&#x1F46D;",
-	"cop": "&#x1F46E;",
-	"dancers": "&#x1F46F;",
-	"bride_with_veil": "&#x1F470;",
-	"person_with_blond_hair": "&#x1F471;",
-	"man_with_gua_pi_mao": "&#x1F472;",
-	"man_with_turban": "&#x1F473;",
-	"older_man": "&#x1F474;",
-	"older_woman": "&#x1F475;",
-	"baby": "&#x1F476;",
-	"construction_worker": "&#x1F477;",
-	"princess": "&#x1F478;",
-	"japanese_ogre": "&#x1F479;",
-	"japanese_goblin": "&#x1F47A;",
-	"ghost": "&#x1F47B;",
-	"angel": "&#x1F47C;",
-	"alien": "&#x1F47D;",
-	"space_invader": "&#x1F47E;",
-	"imp": "&#x1F47F;",
-	"skull": "&#x1F480;",
-	"information_desk_person": "&#x1F481;",
-	"guardsman": "&#x1F482;",
-	"dancer": "&#x1F483;",
-	"lipstick": "&#x1F484;",
-	"nail_care": "&#x1F485;",
-	"massage": "&#x1F486;",
-	"haircut": "&#x1F487;",
-	"barber": "&#x1F488;",
-	"syringe": "&#x1F489;",
-	"pill": "&#x1F48A;",
-	"kiss": "&#x1F48B;",
-	"love_letter": "&#x1F48C;",
-	"ring": "&#x1F48D;",
-	"gem": "&#x1F48E;",
-	"couplekiss": "&#x1F48F;",
-	"bouquet": "&#x1F490;",
-	"couple_with_heart": "&#x1F491;",
-	"wedding": "&#x1F492;",
-	"heartbeat": "&#x1F493;",
-	"broken_heart": "&#x1F494;",
-	"two_hearts": "&#x1F495;",
-	"sparkling_heart": "&#x1F496;",
-	"heartpulse": "&#x1F497;",
-	"cupid": "&#x1F498;",
-	"blue_heart": "&#x1F499;",
-	"green_heart": "&#x1F49A;",
-	"yellow_heart": "&#x1F49B;",
-	"purple_heart": "&#x1F49C;",
-	"gift_heart": "&#x1F49D;",
-	"revolving_hearts": "&#x1F49E;",
-	"heart_decoration": "&#x1F49F;",
-	"diamond_shape_with_a_dot_inside": "&#x1F4A0;",
-	"bulb": "&#x1F4A1;",
-	"anger": "&#x1F4A2;",
-	"bomb": "&#x1F4A3;",
-	"zzz": "&#x1F4A4;",
-	"boom": "&#x1F4A5;",
-	"sweat_drops": "&#x1F4A6;",
-	"droplet": "&#x1F4A7;",
-	"dash": "&#x1F4A8;",
-	"hankey": "&#x1F4A9;",
-	"muscle": "&#x1F4AA;",
-	"dizzy": "&#x1F4AB;",
-	"speech_balloon": "&#x1F4AC;",
-	"thought_balloon": "&#x1F4AD;",
-	"white_flower": "&#x1F4AE;",
-	"moneybag": "&#x1F4B0;",
-	"currency_exchange": "&#x1F4B1;",
-	"heavy_dollar_sign": "&#x1F4B2;",
-	"credit_card": "&#x1F4B3;",
-	"yen": "&#x1F4B4;",
-	"dollar": "&#x1F4B5;",
-	"euro": "&#x1F4B6;",
-	"pound": "&#x1F4B7;",
-	"money_with_wings": "&#x1F4B8;",
-	"chart": "&#x1F4B9;",
-	"seat": "&#x1F4BA;",
-	"computer": "&#x1F4BB;",
-	"briefcase": "&#x1F4BC;",
-	"minidisc": "&#x1F4BD;",
-	"floppy_disk": "&#x1F4BE;",
-	"cd": "&#x1F4BF;",
-	"dvd": "&#x1F4C0;",
-	"file_folder": "&#x1F4C1;",
-	"open_file_folder": "&#x1F4C2;",
-	"page_with_curl": "&#x1F4C3;",
-	"page_facing_up": "&#x1F4C4;",
-	"date": "&#x1F4C5;",
-	"calendar": "&#x1F4C6;",
-	"card_index": "&#x1F4C7;",
-	"chart_with_upwards_trend": "&#x1F4C8;",
-	"chart_with_downwards_trend": "&#x1F4C9;",
-	"bar_chart": "&#x1F4CA;",
-	"clipboard": "&#x1F4CB;",
-	"pushpin": "&#x1F4CC;",
-	"round_pushpin": "&#x1F4CD;",
-	"paperclip": "&#x1F4CE;",
-	"straight_ruler": "&#x1F4CF;",
-	"triangular_ruler": "&#x1F4D0;",
-	"bookmark_tabs": "&#x1F4D1;",
-	"ledger": "&#x1F4D2;",
-	"notebook": "&#x1F4D3;",
-	"notebook_with_decorative_cover": "&#x1F4D4;",
-	"closed_book": "&#x1F4D5;",
-	"book": "&#x1F4D6;",
-	"green_book": "&#x1F4D7;",
-	"blue_book": "&#x1F4D8;",
-	"orange_book": "&#x1F4D9;",
-	"books": "&#x1F4DA;",
-	"name_badge": "&#x1F4DB;",
-	"scroll": "&#x1F4DC;",
-	"memo": "&#x1F4DD;",
-	"telephone_receiver": "&#x1F4DE;",
-	"pager": "&#x1F4DF;",
-	"fax": "&#x1F4E0;",
-	"satellite_antenna": "&#x1F4E1;",
-	"loudspeaker": "&#x1F4E2;",
-	"mega": "&#x1F4E3;",
-	"outbox_tray": "&#x1F4E4;",
-	"inbox_tray": "&#x1F4E5;",
-	"package": "&#x1F4E6;",
-	"e-mail": "&#x1F4E7;",
-	"incoming_envelope": "&#x1F4E8;",
-	"envelope_with_arrow": "&#x1F4E9;",
-	"mailbox_closed": "&#x1F4EA;",
-	"mailbox": "&#x1F4EB;",
-	"mailbox_with_mail": "&#x1F4EC;",
-	"mailbox_with_no_mail": "&#x1F4ED;",
-	"postbox": "&#x1F4EE;",
-	"postal_horn": "&#x1F4EF;",
-	"newspaper": "&#x1F4F0;",
-	"iphone": "&#x1F4F1;",
-	"calling": "&#x1F4F2;",
-	"vibration_mode": "&#x1F4F3;",
-	"mobile_phone_off": "&#x1F4F4;",
-	"no_mobile_phones": "&#x1F4F5;",
-	"signal_strength": "&#x1F4F6;",
-	"camera": "&#x1F4F7;",
-	"camera_with_flash": "&#x1F4F8;",
-	"video_camera": "&#x1F4F9;",
-	"tv": "&#x1F4FA;",
-	"radio": "&#x1F4FB;",
-	"vhs": "&#x1F4FC;",
-	"film_projector": "&#x1F4FD;",
-	"prayer_beads": "&#x1F4FF;",
-	"twisted_rightwards_arrows": "&#x1F500;",
-	"repeat": "&#x1F501;",
-	"repeat_one": "&#x1F502;",
-	"arrows_clockwise": "&#x1F503;",
-	"arrows_counterclockwise": "&#x1F504;",
-	"low_brightness": "&#x1F505;",
-	"high_brightness": "&#x1F506;",
-	"mute": "&#x1F507;",
-	"speaker": "&#x1F508;",
-	"sound": "&#x1F509;",
-	"loud_sound": "&#x1F50A;",
-	"battery": "&#x1F50B;",
-	"electric_plug": "&#x1F50C;",
-	"mag": "&#x1F50D;",
-	"mag_right": "&#x1F50E;",
-	"lock_with_ink_pen": "&#x1F50F;",
-	"closed_lock_with_key": "&#x1F510;",
-	"key": "&#x1F511;",
-	"lock": "&#x1F512;",
-	"unlock": "&#x1F513;",
-	"bell": "&#x1F514;",
-	"no_bell": "&#x1F515;",
-	"bookmark": "&#x1F516;",
-	"link": "&#x1F517;",
-	"radio_button": "&#x1F518;",
-	"back": "&#x1F519;",
-	"end": "&#x1F51A;",
-	"on": "&#x1F51B;",
-	"soon": "&#x1F51C;",
-	"top": "&#x1F51D;",
-	"underage": "&#x1F51E;",
-	"keycap_ten": "&#x1F51F;",
-	"capital_abcd": "&#x1F520;",
-	"abcd": "&#x1F521;",
-	"symbols": "&#x1F523;",
-	"abc": "&#x1F524;",
-	"fire": "&#x1F525;",
-	"flashlight": "&#x1F526;",
-	"wrench": "&#x1F527;",
-	"hammer": "&#x1F528;",
-	"nut_and_bolt": "&#x1F529;",
-	"hocho": "&#x1F52A;",
-	"gun": "&#x1F52B;",
-	"microscope": "&#x1F52C;",
-	"telescope": "&#x1F52D;",
-	"crystal_ball": "&#x1F52E;",
-	"six_pointed_star": "&#x1F52F;",
-	"beginner": "&#x1F530;",
-	"trident": "&#x1F531;",
-	"black_square_button": "&#x1F532;",
-	"white_square_button": "&#x1F533;",
-	"red_circle": "&#x1F534;",
-	"large_blue_circle": "&#x1F535;",
-	"large_orange_diamond": "&#x1F536;",
-	"large_blue_diamond": "&#x1F537;",
-	"small_orange_diamond": "&#x1F538;",
-	"small_blue_diamond": "&#x1F539;",
-	"small_red_triangle": "&#x1F53A;",
-	"small_red_triangle_down": "&#x1F53B;",
-	"arrow_up_small": "&#x1F53C;",
-	"arrow_down_small": "&#x1F53D;",
-	"om_symbol": "&#x1F549;",
-	"dove_of_peace": "&#x1F54A;",
-	"kaaba": "&#x1F54B;",
-	"mosque": "&#x1F54C;",
-	"synagogue": "&#x1F54D;",
-	"menorah_with_nine_branches": "&#x1F54E;",
-	"clock1": "&#x1F550;",
-	"clock2": "&#x1F551;",
-	"clock3": "&#x1F552;",
-	"clock4": "&#x1F553;",
-	"clock5": "&#x1F554;",
-	"clock6": "&#x1F555;",
-	"clock7": "&#x1F556;",
-	"clock8": "&#x1F557;",
-	"clock9": "&#x1F558;",
-	"clock10": "&#x1F559;",
-	"clock11": "&#x1F55A;",
-	"clock12": "&#x1F55B;",
-	"clock130": "&#x1F55C;",
-	"clock230": "&#x1F55D;",
-	"clock330": "&#x1F55E;",
-	"clock430": "&#x1F55F;",
-	"clock530": "&#x1F560;",
-	"clock630": "&#x1F561;",
-	"clock730": "&#x1F562;",
-	"clock830": "&#x1F563;",
-	"clock930": "&#x1F564;",
-	"clock1030": "&#x1F565;",
-	"clock1130": "&#x1F566;",
-	"clock1230": "&#x1F567;",
-	"candle": "&#x1F56F;",
-	"mantelpiece_clock": "&#x1F570;",
-	"hole": "&#x1F573;",
-	"man_in_business_suit_levitating": "&#x1F574;",
-	"sleuth_or_spy": "&#x1F575;",
-	"dark_sunglasses": "&#x1F576;",
-	"spider": "&#x1F577;",
-	"spider_web": "&#x1F578;",
-	"joystick": "&#x1F579;",
-	"man_dancing": "&#x1F57A;",
-	"linked_paperclips": "&#x1F587;",
-	"lower_left_ballpoint_pen": "&#x1F58A;",
-	"lower_left_fountain_pen": "&#x1F58B;",
-	"lower_left_paintbrush": "&#x1F58C;",
-	"lower_left_crayon": "&#x1F58D;",
-	"raised_hand_with_fingers_splayed": "&#x1F590;",
-	"middle_finger": "&#x1F595;",
-	"spock-hand": "&#x1F596;",
-	"black_heart": "&#x1F5A4;",
-	"desktop_computer": "&#x1F5A5;",
-	"printer": "&#x1F5A8;",
-	"three_button_mouse": "&#x1F5B1;",
-	"trackball": "&#x1F5B2;",
-	"frame_with_picture": "&#x1F5BC;",
-	"card_index_dividers": "&#x1F5C2;",
-	"card_file_box": "&#x1F5C3;",
-	"file_cabinet": "&#x1F5C4;",
-	"wastebasket": "&#x1F5D1;",
-	"spiral_note_pad": "&#x1F5D2;",
-	"spiral_calendar_pad": "&#x1F5D3;",
-	"compression": "&#x1F5DC;",
-	"old_key": "&#x1F5DD;",
-	"rolled_up_newspaper": "&#x1F5DE;",
-	"dagger_knife": "&#x1F5E1;",
-	"speaking_head_in_silhouette": "&#x1F5E3;",
-	"left_speech_bubble": "&#x1F5E8;",
-	"right_anger_bubble": "&#x1F5EF;",
-	"ballot_box_with_ballot": "&#x1F5F3;",
-	"world_map": "&#x1F5FA;",
-	"mount_fuji": "&#x1F5FB;",
-	"tokyo_tower": "&#x1F5FC;",
-	"statue_of_liberty": "&#x1F5FD;",
-	"japan": "&#x1F5FE;",
-	"moyai": "&#x1F5FF;",
-	"grinning": "&#x1F600;",
-	"grin": "&#x1F601;",
-	"joy": "&#x1F602;",
-	"smiley": "&#x1F603;",
-	"smile": "&#x1F604;",
-	"sweat_smile": "&#x1F605;",
-	"laughing": "&#x1F606;",
-	"innocent": "&#x1F607;",
-	"smiling_imp": "&#x1F608;",
-	"wink": "&#x1F609;",
-	"blush": "&#x1F60A;",
-	"yum": "&#x1F60B;",
-	"relieved": "&#x1F60C;",
-	"heart_eyes": "&#x1F60D;",
-	"sunglasses": "&#x1F60E;",
-	"smirk": "&#x1F60F;",
-	"neutral_face": "&#x1F610;",
-	"expressionless": "&#x1F611;",
-	"unamused": "&#x1F612;",
-	"sweat": "&#x1F613;",
-	"pensive": "&#x1F614;",
-	"confused": "&#x1F615;",
-	"confounded": "&#x1F616;",
-	"kissing": "&#x1F617;",
-	"kissing_heart": "&#x1F618;",
-	"kissing_smiling_eyes": "&#x1F619;",
-	"kissing_closed_eyes": "&#x1F61A;",
-	"stuck_out_tongue": "&#x1F61B;",
-	"stuck_out_tongue_winking_eye": "&#x1F61C;",
-	"stuck_out_tongue_closed_eyes": "&#x1F61D;",
-	"disappointed": "&#x1F61E;",
-	"worried": "&#x1F61F;",
-	"angry": "&#x1F620;",
-	"rage": "&#x1F621;",
-	"cry": "&#x1F622;",
-	"persevere": "&#x1F623;",
-	"triumph": "&#x1F624;",
-	"disappointed_relieved": "&#x1F625;",
-	"frowning": "&#x1F626;",
-	"anguished": "&#x1F627;",
-	"fearful": "&#x1F628;",
-	"weary": "&#x1F629;",
-	"sleepy": "&#x1F62A;",
-	"tired_face": "&#x1F62B;",
-	"grimacing": "&#x1F62C;",
-	"sob": "&#x1F62D;",
-	"open_mouth": "&#x1F62E;",
-	"hushed": "&#x1F62F;",
-	"cold_sweat": "&#x1F630;",
-	"scream": "&#x1F631;",
-	"astonished": "&#x1F632;",
-	"flushed": "&#x1F633;",
-	"sleeping": "&#x1F634;",
-	"dizzy_face": "&#x1F635;",
-	"no_mouth": "&#x1F636;",
-	"mask": "&#x1F637;",
-	"smile_cat": "&#x1F638;",
-	"joy_cat": "&#x1F639;",
-	"smiley_cat": "&#x1F63A;",
-	"heart_eyes_cat": "&#x1F63B;",
-	"smirk_cat": "&#x1F63C;",
-	"kissing_cat": "&#x1F63D;",
-	"pouting_cat": "&#x1F63E;",
-	"crying_cat_face": "&#x1F63F;",
-	"scream_cat": "&#x1F640;",
-	"slightly_frowning_face": "&#x1F641;",
-	"slightly_smiling_face": "&#x1F642;",
-	"upside_down_face": "&#x1F643;",
-	"face_with_rolling_eyes": "&#x1F644;",
-	"no_good": "&#x1F645;",
-	"ok_woman": "&#x1F646;",
-	"bow": "&#x1F647;",
-	"see_no_evil": "&#x1F648;",
-	"hear_no_evil": "&#x1F649;",
-	"speak_no_evil": "&#x1F64A;",
-	"raising_hand": "&#x1F64B;",
-	"raised_hands": "&#x1F64C;",
-	"person_frowning": "&#x1F64D;",
-	"person_with_pouting_face": "&#x1F64E;",
-	"pray": "&#x1F64F;",
-	"rocket": "&#x1F680;",
-	"helicopter": "&#x1F681;",
-	"steam_locomotive": "&#x1F682;",
-	"railway_car": "&#x1F683;",
-	"bullettrain_side": "&#x1F684;",
-	"bullettrain_front": "&#x1F685;",
-	"train2": "&#x1F686;",
-	"metro": "&#x1F687;",
-	"light_rail": "&#x1F688;",
-	"station": "&#x1F689;",
-	"tram": "&#x1F68A;",
-	"train": "&#x1F68B;",
-	"bus": "&#x1F68C;",
-	"oncoming_bus": "&#x1F68D;",
-	"trolleybus": "&#x1F68E;",
-	"busstop": "&#x1F68F;",
-	"minibus": "&#x1F690;",
-	"ambulance": "&#x1F691;",
-	"fire_engine": "&#x1F692;",
-	"police_car": "&#x1F693;",
-	"oncoming_police_car": "&#x1F694;",
-	"taxi": "&#x1F695;",
-	"oncoming_taxi": "&#x1F696;",
-	"car": "&#x1F697;",
-	"oncoming_automobile": "&#x1F698;",
-	"blue_car": "&#x1F699;",
-	"truck": "&#x1F69A;",
-	"articulated_lorry": "&#x1F69B;",
-	"tractor": "&#x1F69C;",
-	"monorail": "&#x1F69D;",
-	"mountain_railway": "&#x1F69E;",
-	"suspension_railway": "&#x1F69F;",
-	"mountain_cableway": "&#x1F6A0;",
-	"aerial_tramway": "&#x1F6A1;",
-	"ship": "&#x1F6A2;",
-	"rowboat": "&#x1F6A3;",
-	"speedboat": "&#x1F6A4;",
-	"traffic_light": "&#x1F6A5;",
-	"vertical_traffic_light": "&#x1F6A6;",
-	"construction": "&#x1F6A7;",
-	"rotating_light": "&#x1F6A8;",
-	"triangular_flag_on_post": "&#x1F6A9;",
-	"door": "&#x1F6AA;",
-	"no_entry_sign": "&#x1F6AB;",
-	"smoking": "&#x1F6AC;",
-	"no_smoking": "&#x1F6AD;",
-	"put_litter_in_its_place": "&#x1F6AE;",
-	"do_not_litter": "&#x1F6AF;",
-	"potable_water": "&#x1F6B0;",
-	"non-potable_water": "&#x1F6B1;",
-	"bike": "&#x1F6B2;",
-	"no_bicycles": "&#x1F6B3;",
-	"bicyclist": "&#x1F6B4;",
-	"mountain_bicyclist": "&#x1F6B5;",
-	"walking": "&#x1F6B6;",
-	"no_pedestrians": "&#x1F6B7;",
-	"children_crossing": "&#x1F6B8;",
-	"mens": "&#x1F6B9;",
-	"womens": "&#x1F6BA;",
-	"restroom": "&#x1F6BB;",
-	"baby_symbol": "&#x1F6BC;",
-	"toilet": "&#x1F6BD;",
-	"wc": "&#x1F6BE;",
-	"shower": "&#x1F6BF;",
-	"bath": "&#x1F6C0;",
-	"bathtub": "&#x1F6C1;",
-	"passport_control": "&#x1F6C2;",
-	"customs": "&#x1F6C3;",
-	"baggage_claim": "&#x1F6C4;",
-	"left_luggage": "&#x1F6C5;",
-	"couch_and_lamp": "&#x1F6CB;",
-	"sleeping_accommodation": "&#x1F6CC;",
-	"shopping_bags": "&#x1F6CD;",
-	"bellhop_bell": "&#x1F6CE;",
-	"bed": "&#x1F6CF;",
-	"place_of_worship": "&#x1F6D0;",
-	"octagonal_sign": "&#x1F6D1;",
-	"shopping_trolley": "&#x1F6D2;",
-	"hammer_and_wrench": "&#x1F6E0;",
-	"shield": "&#x1F6E1;",
-	"oil_drum": "&#x1F6E2;",
-	"motorway": "&#x1F6E3;",
-	"railway_track": "&#x1F6E4;",
-	"motor_boat": "&#x1F6E5;",
-	"small_airplane": "&#x1F6E9;",
-	"airplane_departure": "&#x1F6EB;",
-	"airplane_arriving": "&#x1F6EC;",
-	"satellite": "&#x1F6F0;",
-	"passenger_ship": "&#x1F6F3;",
-	"scooter": "&#x1F6F4;",
-	"motor_scooter": "&#x1F6F5;",
-	"canoe": "&#x1F6F6;",
-	"zipper_mouth_face": "&#x1F910;",
-	"money_mouth_face": "&#x1F911;",
-	"face_with_thermometer": "&#x1F912;",
-	"nerd_face": "&#x1F913;",
-	"thinking_face": "&#x1F914;",
-	"face_with_head_bandage": "&#x1F915;",
-	"robot_face": "&#x1F916;",
-	"hugging_face": "&#x1F917;",
-	"the_horns": "&#x1F918;",
-	"call_me_hand": "&#x1F919;",
-	"raised_back_of_hand": "&#x1F91A;",
-	"left-facing_fist": "&#x1F91B;",
-	"right-facing_fist": "&#x1F91C;",
-	"handshake": "&#x1F91D;",
-	"hand_with_index_and_middle_fingers_crossed": "&#x1F91E;",
-	"face_with_cowboy_hat": "&#x1F920;",
-	"clown_face": "&#x1F921;",
-	"nauseated_face": "&#x1F922;",
-	"rolling_on_the_floor_laughing": "&#x1F923;",
-	"drooling_face": "&#x1F924;",
-	"lying_face": "&#x1F925;",
-	"face_palm": "&#x1F926;",
-	"sneezing_face": "&#x1F927;",
-	"pregnant_woman": "&#x1F930;",
-	"selfie": "&#x1F933;",
-	"prince": "&#x1F934;",
-	"man_in_tuxedo": "&#x1F935;",
-	"mother_christmas": "&#x1F936;",
-	"shrug": "&#x1F937;",
-	"person_doing_cartwheel": "&#x1F938;",
-	"juggling": "&#x1F939;",
-	"fencer": "&#x1F93A;",
-	"wrestlers": "&#x1F93C;",
-	"water_polo": "&#x1F93D;",
-	"handball": "&#x1F93E;",
-	"wilted_flower": "&#x1F940;",
-	"drum_with_drumsticks": "&#x1F941;",
-	"clinking_glasses": "&#x1F942;",
-	"tumbler_glass": "&#x1F943;",
-	"spoon": "&#x1F944;",
-	"goal_net": "&#x1F945;",
-	"first_place_medal": "&#x1F947;",
-	"second_place_medal": "&#x1F948;",
-	"third_place_medal": "&#x1F949;",
-	"boxing_glove": "&#x1F94A;",
-	"martial_arts_uniform": "&#x1F94B;",
-	"croissant": "&#x1F950;",
-	"avocado": "&#x1F951;",
-	"cucumber": "&#x1F952;",
-	"bacon": "&#x1F953;",
-	"potato": "&#x1F954;",
-	"carrot": "&#x1F955;",
-	"baguette_bread": "&#x1F956;",
-	"green_salad": "&#x1F957;",
-	"shallow_pan_of_food": "&#x1F958;",
-	"stuffed_flatbread": "&#x1F959;",
-	"egg": "&#x1F95A;",
-	"glass_of_milk": "&#x1F95B;",
-	"peanuts": "&#x1F95C;",
-	"kiwifruit": "&#x1F95D;",
-	"pancakes": "&#x1F95E;",
-	"crab": "&#x1F980;",
-	"lion_face": "&#x1F981;",
-	"scorpion": "&#x1F982;",
-	"turkey": "&#x1F983;",
-	"unicorn_face": "&#x1F984;",
-	"eagle": "&#x1F985;",
-	"duck": "&#x1F986;",
-	"bat": "&#x1F987;",
-	"shark": "&#x1F988;",
-	"owl": "&#x1F989;",
-	"fox_face": "&#x1F98A;",
-	"butterfly": "&#x1F98B;",
-	"deer": "&#x1F98C;",
-	"gorilla": "&#x1F98D;",
-	"lizard": "&#x1F98E;",
-	"rhinoceros": "&#x1F98F;",
-	"shrimp": "&#x1F990;",
-	"squid": "&#x1F991;",
-	"cheese_wedge": "&#x1F9C0;",
-	"hash": "&#x0023;&#x20E3;",
-	"keycap_star": "&#x002A;&#x20E3;",
-	"zero": "&#x0030;&#x20E3;",
-	"one": "&#x0031;&#x20E3;",
-	"two": "&#x0032;&#x20E3;",
-	"three": "&#x0033;&#x20E3;",
-	"four": "&#x0034;&#x20E3;",
-	"five": "&#x0035;&#x20E3;",
-	"six": "&#x0036;&#x20E3;",
-	"seven": "&#x0037;&#x20E3;",
-	"eight": "&#x0038;&#x20E3;",
-	"nine": "&#x0039;&#x20E3;",
-	"flag-ac": "&#x1F1E6;&#x1F1E8;",
-	"flag-ad": "&#x1F1E6;&#x1F1E9;",
-	"flag-ae": "&#x1F1E6;&#x1F1EA;",
-	"flag-af": "&#x1F1E6;&#x1F1EB;",
-	"flag-ag": "&#x1F1E6;&#x1F1EC;",
-	"flag-ai": "&#x1F1E6;&#x1F1EE;",
-	"flag-al": "&#x1F1E6;&#x1F1F1;",
-	"flag-am": "&#x1F1E6;&#x1F1F2;",
-	"flag-ao": "&#x1F1E6;&#x1F1F4;",
-	"flag-aq": "&#x1F1E6;&#x1F1F6;",
-	"flag-ar": "&#x1F1E6;&#x1F1F7;",
-	"flag-as": "&#x1F1E6;&#x1F1F8;",
-	"flag-at": "&#x1F1E6;&#x1F1F9;",
-	"flag-au": "&#x1F1E6;&#x1F1FA;",
-	"flag-aw": "&#x1F1E6;&#x1F1FC;",
-	"flag-ax": "&#x1F1E6;&#x1F1FD;",
-	"flag-az": "&#x1F1E6;&#x1F1FF;",
-	"flag-ba": "&#x1F1E7;&#x1F1E6;",
-	"flag-bb": "&#x1F1E7;&#x1F1E7;",
-	"flag-bd": "&#x1F1E7;&#x1F1E9;",
-	"flag-be": "&#x1F1E7;&#x1F1EA;",
-	"flag-bf": "&#x1F1E7;&#x1F1EB;",
-	"flag-bg": "&#x1F1E7;&#x1F1EC;",
-	"flag-bh": "&#x1F1E7;&#x1F1ED;",
-	"flag-bi": "&#x1F1E7;&#x1F1EE;",
-	"flag-bj": "&#x1F1E7;&#x1F1EF;",
-	"flag-bl": "&#x1F1E7;&#x1F1F1;",
-	"flag-bm": "&#x1F1E7;&#x1F1F2;",
-	"flag-bn": "&#x1F1E7;&#x1F1F3;",
-	"flag-bo": "&#x1F1E7;&#x1F1F4;",
-	"flag-bq": "&#x1F1E7;&#x1F1F6;",
-	"flag-br": "&#x1F1E7;&#x1F1F7;",
-	"flag-bs": "&#x1F1E7;&#x1F1F8;",
-	"flag-bt": "&#x1F1E7;&#x1F1F9;",
-	"flag-bv": "&#x1F1E7;&#x1F1FB;",
-	"flag-bw": "&#x1F1E7;&#x1F1FC;",
-	"flag-by": "&#x1F1E7;&#x1F1FE;",
-	"flag-bz": "&#x1F1E7;&#x1F1FF;",
-	"flag-ca": "&#x1F1E8;&#x1F1E6;",
-	"flag-cc": "&#x1F1E8;&#x1F1E8;",
-	"flag-cd": "&#x1F1E8;&#x1F1E9;",
-	"flag-cf": "&#x1F1E8;&#x1F1EB;",
-	"flag-cg": "&#x1F1E8;&#x1F1EC;",
-	"flag-ch": "&#x1F1E8;&#x1F1ED;",
-	"flag-ci": "&#x1F1E8;&#x1F1EE;",
-	"flag-ck": "&#x1F1E8;&#x1F1F0;",
-	"flag-cl": "&#x1F1E8;&#x1F1F1;",
-	"flag-cm": "&#x1F1E8;&#x1F1F2;",
-	"flag-cn": "&#x1F1E8;&#x1F1F3;",
-	"flag-co": "&#x1F1E8;&#x1F1F4;",
-	"flag-cp": "&#x1F1E8;&#x1F1F5;",
-	"flag-cr": "&#x1F1E8;&#x1F1F7;",
-	"flag-cu": "&#x1F1E8;&#x1F1FA;",
-	"flag-cv": "&#x1F1E8;&#x1F1FB;",
-	"flag-cw": "&#x1F1E8;&#x1F1FC;",
-	"flag-cx": "&#x1F1E8;&#x1F1FD;",
-	"flag-cy": "&#x1F1E8;&#x1F1FE;",
-	"flag-cz": "&#x1F1E8;&#x1F1FF;",
-	"flag-de": "&#x1F1E9;&#x1F1EA;",
-	"flag-dg": "&#x1F1E9;&#x1F1EC;",
-	"flag-dj": "&#x1F1E9;&#x1F1EF;",
-	"flag-dk": "&#x1F1E9;&#x1F1F0;",
-	"flag-dm": "&#x1F1E9;&#x1F1F2;",
-	"flag-do": "&#x1F1E9;&#x1F1F4;",
-	"flag-dz": "&#x1F1E9;&#x1F1FF;",
-	"flag-ea": "&#x1F1EA;&#x1F1E6;",
-	"flag-ec": "&#x1F1EA;&#x1F1E8;",
-	"flag-ee": "&#x1F1EA;&#x1F1EA;",
-	"flag-eg": "&#x1F1EA;&#x1F1EC;",
-	"flag-eh": "&#x1F1EA;&#x1F1ED;",
-	"flag-er": "&#x1F1EA;&#x1F1F7;",
-	"flag-es": "&#x1F1EA;&#x1F1F8;",
-	"flag-et": "&#x1F1EA;&#x1F1F9;",
-	"flag-eu": "&#x1F1EA;&#x1F1FA;",
-	"flag-fi": "&#x1F1EB;&#x1F1EE;",
-	"flag-fj": "&#x1F1EB;&#x1F1EF;",
-	"flag-fk": "&#x1F1EB;&#x1F1F0;",
-	"flag-fm": "&#x1F1EB;&#x1F1F2;",
-	"flag-fo": "&#x1F1EB;&#x1F1F4;",
-	"flag-fr": "&#x1F1EB;&#x1F1F7;",
-	"flag-ga": "&#x1F1EC;&#x1F1E6;",
-	"flag-gb": "&#x1F1EC;&#x1F1E7;",
-	"flag-gd": "&#x1F1EC;&#x1F1E9;",
-	"flag-ge": "&#x1F1EC;&#x1F1EA;",
-	"flag-gf": "&#x1F1EC;&#x1F1EB;",
-	"flag-gg": "&#x1F1EC;&#x1F1EC;",
-	"flag-gh": "&#x1F1EC;&#x1F1ED;",
-	"flag-gi": "&#x1F1EC;&#x1F1EE;",
-	"flag-gl": "&#x1F1EC;&#x1F1F1;",
-	"flag-gm": "&#x1F1EC;&#x1F1F2;",
-	"flag-gn": "&#x1F1EC;&#x1F1F3;",
-	"flag-gp": "&#x1F1EC;&#x1F1F5;",
-	"flag-gq": "&#x1F1EC;&#x1F1F6;",
-	"flag-gr": "&#x1F1EC;&#x1F1F7;",
-	"flag-gs": "&#x1F1EC;&#x1F1F8;",
-	"flag-gt": "&#x1F1EC;&#x1F1F9;",
-	"flag-gu": "&#x1F1EC;&#x1F1FA;",
-	"flag-gw": "&#x1F1EC;&#x1F1FC;",
-	"flag-gy": "&#x1F1EC;&#x1F1FE;",
-	"flag-hk": "&#x1F1ED;&#x1F1F0;",
-	"flag-hm": "&#x1F1ED;&#x1F1F2;",
-	"flag-hn": "&#x1F1ED;&#x1F1F3;",
-	"flag-hr": "&#x1F1ED;&#x1F1F7;",
-	"flag-ht": "&#x1F1ED;&#x1F1F9;",
-	"flag-hu": "&#x1F1ED;&#x1F1FA;",
-	"flag-ic": "&#x1F1EE;&#x1F1E8;",
-	"flag-id": "&#x1F1EE;&#x1F1E9;",
-	"flag-ie": "&#x1F1EE;&#x1F1EA;",
-	"flag-il": "&#x1F1EE;&#x1F1F1;",
-	"flag-im": "&#x1F1EE;&#x1F1F2;",
-	"flag-in": "&#x1F1EE;&#x1F1F3;",
-	"flag-io": "&#x1F1EE;&#x1F1F4;",
-	"flag-iq": "&#x1F1EE;&#x1F1F6;",
-	"flag-ir": "&#x1F1EE;&#x1F1F7;",
-	"flag-is": "&#x1F1EE;&#x1F1F8;",
-	"flag-it": "&#x1F1EE;&#x1F1F9;",
-	"flag-je": "&#x1F1EF;&#x1F1EA;",
-	"flag-jm": "&#x1F1EF;&#x1F1F2;",
-	"flag-jo": "&#x1F1EF;&#x1F1F4;",
-	"flag-jp": "&#x1F1EF;&#x1F1F5;",
-	"flag-ke": "&#x1F1F0;&#x1F1EA;",
-	"flag-kg": "&#x1F1F0;&#x1F1EC;",
-	"flag-kh": "&#x1F1F0;&#x1F1ED;",
-	"flag-ki": "&#x1F1F0;&#x1F1EE;",
-	"flag-km": "&#x1F1F0;&#x1F1F2;",
-	"flag-kn": "&#x1F1F0;&#x1F1F3;",
-	"flag-kp": "&#x1F1F0;&#x1F1F5;",
-	"flag-kr": "&#x1F1F0;&#x1F1F7;",
-	"flag-kw": "&#x1F1F0;&#x1F1FC;",
-	"flag-ky": "&#x1F1F0;&#x1F1FE;",
-	"flag-kz": "&#x1F1F0;&#x1F1FF;",
-	"flag-la": "&#x1F1F1;&#x1F1E6;",
-	"flag-lb": "&#x1F1F1;&#x1F1E7;",
-	"flag-lc": "&#x1F1F1;&#x1F1E8;",
-	"flag-li": "&#x1F1F1;&#x1F1EE;",
-	"flag-lk": "&#x1F1F1;&#x1F1F0;",
-	"flag-lr": "&#x1F1F1;&#x1F1F7;",
-	"flag-ls": "&#x1F1F1;&#x1F1F8;",
-	"flag-lt": "&#x1F1F1;&#x1F1F9;",
-	"flag-lu": "&#x1F1F1;&#x1F1FA;",
-	"flag-lv": "&#x1F1F1;&#x1F1FB;",
-	"flag-ly": "&#x1F1F1;&#x1F1FE;",
-	"flag-ma": "&#x1F1F2;&#x1F1E6;",
-	"flag-mc": "&#x1F1F2;&#x1F1E8;",
-	"flag-md": "&#x1F1F2;&#x1F1E9;",
-	"flag-me": "&#x1F1F2;&#x1F1EA;",
-	"flag-mf": "&#x1F1F2;&#x1F1EB;",
-	"flag-mg": "&#x1F1F2;&#x1F1EC;",
-	"flag-mh": "&#x1F1F2;&#x1F1ED;",
-	"flag-mk": "&#x1F1F2;&#x1F1F0;",
-	"flag-ml": "&#x1F1F2;&#x1F1F1;",
-	"flag-mm": "&#x1F1F2;&#x1F1F2;",
-	"flag-mn": "&#x1F1F2;&#x1F1F3;",
-	"flag-mo": "&#x1F1F2;&#x1F1F4;",
-	"flag-mp": "&#x1F1F2;&#x1F1F5;",
-	"flag-mq": "&#x1F1F2;&#x1F1F6;",
-	"flag-mr": "&#x1F1F2;&#x1F1F7;",
-	"flag-ms": "&#x1F1F2;&#x1F1F8;",
-	"flag-mt": "&#x1F1F2;&#x1F1F9;",
-	"flag-mu": "&#x1F1F2;&#x1F1FA;",
-	"flag-mv": "&#x1F1F2;&#x1F1FB;",
-	"flag-mw": "&#x1F1F2;&#x1F1FC;",
-	"flag-mx": "&#x1F1F2;&#x1F1FD;",
-	"flag-my": "&#x1F1F2;&#x1F1FE;",
-	"flag-mz": "&#x1F1F2;&#x1F1FF;",
-	"flag-na": "&#x1F1F3;&#x1F1E6;",
-	"flag-nc": "&#x1F1F3;&#x1F1E8;",
-	"flag-ne": "&#x1F1F3;&#x1F1EA;",
-	"flag-nf": "&#x1F1F3;&#x1F1EB;",
-	"flag-ng": "&#x1F1F3;&#x1F1EC;",
-	"flag-ni": "&#x1F1F3;&#x1F1EE;",
-	"flag-nl": "&#x1F1F3;&#x1F1F1;",
-	"flag-no": "&#x1F1F3;&#x1F1F4;",
-	"flag-np": "&#x1F1F3;&#x1F1F5;",
-	"flag-nr": "&#x1F1F3;&#x1F1F7;",
-	"flag-nu": "&#x1F1F3;&#x1F1FA;",
-	"flag-nz": "&#x1F1F3;&#x1F1FF;",
-	"flag-om": "&#x1F1F4;&#x1F1F2;",
-	"flag-pa": "&#x1F1F5;&#x1F1E6;",
-	"flag-pe": "&#x1F1F5;&#x1F1EA;",
-	"flag-pf": "&#x1F1F5;&#x1F1EB;",
-	"flag-pg": "&#x1F1F5;&#x1F1EC;",
-	"flag-ph": "&#x1F1F5;&#x1F1ED;",
-	"flag-pk": "&#x1F1F5;&#x1F1F0;",
-	"flag-pl": "&#x1F1F5;&#x1F1F1;",
-	"flag-pm": "&#x1F1F5;&#x1F1F2;",
-	"flag-pn": "&#x1F1F5;&#x1F1F3;",
-	"flag-pr": "&#x1F1F5;&#x1F1F7;",
-	"flag-ps": "&#x1F1F5;&#x1F1F8;",
-	"flag-pt": "&#x1F1F5;&#x1F1F9;",
-	"flag-pw": "&#x1F1F5;&#x1F1FC;",
-	"flag-py": "&#x1F1F5;&#x1F1FE;",
-	"flag-qa": "&#x1F1F6;&#x1F1E6;",
-	"flag-re": "&#x1F1F7;&#x1F1EA;",
-	"flag-ro": "&#x1F1F7;&#x1F1F4;",
-	"flag-rs": "&#x1F1F7;&#x1F1F8;",
-	"flag-ru": "&#x1F1F7;&#x1F1FA;",
-	"flag-rw": "&#x1F1F7;&#x1F1FC;",
-	"flag-sa": "&#x1F1F8;&#x1F1E6;",
-	"flag-sb": "&#x1F1F8;&#x1F1E7;",
-	"flag-sc": "&#x1F1F8;&#x1F1E8;",
-	"flag-sd": "&#x1F1F8;&#x1F1E9;",
-	"flag-se": "&#x1F1F8;&#x1F1EA;",
-	"flag-sg": "&#x1F1F8;&#x1F1EC;",
-	"flag-sh": "&#x1F1F8;&#x1F1ED;",
-	"flag-si": "&#x1F1F8;&#x1F1EE;",
-	"flag-sj": "&#x1F1F8;&#x1F1EF;",
-	"flag-sk": "&#x1F1F8;&#x1F1F0;",
-	"flag-sl": "&#x1F1F8;&#x1F1F1;",
-	"flag-sm": "&#x1F1F8;&#x1F1F2;",
-	"flag-sn": "&#x1F1F8;&#x1F1F3;",
-	"flag-so": "&#x1F1F8;&#x1F1F4;",
-	"flag-sr": "&#x1F1F8;&#x1F1F7;",
-	"flag-ss": "&#x1F1F8;&#x1F1F8;",
-	"flag-st": "&#x1F1F8;&#x1F1F9;",
-	"flag-sv": "&#x1F1F8;&#x1F1FB;",
-	"flag-sx": "&#x1F1F8;&#x1F1FD;",
-	"flag-sy": "&#x1F1F8;&#x1F1FE;",
-	"flag-sz": "&#x1F1F8;&#x1F1FF;",
-	"flag-ta": "&#x1F1F9;&#x1F1E6;",
-	"flag-tc": "&#x1F1F9;&#x1F1E8;",
-	"flag-td": "&#x1F1F9;&#x1F1E9;",
-	"flag-tf": "&#x1F1F9;&#x1F1EB;",
-	"flag-tg": "&#x1F1F9;&#x1F1EC;",
-	"flag-th": "&#x1F1F9;&#x1F1ED;",
-	"flag-tj": "&#x1F1F9;&#x1F1EF;",
-	"flag-tk": "&#x1F1F9;&#x1F1F0;",
-	"flag-tl": "&#x1F1F9;&#x1F1F1;",
-	"flag-tm": "&#x1F1F9;&#x1F1F2;",
-	"flag-tn": "&#x1F1F9;&#x1F1F3;",
-	"flag-to": "&#x1F1F9;&#x1F1F4;",
-	"flag-tr": "&#x1F1F9;&#x1F1F7;",
-	"flag-tt": "&#x1F1F9;&#x1F1F9;",
-	"flag-tv": "&#x1F1F9;&#x1F1FB;",
-	"flag-tw": "&#x1F1F9;&#x1F1FC;",
-	"flag-tz": "&#x1F1F9;&#x1F1FF;",
-	"flag-ua": "&#x1F1FA;&#x1F1E6;",
-	"flag-ug": "&#x1F1FA;&#x1F1EC;",
-	"flag-um": "&#x1F1FA;&#x1F1F2;",
-	"flag-un": "&#x1F1FA;&#x1F1F3;",
-	"flag-us": "&#x1F1FA;&#x1F1F8;",
-	"flag-uy": "&#x1F1FA;&#x1F1FE;",
-	"flag-uz": "&#x1F1FA;&#x1F1FF;",
-	"flag-va": "&#x1F1FB;&#x1F1E6;",
-	"flag-vc": "&#x1F1FB;&#x1F1E8;",
-	"flag-ve": "&#x1F1FB;&#x1F1EA;",
-	"flag-vg": "&#x1F1FB;&#x1F1EC;",
-	"flag-vi": "&#x1F1FB;&#x1F1EE;",
-	"flag-vn": "&#x1F1FB;&#x1F1F3;",
-	"flag-vu": "&#x1F1FB;&#x1F1FA;",
-	"flag-wf": "&#x1F1FC;&#x1F1EB;",
-	"flag-ws": "&#x1F1FC;&#x1F1F8;",
-	"flag-xk": "&#x1F1FD;&#x1F1F0;",
-	"flag-ye": "&#x1F1FE;&#x1F1EA;",
-	"flag-yt": "&#x1F1FE;&#x1F1F9;",
-	"flag-za": "&#x1F1FF;&#x1F1E6;",
-	"flag-zm": "&#x1F1FF;&#x1F1F2;",
-	"flag-zw": "&#x1F1FF;&#x1F1FC;",
-	"male-farmer": "&#x1F468;&#x200D;&#x1F33E;",
-	"male-cook": "&#x1F468;&#x200D;&#x1F373;",
-	"male-student": "&#x1F468;&#x200D;&#x1F393;",
-	"male-singer": "&#x1F468;&#x200D;&#x1F3A4;",
-	"male-artist": "&#x1F468;&#x200D;&#x1F3A8;",
-	"male-teacher": "&#x1F468;&#x200D;&#x1F3EB;",
-	"male-factory-worker": "&#x1F468;&#x200D;&#x1F3ED;",
-	"man-boy": "&#x1F468;&#x200D;&#x1F466;",
-	"man-girl": "&#x1F468;&#x200D;&#x1F467;",
-	"male-technologist": "&#x1F468;&#x200D;&#x1F4BB;",
-	"male-office-worker": "&#x1F468;&#x200D;&#x1F4BC;",
-	"male-mechanic": "&#x1F468;&#x200D;&#x1F527;",
-	"male-scientist": "&#x1F468;&#x200D;&#x1F52C;",
-	"male-astronaut": "&#x1F468;&#x200D;&#x1F680;",
-	"male-firefighter": "&#x1F468;&#x200D;&#x1F692;",
-	"female-farmer": "&#x1F469;&#x200D;&#x1F33E;",
-	"female-cook": "&#x1F469;&#x200D;&#x1F373;",
-	"female-student": "&#x1F469;&#x200D;&#x1F393;",
-	"female-singer": "&#x1F469;&#x200D;&#x1F3A4;",
-	"female-artist": "&#x1F469;&#x200D;&#x1F3A8;",
-	"female-teacher": "&#x1F469;&#x200D;&#x1F3EB;",
-	"female-factory-worker": "&#x1F469;&#x200D;&#x1F3ED;",
-	"woman-boy": "&#x1F469;&#x200D;&#x1F466;",
-	"woman-girl": "&#x1F469;&#x200D;&#x1F467;",
-	"female-technologist": "&#x1F469;&#x200D;&#x1F4BB;",
-	"female-office-worker": "&#x1F469;&#x200D;&#x1F4BC;",
-	"female-mechanic": "&#x1F469;&#x200D;&#x1F527;",
-	"female-scientist": "&#x1F469;&#x200D;&#x1F52C;",
-	"female-astronaut": "&#x1F469;&#x200D;&#x1F680;",
-	"female-firefighter": "&#x1F469;&#x200D;&#x1F692;",
-	"woman-running": "&#x1F3C3;&#x200D;&#x2640;&#xFE0F;",
-	"man-running": "&#x1F3C3;&#x200D;&#x2642;&#xFE0F;",
-	"woman-surfing": "&#x1F3C4;&#x200D;&#x2640;&#xFE0F;",
-	"man-surfing": "&#x1F3C4;&#x200D;&#x2642;&#xFE0F;",
-	"woman-swimming": "&#x1F3CA;&#x200D;&#x2640;&#xFE0F;",
-	"man-swimming": "&#x1F3CA;&#x200D;&#x2642;&#xFE0F;",
-	"woman-lifting-weights": "&#x1F3CB;&#xFE0F;&#x200D;&#x2640;&#xFE0F;",
-	"man-lifting-weights": "&#x1F3CB;&#xFE0F;&#x200D;&#x2642;&#xFE0F;",
-	"woman-golfing": "&#x1F3CC;&#xFE0F;&#x200D;&#x2640;&#xFE0F;",
-	"man-golfing": "&#x1F3CC;&#xFE0F;&#x200D;&#x2642;&#xFE0F;",
-	"rainbow-flag": "&#x1F3F3;&#xFE0F;&#x200D;&#x1F308;",
-	"eye-in-speech-bubble": "&#x1F441;&#xFE0F;&#x200D;&#x1F5E8;&#xFE0F;",
-	"man-boy-boy": "&#x1F468;&#x200D;&#x1F466;&#x200D;&#x1F466;",
-	"man-girl-boy": "&#x1F468;&#x200D;&#x1F467;&#x200D;&#x1F466;",
-	"man-girl-girl": "&#x1F468;&#x200D;&#x1F467;&#x200D;&#x1F467;",
-	"man-man-boy": "&#x1F468;&#x200D;&#x1F468;&#x200D;&#x1F466;",
-	"man-man-boy-boy": "&#x1F468;&#x200D;&#x1F468;&#x200D;&#x1F466;&#x200D;&#x1F466;",
-	"man-man-girl": "&#x1F468;&#x200D;&#x1F468;&#x200D;&#x1F467;",
-	"man-man-girl-boy": "&#x1F468;&#x200D;&#x1F468;&#x200D;&#x1F467;&#x200D;&#x1F466;",
-	"man-man-girl-girl": "&#x1F468;&#x200D;&#x1F468;&#x200D;&#x1F467;&#x200D;&#x1F467;",
-	"man-woman-boy": "&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F466;",
-	"man-woman-boy-boy": "&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F466;&#x200D;&#x1F466;",
-	"man-woman-girl": "&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467;",
-	"man-woman-girl-boy": "&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F466;",
-	"man-woman-girl-girl": "&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F467;",
-	"male-doctor": "&#x1F468;&#x200D;&#x2695;&#xFE0F;",
-	"male-judge": "&#x1F468;&#x200D;&#x2696;&#xFE0F;",
-	"male-pilot": "&#x1F468;&#x200D;&#x2708;&#xFE0F;",
-	"man-heart-man": "&#x1F468;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F468;",
-	"man-kiss-man": "&#x1F468;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F48B;&#x200D;&#x1F468;",
-	"woman-boy-boy": "&#x1F469;&#x200D;&#x1F466;&#x200D;&#x1F466;",
-	"woman-girl-boy": "&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F466;",
-	"woman-girl-girl": "&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F467;",
-	"woman-woman-boy": "&#x1F469;&#x200D;&#x1F469;&#x200D;&#x1F466;",
-	"woman-woman-boy-boy": "&#x1F469;&#x200D;&#x1F469;&#x200D;&#x1F466;&#x200D;&#x1F466;",
-	"woman-woman-girl": "&#x1F469;&#x200D;&#x1F469;&#x200D;&#x1F467;",
-	"woman-woman-girl-boy": "&#x1F469;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F466;",
-	"woman-woman-girl-girl": "&#x1F469;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F467;",
-	"female-doctor": "&#x1F469;&#x200D;&#x2695;&#xFE0F;",
-	"female-judge": "&#x1F469;&#x200D;&#x2696;&#xFE0F;",
-	"female-pilot": "&#x1F469;&#x200D;&#x2708;&#xFE0F;",
-	"woman-heart-man": "&#x1F469;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F468;",
-	"woman-heart-woman": "&#x1F469;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F469;",
-	"woman-kiss-man": "&#x1F469;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F48B;&#x200D;&#x1F468;",
-	"woman-kiss-woman": "&#x1F469;&#x200D;&#x2764;&#xFE0F;&#x200D;&#x1F48B;&#x200D;&#x1F469;",
-	"female-police-officer": "&#x1F46E;&#x200D;&#x2640;&#xFE0F;",
-	"male-police-officer": "&#x1F46E;&#x200D;&#x2642;&#xFE0F;",
-	"woman-with-bunny-ears-partying": "&#x1F46F;&#x200D;&#x2640;&#xFE0F;",
-	"man-with-bunny-ears-partying": "&#x1F46F;&#x200D;&#x2642;&#xFE0F;",
-	"blond-haired-woman": "&#x1F471;&#x200D;&#x2640;&#xFE0F;",
-	"blond-haired-man": "&#x1F471;&#x200D;&#x2642;&#xFE0F;",
-	"woman-wearing-turban": "&#x1F473;&#x200D;&#x2640;&#xFE0F;",
-	"man-wearing-turban": "&#x1F473;&#x200D;&#x2642;&#xFE0F;",
-	"female-construction-worker": "&#x1F477;&#x200D;&#x2640;&#xFE0F;",
-	"male-construction-worker": "&#x1F477;&#x200D;&#x2642;&#xFE0F;",
-	"woman-tipping-hand": "&#x1F481;&#x200D;&#x2640;&#xFE0F;",
-	"man-tipping-hand": "&#x1F481;&#x200D;&#x2642;&#xFE0F;",
-	"female-guard": "&#x1F482;&#x200D;&#x2640;&#xFE0F;",
-	"male-guard": "&#x1F482;&#x200D;&#x2642;&#xFE0F;",
-	"woman-getting-massage": "&#x1F486;&#x200D;&#x2640;&#xFE0F;",
-	"man-getting-massage": "&#x1F486;&#x200D;&#x2642;&#xFE0F;",
-	"woman-getting-haircut": "&#x1F487;&#x200D;&#x2640;&#xFE0F;",
-	"man-getting-haircut": "&#x1F487;&#x200D;&#x2642;&#xFE0F;",
-	"female-detective": "&#x1F575;&#xFE0F;&#x200D;&#x2640;&#xFE0F;",
-	"male-detective": "&#x1F575;&#xFE0F;&#x200D;&#x2642;&#xFE0F;",
-	"woman-gesturing-no": "&#x1F645;&#x200D;&#x2640;&#xFE0F;",
-	"man-gesturing-no": "&#x1F645;&#x200D;&#x2642;&#xFE0F;",
-	"woman-gesturing-ok": "&#x1F646;&#x200D;&#x2640;&#xFE0F;",
-	"man-gesturing-ok": "&#x1F646;&#x200D;&#x2642;&#xFE0F;",
-	"woman-bowing": "&#x1F647;&#x200D;&#x2640;&#xFE0F;",
-	"man-bowing": "&#x1F647;&#x200D;&#x2642;&#xFE0F;",
-	"woman-raising-hand": "&#x1F64B;&#x200D;&#x2640;&#xFE0F;",
-	"man-raising-hand": "&#x1F64B;&#x200D;&#x2642;&#xFE0F;",
-	"woman-frowning": "&#x1F64D;&#x200D;&#x2640;&#xFE0F;",
-	"man-frowning": "&#x1F64D;&#x200D;&#x2642;&#xFE0F;",
-	"woman-pouting": "&#x1F64E;&#x200D;&#x2640;&#xFE0F;",
-	"man-pouting": "&#x1F64E;&#x200D;&#x2642;&#xFE0F;",
-	"woman-rowing-boat": "&#x1F6A3;&#x200D;&#x2640;&#xFE0F;",
-	"man-rowing-boat": "&#x1F6A3;&#x200D;&#x2642;&#xFE0F;",
-	"woman-biking": "&#x1F6B4;&#x200D;&#x2640;&#xFE0F;",
-	"man-biking": "&#x1F6B4;&#x200D;&#x2642;&#xFE0F;",
-	"woman-mountain-biking": "&#x1F6B5;&#x200D;&#x2640;&#xFE0F;",
-	"man-mountain-biking": "&#x1F6B5;&#x200D;&#x2642;&#xFE0F;",
-	"woman-walking": "&#x1F6B6;&#x200D;&#x2640;&#xFE0F;",
-	"man-walking": "&#x1F6B6;&#x200D;&#x2642;&#xFE0F;",
-	"woman-facepalming": "&#x1F926;&#x200D;&#x2640;&#xFE0F;",
-	"man-facepalming": "&#x1F926;&#x200D;&#x2642;&#xFE0F;",
-	"woman-shrugging": "&#x1F937;&#x200D;&#x2640;&#xFE0F;",
-	"man-shrugging": "&#x1F937;&#x200D;&#x2642;&#xFE0F;",
-	"woman-cartwheeling": "&#x1F938;&#x200D;&#x2640;&#xFE0F;",
-	"man-cartwheeling": "&#x1F938;&#x200D;&#x2642;&#xFE0F;",
-	"woman-juggling": "&#x1F939;&#x200D;&#x2640;&#xFE0F;",
-	"man-juggling": "&#x1F939;&#x200D;&#x2642;&#xFE0F;",
-	"woman-wrestling": "&#x1F93C;&#x200D;&#x2640;&#xFE0F;",
-	"man-wrestling": "&#x1F93C;&#x200D;&#x2642;&#xFE0F;",
-	"woman-playing-water-polo": "&#x1F93D;&#x200D;&#x2640;&#xFE0F;",
-	"man-playing-water-polo": "&#x1F93D;&#x200D;&#x2642;&#xFE0F;",
-	"woman-playing-handball": "&#x1F93E;&#x200D;&#x2640;&#xFE0F;",
-	"man-playing-handball": "&#x1F93E;&#x200D;&#x2642;&#xFE0F;",
-	"woman-bouncing-ball": "&#x26F9;&#xFE0F;&#x200D;&#x2640;&#xFE0F;",
-	"man-bouncing-ball": "&#x26F9;&#xFE0F;&#x200D;&#x2642;&#xFE0F;"
-};
 
 /***/ })
 /******/ ]);

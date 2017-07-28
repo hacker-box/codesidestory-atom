@@ -26419,13 +26419,13 @@ var _initialiseProps = function _initialiseProps() {
       return $.div({ className: "css-convo inline-block" }, $.div({ className: "css-close-chat", onClick: function onClick() {
           return _this4.onHide();
         } }, $.i({ className: "icon icon-x" })), $.div({
-        className: "css-scroll",
+        className: "css-scroll hidden",
         ref: "scrollUp",
         onClick: function onClick() {
           return _this4.scroll(true);
         }
       }, $.i({ className: "icon icon-chevron-up" })), $.div.apply($, [{ className: "css-lines-wrapper", ref: "container" }].concat(_toConsumableArray(_this4.lines.filter(_this4.filterDups).sort(_this4.sortEvent).map(_this4.renderLine)))), $.div({
-        className: "css-scroll",
+        className: "css-scroll hidden",
         ref: "scrollDown",
         onClick: function onClick() {
           return _this4.scroll();

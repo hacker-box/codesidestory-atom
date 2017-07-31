@@ -34,7 +34,7 @@
 .css-convo {
   min-height: 20px;
   min-width: 400px;
-  background-color: #fff;
+  background-color: @syntax-background-color;
   box-shadow: 0 5px 10px lighten(@base-border-color, 50%);
   border: 1px solid @base-border-color;
   box-shadow: 0 0 5px @overlay-border-color;
@@ -131,4 +131,41 @@
 }
 .css-repo {
   border: 1px solid #dddddd;
+}
+
+/* screen picker */
+.css-picker {
+  display: flex;
+  flex-direction: column;
+  .css-thumbs {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    .css-thumb-wrapper {
+      margin: 5px;
+      padding: 0 5px;
+      cursor: pointer;
+      box-shadow: 0 0 5px @overlay-border-color;
+      &:hover {
+        outline: 2px solid @text-color-info;
+      }
+    }
+  }
+}
+
+/* screen preview */
+.css-preview {
+  display: flex;
+  flex-direction: column;
+  .css-video {
+    width: 580px;
+  }
+}
+.css-progress {
+  width: 100%;
+  margin: 5px 0;
+}
+.css-recording {
+  margin-top: 6px;
+  margin-right: 5px;
 }

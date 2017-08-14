@@ -11936,7 +11936,7 @@ var _initialiseProps = function _initialiseProps() {
       recorder.ondataavailable = function (event) {
         recording.chunks.push(event.data);
       };
-      recorder.start();
+      recorder.start(1001);
       recording.recorder = recorder;
       recording.tracks = stream.getTracks();
     }
